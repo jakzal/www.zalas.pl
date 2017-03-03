@@ -1,0 +1,14 @@
+title: B.C. Rich Warlock
+link: http://www.zalas.pl/bc-rich-warlock
+author: admin
+description: 
+post_id: 16
+created: 2006/12/13 06:42:23
+created_gmt: 2006/12/13 05:42:23
+comment_status: open
+post_name: bc-rich-warlock
+status: attachment
+post_type: post
+
+# B.C. Rich Warlock
+

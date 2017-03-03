@@ -1,0 +1,15 @@
+title: Phoenix
+link: http://www.zalas.pl/phoenix
+author: admin
+description: 
+post_id: 8
+created: 2006/12/05 20:37:03
+created_gmt: 2006/12/05 19:37:03
+comment_status: open
+post_name: phoenix
+status: attachment
+post_type: post
+
+# Phoenix
+
+Programator Phoenix

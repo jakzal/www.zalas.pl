@@ -1,0 +1,58 @@
+title: Symfony Live 2010
+link: http://www.zalas.pl/symfony-live-2010
+author: admin
+description: 
+post_id: 456
+created: 2010/02/27 22:34:45
+created_gmt: 2010/02/27 21:34:45
+comment_status: open
+post_name: symfony-live-2010
+status: publish
+post_type: post
+
+<!--W dniach 16-17 lutego odbyła się pierwsza międzynarodowa konferencja Symfony Live. Była to nie lada gratka dla użytkowników frameworka symfony, w której miałem wielką przyjemność uczestniczyć. Wiele ciekawych rzeczy dzieje się obecnie wokół symfony (i Symfony (;). Oto skrót z tego co wydarzyło się na konferencji, a także przedsmak tego co nas czeka w niedalekiej przyszłości.-->
+
+# Symfony Live 2010
+
+![sflive2010](/uploads/wp//2010/02/sflive2010.png)W dniach 16-17 lutego w Paryżu odbyła się pierwsza, międzynarodowa konferencja [Symfony Live](http://www.symfony-live.com/). Była to nie lada gratka dla użytkowników  frameworka [symfony](http://www.symfony-project.org/), w której miałem wielką przyjemność uczestniczyć. Wiele ciekawych rzeczy dzieje się obecnie wokół symfony (i Symfony (;). Oto skrót z tego co wydarzyło się na konferencji, a także przedsmak tego co nas czeka w niedalekiej przyszłości. 
+
+## CMS w symfony
+
+![Wieża Eiffla](/uploads/wp//2010/02/eiffel-tower-300x400.jpg)[Dailymotion](http://www.dailymotion.com/) i [Yahoo](http://www.yahoo.com/) [udowodniły](http://www.symfony-project.org/blog/category/Case+studies), że symfony doskonale sprawdza się przy pisaniu serwisów generujących duży ruch i obciążenie serwerów. Wiadomo jednak, że nie ma zbyt wielu dobrych rozwiązań Open Source opartych na symfony. Do niedawna nie było nawet przyzwoitego CMSa. Teraz możemy wybierać z conajmniej trzech dojrzewających systemów tego typu: [Sympal](http://www.sympalphp.org/), [Diem](http://diem-project.org/) i [Apostrophe](http://www.apostrophenow.com/). Są to dobre rozwiązania, jednak nie mogą konkurować z [Drupal](http://drupal.org/)em jeśli chodzi o ilość funkcjonalności, czy łatwość w użyciu. [Fabien](http://twitter.com/fabpot) nazwał je dobrymi eksperymentami, przy których wiele się nauczyliśmy. Zdobyte doświadczenia możemy teraz wykorzystać przy budowaniu jednego, super **CMS**a opartego na **Symfony 2**. Większość zgodzi się ze mną, że zamiast rozpraszać uwagę na kilka CMSów, lepiej jest skupić się na zbudowaniu jednego. Za to bardzo dobrego. [Jonathan Wage](http://twitter.com/jwage) (Sympal) i [Tom Boutell](http://twitter.com/tommybgoode) (Apostrophe), mając połączenie sił na uwadze, założyli listę dyskusyjną symfony-cms-project-x. Póki co lista jest martwa, bo Symfony 2 jeszcze raczkuje.  Cieszy mnie sama deklaracja współpracy. Nie jestem pewien, czy reprezentanci innych CMSów (np Diem) byli obecni na konferencji, jednak podejrzewam, że każdy z chęcią poprze tą inicjatywę. 
+
+## phpBB4 w Symfony 2
+
+[Nils Aderman](http://twitter.com/naderman), główny programista [phpBB](http://www.phpbb.com/), poinformował o innym przełomowym wydarzeniu. Kolejna, czwarta wersja **phpBB** będzie oparta na **Symfony 2**. Ma to niezwykłe znaczenie dla przyszlości Symfony. phpBB jest jedną z bardziej popularnych aplikacji napisanych w PHP i jego migracja na Symfony 2 do pary z bardzo dobrym CMSem z pewnością zwiększy popularność farmeworka. Jeśli jesteście zainteresowaniu w zaangażowaniu się w projekt Open Source, to Nils szuka pomocy przy phpBB4. Każdy jest mile widziany. Pamiętajcie, że nie tylko programiści są potrzebni przy tego typu projektach! 
+
+## Przedsmak Symfony 2
+
+"[Symfony 2 Revealed](http://www.slideshare.net/fabpot/symfony-20-revealed)" była ostatnią i najbardziej oczekiwaną prezentacją na konferencji. [Fabien Potencier](http://twitter.com/fabpot), lider projektu Symfony, prawie jak Steve Jobs prezentujący iPada, odsłonił pierwszą wersję frameworka nowej generacji - [Symfony 2](http://symfony-reloaded.org/). Symfony w końcu zyskało duże 'S'. Framework jest całkowicie nowy i jest wiele rzeczy, o których wypada napisać. Aby dowiedzieć się więcej przeczytajcie mój kolejny wpis: "[Symfony 2 opublikowane (podczas Symfony Live 2010)](/symfony-2-opublikowane-podczas-symfony-live-2010)". Szykuje się niezła rewolucja! 
+
+## Sismo
+
+[Sismo](http://ci.symfony-project.org/) to serwer integracji npisany w symfony. Jest używany przez Sensio i póki co nie został jeszcze otwarty. Jeśli liczyliście na to, że pewnego dnia będziecie mogli go użyć, nie oczekujcie, że stanie się to w najbliższym czasie. Jeśli planujecie postawić serwer integracji w ciągu najbliższego miesiąca, czy nawet roku, lepiej użyjcie czegoś innego (na przykład [Hudson](https://hudson.dev.java.net/), czy [Cruise Control](http://www.phpundercontrol.org/)). 
+
+## Git
+
+[Scott Chacon](http://twitter.com/chacon) zrobił świetnie wprowadzenie do [git](http://git-scm.com/)a i rozproszonych systemów kontroli wersji. Prezentacja była bardzo podobna do jego książki - [progit](http://progit.org/book/). Większość ze słuchaczy wciąż używa rozwiązań typu [subversion](http://subversion.tigris.org/) i wszyscy byli pod wrażeniem móżliwości gita. Myślę, że jest to następna generacja[ SCM](http://en.wikipedia.org/wiki/Source_Code_Management)ów, które wkrótce zaczną wypierać subversion i spółkę. Dokładnie na tej samej zasadzie jak Subversion wyparł [CVS](http://www.nongnu.org/cvs/), teraz git wyprze Subversion. Warto wspomnieć, że [Symfony 2 jest publikowane na githubie](http://github.com/symfony/symfony), bo core team zastąpił svn właśnie gitem. Jeśli do tej pory nie mieliście okazji zapoznać się z gitem, to gorąco polecam lekturę **progit**. [Książka jest dostępna także online](http://progit.org/book/). 
+
+## Integracja
+
+Integracja z uczestnikami i organizatorami jest zawsze jedną z ważniejszych części konferencji. Podczas Symfony Live było ku temu wiele okazji. Dzień przed konferencją wielu z nas spotkało się w [Frog Pub](http://www.frogpubs.com/)ie na [sfPot](http://twitter.com/#search?q=%23sfpot). Po pierwszym konferencyjnym dniu zorganizowaliśmy spontaniczną wyprawę po paryskich pubach. Kolejnego wieczoru github sponsorował piwo i przekąski w [Patrick's Irish Pub](http://maps.google.com/maps?f=q&source=s_q&hl=en&g=33+Rue+de+Montreuil,+75011+Paris,+France&q=Patrick's+Irish+Pub+paris&ie=UTF8&hq=Patrick's+Irish+Pub&hnear=Paris,+France&ll=48.852743,2.386265&spn=0.073419,0.135784&z=13&iwloc=A). Miałem szansę porozmawiać z wieloma interesującymi i doświadczonymi programistami z całego świata oraz ze znanymi figurami z kręgu Symfony i PHP. Na innych konferencjach poziom uczestników jest bardzo zróżnicowany. Tym razem było nieco inaczej, ponieważ wiedza uczestników Symfony Live była imponująca. 
+
+## Imprezy Symfony w 2010
+
+Jeśli przegapiliście lub po prostu nie mieliście szczęścia uczestniczyć w Symfony Live to nie wszystko stracone. W dniach 25-26 czerwca w Holandii odbędzie się [Symfony Camp](http://www.symfonycamp.com/). 8 października w Niemczech planowany jest kolejny [Symfony Day](http://www.symfonyday.com/en/).
+
+## Comments
+
+**[wowo](#2984 "2010-03-03 13:57:45"):** Niezła relacja, przypadkowo tu trafiłem, ale co raz bardziej podoba mi się ten blog :-)
+
+**[Jakub Zalas](#2985 "2010-03-04 22:49:36"):** Dzięki! Zapraszam ponownie :)
+
+**[str](#2988 "2010-03-10 06:58:31"):** Świetny blog. Dwójki juz nie moge się doczekać. Code even less. Do even more. CAPTHCHA POPRAW albo napisz dla debili takich jak ja zeby Ctrl przytrzymali :) Pozdrawiam
+
+**[Jakub Zalas](#2989 "2010-03-10 10:45:49"):** Ctrl? W jakiej przeglądarce? U mnie captcha działa bez ctrl :)
+
+**[mtr](#2993 "2010-03-22 16:32:34"):** tak, nastepnym razem sie jakos zgadamy :)
+

@@ -1,0 +1,17 @@
+title: Konferencja PHP North West 2009
+link: http://www.zalas.pl/konferencja-php-north-west-2009
+author: admin
+description: 
+post_id: 348
+created: 2009/10/18 09:32:13
+created_gmt: 2009/10/18 08:32:13
+comment_status: open
+post_name: konferencja-php-north-west-2009
+status: publish
+post_type: post
+
+<!--Tydzień temu miałem okazję uczestniczyć w konferencji PHP North West w Manchester. Wszystko zaczęło się imprezą w pubie Lass O' Gowrie w piątkowy wieczór przed konferencją. Wielką przyjemnością było dla mnie poznać i rozmawiać z tyloma ludźmi zaangażowanych w społeczność PHP. Wszyscy, bez względu na doświadczenie, byli przyjaźni i chętni do wymiany punktu widzenia. Nieformalne spotkania przy piwie i grach wideo niewątpliwie sprzyjają poszerzaniu grona znajomych o wiele lepiej, niż krótkie rozmowy między konferencyjnymi prezentacjami.-->
+
+# Konferencja PHP North West 2009
+
+![Manchester, Sackville Street](/uploads/wp//2009/10/img_5176-400x300.jpg)Tydzień temu miałem okazję uczestniczyć w konferencji **PHP North West** w **Manchester**. Wszystko zaczęło się imprezą w pubie [Lass O' Gowrie](http://www.thelass.co.uk/) w piątkowy wieczór przed konferencją. Wielką przyjemnością było dla mnie poznać i rozmawiać z tyloma ludźmi zaangażowanych w społeczność PHP. Wszyscy, bez względu na doświadczenie, byli przyjaźni i chętni do wymiany punktu widzenia. Nieformalne spotkania przy piwie i grach wideo niewątpliwie sprzyjają poszerzaniu grona znajomych o wiele lepiej, niż krótkie rozmowy między konferencyjnymi prezentacjami. Część oficjalna została otwarta w sobotę rano przez _[Kevlin'a Henney](http://twitter.com/KevlinHenney)_ sesją "**The Uncertainty Principle**". Kevlin nie jest osobą powiązaną z PHP w żaden sposób, jednak jest specjalistą z dziedziny wzorców projektowych i architektury oprogramowania. Usłyszałem od niego wiele mądych rzeczy, przez co [jego książka](http://www.goodreads.com/book/show/7003902-97-things-every-programmer-should-know-collective-wisdom-from-the-exper) trafiła na moją listę "do przeczytania". Kolejne wykłady prowadzone były w dwóch równoległych sesjach. Dzięki temu więcej osób mogło prezentować, ale słuchaczom czasem trudno było dokonać wyboru. Część prezentacji dostępna jest już [on-line](http://conference.phpnw.org.uk/phpnw09/?p=346), a niebawem powinny też [pojawić się nagrania wideo wszystkich wykładów](http://conference.phpnw.org.uk/phpnw09/). Dlatego nie będę ich omawiał. Zobaczcie sami :) Pod koniec dnia Microsoft zaprezentował SketchFlow, przyjemne narzędzie do tworzenia szkiców i prototypowania. Pokaz był zabawny, ale nie zachęcił mnie do zrezygnowania z [Balsamiq Mockups](/tworzenie-szkicow-interfejsu-uzytkownika-ui-balsamiq-mockups). Wprawdzie SketchFlow posiada kilka bardzo dobrych funkcjonalności, takich jak wersjonowanie szkiców, jednak wydaje się bardziej nadawać do współpracy z innymi technologiami Microsoftu, niż z PHP. Wieczorem miała miejsce jeszcze jedna impreza, tym razem nieco większa i sponsorowana przez SUN. Kolejna okazja do dyskusji i nawiązywania kontaktów przy piwie i wii ;) W niedzielę poprowadzono serię mniej formalnych wykładów dla wytrwałych (i tych, którzy przetrwali imprezę). Jeśli chcielibyście dowiedzieć się więcej o [konferencji](http://conference.phpnw.org.uk/phpnw09/), to dyskusje na temat poszczególnych sesji prowadzone są w serwisie [joind.in](http://joind.in/event/view/70) i na [twitterze](http://twitter.com/#search?q=%23phpnw09) (#phpnw09).

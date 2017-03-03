@@ -1,0 +1,23 @@
+{
+    "name": "zalas/zalas.pl",
+    "description": "www.zalas.pl site",
+    "type": "project",
+    "require": {
+        "php": "^7.0",
+        "sculpin/sculpin": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zalas\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Zalas",
+            "email": "jakub@zalas.pl"
+        }
+    ]
+}

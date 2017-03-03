@@ -1,0 +1,51 @@
+title: Symfony Live 2011
+link: http://www.zalas.pl/symfony-live-2011
+author: admin
+description: 
+post_id: 753
+created: 2011/03/08 11:11:20
+created_gmt: 2011/03/08 10:11:20
+comment_status: open
+post_name: symfony-live-2011
+status: publish
+post_type: post
+
+<!--Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji Symfony Live. Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują).-->
+
+# Symfony Live 2011
+
+![Symfony Live 2011 Paris](/uploads/wp//2011/03/symfony-live-2011-paris.png)Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji [Symfony Live](http://www.symfony-live.com/). Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują). 
+
+## Wykłady
+
+Poziom prezentacji, zarówno tych oficjalnych, jak i [niekonferencyjnych](http://symfony.com/blog/the-symfony-live-unconference-schedule), był bardzo wysoki. Zdarzyły się małe wpadki, ale poziom konferencji na tym nie ucierpiał. Symfony przyciąga świetnych programistów, albo jak przyznał [Ryan Weaver](http://twitter.com/weaverryan), **robi z nich** świetnych programistów. Mogliśmy posłuchać o najlepszych dostępnych narzędziach i praktykach, po czym wymienić się doświadczeniami z prezentującymi i innymi uczestnikami. Z dużą przyjemnością wysłuchałem wykładów. Nie będę jednak rozpisywał się na temat poszczególnych prezentacji, bo zrobili to już świetnie [Christian](http://twitter.com/caefer) i [Tom](http://twitter.com/boutell): 
+
+  * [My resume of Symfony Live Paris 2011 (including slides)](http://test.ical.ly/2011/03/07/my-resume-of-symfony-live-paris-2011-including-slides/comment-page-1/)
+  * [Symfony Live 2011 in Paris – Day 1 – (almost) live](http://test.ical.ly/2011/03/03/symfony-live-2011-in-paris-day-1-almost-live/)
+  * [Symfony Live 2011 in Paris – Day 2 – (almost) live](http://test.ical.ly/2011/03/04/symfony-live-2011-in-paris-%E2%80%93-day-2-%E2%80%93-almost-live/)
+  * [Liveblogging Symfony Live Paris](http://window.punkave.com/2011/03/03/liveblogging-symfony-live-paris/)
+  * [Liveblogging Symfony Live Paris: Unconference Day](http://window.punkave.com/2011/03/04/liveblogging-symfony-live-paris-unconference-day/)
+Warto też zerknąć na [opinie uczestników konferencji](http://joind.in/event/view/561). ![ElePHPant playing near the Eiffel Tower](/uploads/wp//2011/03/elephpant-eiffel-tower-300x400.jpg)
+
+## Networking
+
+Regularnie uczęszczając na konferencje muszę przyznać, że z czasem główne prezentacje przestają wystarczać. Na szczęście podczas kilku dni konferencyjnych jest wystarczająco dużo okazji do dyskusji w kuluarach, a wieczorami w pubach. Na Symfony Live nie zabrakło kultowego już [Github Meetup](http://symfony.com/blog/we-re-cheering-again-for-github) w Patrick's Irish Pub, gdzie zjawiła się także pokaźna grupa ludzi spoza świata Symfony. Francuska Weka Entertainment sponsorowała wieczór pierwszego dnia konferencji. Oczywiście miało też miejsce wiele bardziej spontanicznych wypadów. Twitter rządził jako narzędzie do lokalizacji innych Symfomaniaków. Nie wyobrażam sobie tak sprawnej komunikacji bez Internetu i GPSa. 
+
+## One more thing...
+
+![Symfony Logo](/uploads/wp//2011/03/sflogo.png)Wydarzeniem konferencji była premiera nowego logo Symfony i odsłona strony [symfony.com](http://symfony.com). Organizatorom udało utrzymać się niespodziankę w tajemnicy do samego końca. [Fabien](http://twitter.com/fabpot) zbudował świętną atmosferę zaczynając prezentację od filmu [Symfony2 Source Code Evolution](http://www.youtube.com/watch?v=w1C0TjCr76I). Muzyka stworzyła nastrój, który trwał już do końca. Fabien podsumował lata pracy nad obiema wersjami Symfony, przedstawił trochę statystyk i podziękował wszystkim, którzy mieli swój wkład w projekt. Udział społeczności wzrósł znacząco odkąd Symfony zostało umieszczone na [github](https://github.com/symfony/symfony)ie. Fabien żartował, że jego tytuł zmienił się z **Lead Developer** na **Lead Merger**. Ludzie testują framework, po czym nadsyłają łatki i sugestie. Dzięki temu API staje się wygodniejsze, bo jest faktycznie używane, a nie tylko projektowane. Natłok pomysłów jest jednym z powodów opóźnionego wydania. **API powinno przetrwać kilka lat bez zmian** i obecnie trwają prace nad jego zamrożeniem. Jednym z podstawowych założeń Symfony2 jest być **prostym dla początkujących** i **elastycznym dla zaawansowanych**. Dlatego powstanie specjalna dystrybucja z instalatorem dla początkujących. Znajdziemy w niej wszystko co potrzebne, by zacząć z frameworkiem. Zaawansowani użytkownicy z chęcią sięgną do minimalnej dystrybucji, w kŧórej znajdzie się tylko podstawowy zestaw bundle. Potencjalnie będą tworzone wyspecjalizowane dystrybucje, np CMS. Oczywiście nie zabraknie s[pecjalnej dystrybucji](https://github.com/symfony/symfony-hello-world) zoptymalizowanej do testów Hello World ;) Z myślą o początkujących powstanie też dokumentacja opisująca minimum potrzebnej wiedzy, aby zacząć z Symfony. 
+
+## Hacking Day
+
+Na otwartym dla wszystkich Hacking Day zjawiła się spora grupa ludzi. Pracowaliśmy nad dokumentacją i pokryciem Symfony testami. Niektórzy korzystali z okazji i wgryzali się w komponenty nowego frameworka pod okiem głównych deweloperów. Mi udało się napisać kilka prostych testów. Zauważyłem, ze jest to bardzo dobra metoda na poznanie wnętrzności Symfony2. Napisanie testu wymaga wstępnej analizy istniejących testów i wgryzienia się w testowany kod. Można się w ten sposób wiele nauczyć. 
+
+## I co dalej?
+
+Wracam zainspirowany, z głową pełną pomysłów. Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. W międzyczasie planuję nadrobić braki ze znajomości protokołu HTTP, czytając w końcu specyfikację. Chcę też przyjrzeć się bliżej kolejkom z [RabbitMQ](http://www.rabbitmq.com/), cachowaniu HTTP i [Varnish](http://www.varnish-cache.org/)owi. Na listę "do przeczytania" wędruje książka "[High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites)".  [ Zdjęcia z Symfony Live 2011](https://picasaweb.google.com/jzalas/SymfonyLive2011?feat=directlink#)
+
+## Comments
+
+**[xis](#3035 "2011-03-08 03:11:17"):** Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. Są specjalne sposoby leczenia czegoś takiego ;) Nie mogę się doczekać sf2 i zacieram niecierpliwie ręce. Liczę, że i dla niego wyjdzie coś w stylu "kalendarzy adwentowych" poprzedników.
+
+**[Kuba](#3036 "2011-03-08 04:32:53"):** Coś w stylu "kalendarzy" będzie z pewnością przygotowane. Dopóki API nie będzie stabilne ciężko jest nad czymś takim pracować :)
+
