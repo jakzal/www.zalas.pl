@@ -1,3 +1,4 @@
+---
 title: PHP 5.3 zostało wydane
 link: http://www.zalas.pl/php-53-zostalo-wydane
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: php-53-zostalo-wydane
 status: publish
 post_type: post
+---
 
 <!--PHP 5.3 zostało wydane. Wersja była długo oczekiwana z uwagi na wiele usprawnień, nowych funkcjonalności i poprawionych błędów. PHP 5.3 to prawie 6, tylko bez wsparcia dla Unicode. Oto lista rzeczy, na które szczególnie czekałem lub wydały mi się interesujące.-->
 

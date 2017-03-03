@@ -1,3 +1,4 @@
+---
 title: Sklep Muzyczny w Ubuntu - Ubuntu One Music Store
 link: http://www.zalas.pl/sklep-muzyczny-w-ubuntu-ubuntu-one-music-store
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: sklep-muzyczny-w-ubuntu-ubuntu-one-music-store
 status: publish
 post_type: post
+---
 
 <!--Piszę tego posta słuchając pierwszego utworu, który pobrałem kilka minut temu z Ubuntu One Music Store. Kosztował mnie 3zł (79 euro centów). Sklep muzyczny Ubuntu One został dzisiaj otwarty!-->
 

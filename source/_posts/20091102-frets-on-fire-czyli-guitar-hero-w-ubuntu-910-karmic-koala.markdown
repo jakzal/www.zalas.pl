@@ -1,3 +1,4 @@
+---
 title: Frets on Fire, czyli Guitar Hero w Ubuntu 9.10 (Karmic Koala)
 link: http://www.zalas.pl/frets-on-fire-czyli-guitar-hero-w-ubuntu-910-karmic-koala
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: frets-on-fire-czyli-guitar-hero-w-ubuntu-910-karmic-koala
 status: publish
 post_type: post
+---
 
 <!--Właśnie grałem w Frets on Fire - na tyle świetną grę, aby wciągnąć mnie na chwilę i napisać wpis na blogu. Nie zdarza mi się to często. Frets on Fire to klon Guitar Hero na PC (działa na Linuksie, Macu i Windows).-->
 

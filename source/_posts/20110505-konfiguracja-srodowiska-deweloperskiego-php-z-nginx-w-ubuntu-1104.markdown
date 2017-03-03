@@ -1,3 +1,4 @@
+---
 title: Konfiguracja środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04
 link: http://www.zalas.pl/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104
 status: publish
 post_type: post
+---
 
 <!--Opisywałem już jak przygotować PHP do pracy z Nginx w Ubuntu 10.04. W Ubuntu 11.04 (Natty Narwhal) procedura jest dużo prostsza za sprawą PHP 5.3 i obecnego w nim php-fpm. Ponieważ w międzyczasie udało mi się też ulepszyć swoją konfigurację Nginx dla PHP, postanowiłem opisać temat jeszcze raz.-->
 

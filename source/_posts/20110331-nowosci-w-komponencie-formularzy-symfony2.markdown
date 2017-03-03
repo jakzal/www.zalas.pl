@@ -1,3 +1,4 @@
+---
 title: Nowości w komponencie formularzy Symfony2
 link: http://www.zalas.pl/nowosci-w-komponencie-formularzy-symfony2
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: nowosci-w-komponencie-formularzy-symfony2
 status: publish
 post_type: post
+---
 
 <!--Refaktoryzacja formularzy to ostatnia z wielkich zmian i najbardziej oczekiwany pull request w Symfony2. Prace nie są jeszcze w pełni skończone, ale kod jest gotowy do połączenia z główną gałęzią. Jak tylko zmiany zostaną zaakceptowane (lub odrzucone) możemy spodziewać się wydania bety.-->
 

@@ -1,3 +1,4 @@
+---
 title: Symfony Live 2011
 link: http://www.zalas.pl/symfony-live-2011
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symfony-live-2011
 status: publish
 post_type: post
+---
 
 <!--Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji Symfony Live. Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują).-->
 

@@ -1,3 +1,4 @@
+---
 title: Kolorowanie wyniku svn diff
 link: http://www.zalas.pl/kolorowanie-wyniku-svn-diff
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: kolorowanie-wyniku-svn-diff
 status: publish
 post_type: post
+---
 
 <!--Polecenie svn diff umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Ponieważ jego wyjście nie zawsze jest czytelne, możemy nieco ułatwić sobie pracę przez instalację colordiff. Program opakowuje polecenie diff i zwraca taki sam rezultat, jednak pokolorowany.-->
 

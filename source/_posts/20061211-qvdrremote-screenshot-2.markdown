@@ -1,3 +1,4 @@
+---
 title: QVdrRemote Screenshot 2
 link: http://www.zalas.pl/qvdrremote-screenshot-2
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: qvdrremote-screenshot-2
 status: attachment
 post_type: post
+---
 
 # QVdrRemote Screenshot 2
 

@@ -1,3 +1,4 @@
+---
 title: QVdrRemote w Windows
 link: http://www.zalas.pl/qvdrremote-w-windows
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: qvdrremote-w-windows
 status: attachment
 post_type: post
+---
 
 # QVdrRemote w Windows
 

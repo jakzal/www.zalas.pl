@@ -1,3 +1,4 @@
+---
 title: Symfony Live Londyn 2012
 link: http://www.zalas.pl/symfony-live-londyn-2012
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symfony-live-londyn-2012
 status: publish
 post_type: post
+---
 
 <!--Świetne prezentacje, przyjaźni prelegenci i wspaniała społeczność. Pierwsza konferencja Symfony Live w Londynie okazała się dużym sukcesem. Cieszę się z tego podwójnie, jako że niedawno dołączyłem do ekipy Sensio Labs UK, organizatora konferencji ;)-->
 

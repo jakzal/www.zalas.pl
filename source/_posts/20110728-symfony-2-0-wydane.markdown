@@ -1,3 +1,4 @@
+---
 title: Symfony 2.0 wydane!
 link: http://www.zalas.pl/symfony-2-0-wydane
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symfony-2-0-wydane
 status: publish
 post_type: post
+---
 
 <!--Dziś, 28go lipca 2011, wydano stabilną wersję Symfony 2. Czekaliśmy nieco dłużej niż planowano, ale było warto!-->
 

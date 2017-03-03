@@ -1,3 +1,4 @@
+---
 title: Symfony 2 opublikowane (podczas Symfony Live 2010)
 link: http://www.zalas.pl/symfony-2-opublikowane-podczas-symfony-live-2010
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symfony-2-opublikowane-podczas-symfony-live-2010
 status: publish
 post_type: post
+---
 
 <!--Podczas pierwszej międzynarodowej konferencji Symfony Live, Fabien Potencier upublicznił Symfony 2. Nowoczesne podejście i sprawdzone praktyki, podpatrzone w innych pierwszoligowych projektach Open Source, tworzą wybuchową miksturę, która ma szansę zrewolucjonizować świat PHP.-->
 

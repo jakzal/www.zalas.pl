@@ -1,3 +1,4 @@
+---
 title: Symfony i APC
 link: http://www.zalas.pl/symfony-i-apc
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symfony-i-apc
 status: publish
 post_type: post
+---
 
 <!--Do niedawna byłem wyłącznie użytkownikiem XCache (jeśli chodzi o akceleratory PHP). Ostatnio potrzebowałem użyć APC w aplikacji symfony. Poszło mi całkiem gładko jako, że framework bardzo ładnie integruje się z najpopularniejszymi rozwiązaniami tego typu.-->
 

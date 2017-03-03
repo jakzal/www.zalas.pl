@@ -1,3 +1,4 @@
+---
 title: Yamaha XV535 Virago 
 link: http://www.zalas.pl/yamaha-xv535-virago
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: yamaha-xv535-virago
 status: attachment
 post_type: post
+---
 
 # Yamaha XV535 Virago 
 

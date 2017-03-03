@@ -1,3 +1,4 @@
+---
 title: Instalacja Oracle 10g w Gentoo
 link: http://www.zalas.pl/instalacja-oracle-10g-w-gentoo-czesc-1
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: instalacja-oracle-10g-w-gentoo-czesc-1
 status: publish
 post_type: post
+---
 
 <!--Oracle wspiera instalację swojej bazy danych tylko na niektórych dystrybucjach (np RedHat, SUSE). Wystarczy jednak odpowiednio przygotować system, aby dział na praktycznie każdej nowoczesnej dystrybucji. Przedstawiam opis bazujący na Gentoo, ale w podobny sposób zrobiłem to w Fedorze.
 -->

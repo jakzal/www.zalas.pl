@@ -1,3 +1,4 @@
+---
 title: Doctrine2 i Symfony2
 link: http://www.zalas.pl/doctrine2-i-symfony2
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: doctrine2-i-symfony2
 status: publish
 post_type: post
+---
 
 <!--Wciąż poznaję Symfony2. Nadszedł czas na wybranie i przetestowanie ORMa. Symfony2 jest wystarczająco elastyczne, aby współpracować z praktycznie dowolnym (nowoczesnym) PHPowym ORMem. Równocześnie dostajemy rozsądną domyślną opcję w postaci Doctrine2.-->
 

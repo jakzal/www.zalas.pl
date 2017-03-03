@@ -1,3 +1,4 @@
+---
 title: Parsowanie stron internetowych z użyciem sfWebBrowser i SimpleXML
 link: http://www.zalas.pl/parsowanie-stron-internetowych-z-uzyciem-sfwebbrowser-i-simplexml
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: parsowanie-stron-internetowych-z-uzyciem-sfwebbrowser-i-simplexml
 status: publish
 post_type: post
+---
 
 <!--sfWebBrowser to klasa emulująca wywołania przeglądarki internetwej. Dzięki niej możemy zaprogramować nawigację po stronie www przy pomocy przyjemnego, obiektowego interfejsu. Odpowiedź może zostać zwrócona jako element SimpleXML, co umożliwia wykonywanie zapytań xpath na parsowanym dokumencie. Niestety strony www rzadko są poprawnymi dokumentami XML. W większości przypadków sfWebBrowser raczej wyrzuci wyjątek, niż zwróci coś interesującego. Jest jednak sposób, aby temu zaradzić.-->
 

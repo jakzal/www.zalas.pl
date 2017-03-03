@@ -1,3 +1,4 @@
+---
 title: Nieprawidłowe wyświetlanie plików PNG w MS Internet Explorer
 link: http://www.zalas.pl/nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer
 status: publish
 post_type: post
+---
 
 <!--Nie jeden webmaster klął na Microsoft&copy; za nieprawidłowe wyświetlanie przezroczystości plików PNG w przeglądarkach Internet Explorer - zamiast niej otrzymujemy szare tło. Jedyne co pozostaje to zastosować GIFa, który rzadko się do tego nadaje. Przezroczyste pliki GIF często są poszarpane, a ich jakość jest oczywiście niższa - to dlatego, że ich przezroczystość ma tylko 8 bitów. Myślałem, że tego nie da się obeść w inny sposób niż zaczekać aż IE będzie niszową, mało znaczącą przeglądarką, albo zostanie wypuszczona jego nowa, poprawiona wersja. A jednak...-->
 

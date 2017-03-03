@@ -1,3 +1,4 @@
+---
 title: Kompilacja Doctrine w symfony 1.4
 link: http://www.zalas.pl/kompilacja-doctrine-w-symfony
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: kompilacja-doctrine-w-symfony
 status: publish
 post_type: post
+---
 
 <!--Z reguły przy profilowaniu aplikacji symfony 1.x wychodzi, że budowanie obiektów przez Doctrine jest jedną z bardziej pracochłonnych operacji. Ostatnio miałem ciekawszy przypadek. Znaczącą część czasu wykonania skryptu zajmowało ładowanie klas ORMa (require_once!). W normalnych warunkach tego typu operacje są prawie niewidoczne.-->
 

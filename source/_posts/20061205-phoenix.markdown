@@ -1,3 +1,4 @@
+---
 title: Phoenix
 link: http://www.zalas.pl/phoenix
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: phoenix
 status: attachment
 post_type: post
+---
 
 # Phoenix
 

@@ -1,3 +1,4 @@
+---
 title: Graficzna ściągawka z vima
 link: http://www.zalas.pl/graficzna-sciagawka-z-vima
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: graficzna-sciagawka-z-vima
 status: publish
 post_type: post
+---
 
 <!--Oto graficzna ściągawka z vima, którą znalazłem na stronie ViEmu. Znajdziecie tam także tutorial. Naprawdę użyteczna rzecz. Nie tylko dla początkujących!-->
 

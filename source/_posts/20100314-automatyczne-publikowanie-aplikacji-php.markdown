@@ -1,3 +1,4 @@
+---
 title: Automatyczne publikowanie aplikacji PHP
 link: http://www.zalas.pl/automatyczne-publikowanie-aplikacji-php
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: automatyczne-publikowanie-aplikacji-php
 status: publish
 post_type: post
+---
 
 <!--Aplikacje PHP publikowane są na serwery na wiele różnych sposobów (pisząc "publikacja" mam na myśli anglojęzyczne słowo "deploy"). Niektórzy używają w tym celu systemów kontroli wersji takich jak Subversion. Inni po prostu kopiują pliki przy pomocy FTP, SSH czy rsync. Jest tylko jeden problem ze wspomnianymi technikami. Wszystkie są podatne na błędy. Transfer plików to tylko niewielka część całego procesu publikacji, czy aktualizacji aplikacji PHP. Często potrzebna jest dodatkowa konfiguracja, czy uruchomienie skryptów migracyjnych.-->
 

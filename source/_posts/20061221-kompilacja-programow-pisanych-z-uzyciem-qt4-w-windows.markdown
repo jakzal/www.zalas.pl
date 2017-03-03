@@ -1,3 +1,4 @@
+---
 title: Kompilacja programów QT4 w Windows
 link: http://www.zalas.pl/kompilacja-programow-pisanych-z-uzyciem-qt4-w-windows
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: kompilacja-programow-pisanych-z-uzyciem-qt4-w-windows
 status: publish
 post_type: post
+---
 
 <!--Kompilacja programu napisanego w Qt wymaga oczywiście instalacji tej biblioteki. Trzeba będzie także zainstalować MinGW (Minimalist GNU for Windows). Na stronie Trolltech dostępny jest instalator, który pobierze i zainstaluje od razu oba pakiety.-->
 

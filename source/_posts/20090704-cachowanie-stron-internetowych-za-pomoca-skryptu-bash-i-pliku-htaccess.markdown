@@ -1,3 +1,4 @@
+---
 title: Cachowanie stron internetowych za pomocą skryptu bash i pliku .htaccess
 link: http://www.zalas.pl/cachowanie-stron-internetowych-za-pomoca-skryptu-bash-i-pliku-htaccess
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: cachowanie-stron-internetowych-za-pomoca-skryptu-bash-i-pliku-htaccess
 status: publish
 post_type: post
+---
 
 <!--Powierzono mi ostatnio zadanie uczynienia kompletnie niewydajnej strony www na tyle wydajną, aby dać zespołowi czas  na jej naprawienie. Nie znałem kodu i technologii wspomnianej aplikacji, nie miałem też wystarczającej ilości czasu na jej poznanie.-->
 

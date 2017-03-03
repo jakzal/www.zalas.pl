@@ -1,3 +1,4 @@
+---
 title: Tydzień przed Symfony Live 2011
 link: http://www.zalas.pl/tydzien-przed-symfony-live-2011
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: tydzien-przed-symfony-live-2011
 status: publish
 post_type: post
+---
 
 <!--Został już tylko tydzień do tegorocznego Symfony Live w Paryżu. Już wiemy, że Symfony 2.0 nie ujrzy światła dziennego na konferencji. Możemy liczyć na stabilne API, jednak ostateczne wydanie planowane jest na koniec marca. Mimo to konferencja zapowiada się ekscytująco.-->
 

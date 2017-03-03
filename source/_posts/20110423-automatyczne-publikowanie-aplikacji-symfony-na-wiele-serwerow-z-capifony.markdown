@@ -1,3 +1,4 @@
+---
 title: Automatyczne publikowanie aplikacji Symfony na wiele serwerów z Capifony
 link: http://www.zalas.pl/automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony
 status: publish
 post_type: post
+---
 
 <!--Capifony to zestaw recept Capistrano do publikowania aplikacji napisanych w symfony lub Symfony2. Multistage jest rozszerzeniem Capistrano. Ułatwia publikację kodu na kilka serwerów, które różnią się nieco konfiguracją lub procesem publikacji.-->
 

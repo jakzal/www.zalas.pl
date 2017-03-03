@@ -1,3 +1,4 @@
+---
 title: Nauka Symfony2 przez pisanie testów jednostkowych
 link: http://www.zalas.pl/nauka-symfony2-pisanie-testow-jednostkowych
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: nauka-symfony2-pisanie-testow-jednostkowych
 status: publish
 post_type: post
+---
 
 <!--Podczas Hacking Day na Symfony Live postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla Symfony2. Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że pisanie testów dla istniejącego kodu może sprawić tyle radości.
 

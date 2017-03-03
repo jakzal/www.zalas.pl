@@ -1,3 +1,4 @@
+---
 title: Kolorowe svn diff w edytorze vim
 link: http://www.zalas.pl/kolorowe-svn-diff-w-edytorze-vim
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: kolorowe-svn-diff-w-edytorze-vim
 status: publish
 post_type: post
+---
 
 <!--Jakiś czas temu tłumaczyłem jak pokolorować wynik svn diff. Możemy uzyskać podobny rezultat przy pomocy vima. Druga metoda okazuje się wygodniejsza, gdy mamy do zatwierdzenia dużą ilość kodu.-->
 

@@ -1,3 +1,4 @@
+---
 title: Instalacja MySQL w Ubuntu 10.04
 link: http://www.zalas.pl/instalacja-mysql-w-ubuntu-1004
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: instalacja-mysql-w-ubuntu-1004
 status: publish
 post_type: post
+---
 
 <!--MySQL to jednen z popularniejszych relacyjnych systemów baz danych, który jest szeroko stosowany przy budowie aplikacji PHP. Jest dość łatwy w konfiguracji i obsłudze. Oto krótki opis instalacji MySQL w najnowszej wersji Ubuntu. -->
 

@@ -1,3 +1,4 @@
+---
 title: Symphony CMS na nginx
 link: http://www.zalas.pl/symphony-cms-na-nginx
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: symphony-cms-na-nginx
 status: publish
 post_type: post
+---
 
 <!--Zdecydowałem się przetetsować CMS o nazwie Symphony z dwóch powodów. Pierwszym były dokładnie określone fazy tworzenia stron internetowych, które wymusza sam CMS. Drugim powodem był oparty o XSLT system szablonów. Jak większość aplikacji PHP, Symphony zostało stworzone głównie z myślą o serwerze apache. Ponieważ od pewnego czasu preferuję używać nginx-a, napotkałem na małe problemy konfiguracyjne.-->
 

@@ -1,3 +1,4 @@
+---
 title: Zarządzanie konstrukcją obiektów w PHP z komponentem DependencyInjection Symfony2
 link: http://www.zalas.pl/zarzadzanie-konstrukcja-obiektow-w-php-z-komponentem-dependencyinjection-symfony2
 author: admin
@@ -9,6 +10,7 @@ comment_status: open
 post_name: zarzadzanie-konstrukcja-obiektow-w-php-z-komponentem-dependencyinjection-symfony2
 status: publish
 post_type: post
+---
 
 <!--Komponent DependencyInjection Symfony2 to PHPowa implementacja kontenera usług (z ang. Dependency Injection Container). Dodatkowo, komponent zawiera kilka przydatnych narzędzi, pozwalających na import i eksport definicji w różnych formatach (np XML).-->
 
