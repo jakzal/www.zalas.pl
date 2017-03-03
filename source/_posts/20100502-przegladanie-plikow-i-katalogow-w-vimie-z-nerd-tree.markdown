@@ -1,7 +1,7 @@
 ---
 title: Przeglądanie plików i katalogów w vimie z NERD tree
-link: http://www.zalas.pl/przegladanie-plikow-i-katalogow-w-vimie-z-nerd-tree
-author: admin
+slug: przegladanie-plikow-i-katalogow-w-vimie-z-nerd-tree
+author: Jakub Zalas
 description: 
 post_id: 579
 created: 2010/05/02 05:33:36

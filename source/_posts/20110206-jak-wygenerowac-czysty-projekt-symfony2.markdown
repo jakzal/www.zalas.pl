@@ -1,7 +1,7 @@
 ---
 title: Jak wygenerować czysty projekt Symfony2?
-link: http://www.zalas.pl/jak-wygenerowac-czysty-projekt-symfony2
-author: admin
+slug: jak-wygenerowac-czysty-projekt-symfony2
+author: Jakub Zalas
 description: 
 post_id: 715
 created: 2011/02/06 23:14:56

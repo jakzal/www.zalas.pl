@@ -1,7 +1,7 @@
 ---
 title: Instalacja sasc-ng w Ubuntu 10.10
-link: http://www.zalas.pl/instalacja-sasc-ng-ubuntu-1010
-author: admin
+slug: instalacja-sasc-ng-ubuntu-1010
+author: Jakub Zalas
 description: 
 post_id: 685
 created: 2010/11/16 20:48:40

@@ -1,7 +1,7 @@
 ---
 title: Parsowanie stron internetowych z użyciem sfWebBrowser i SimpleXML
-link: http://www.zalas.pl/parsowanie-stron-internetowych-z-uzyciem-sfwebbrowser-i-simplexml
-author: admin
+slug: parsowanie-stron-internetowych-z-uzyciem-sfwebbrowser-i-simplexml
+author: Jakub Zalas
 description: 
 post_id: 114
 created: 2009/05/14 22:09:20

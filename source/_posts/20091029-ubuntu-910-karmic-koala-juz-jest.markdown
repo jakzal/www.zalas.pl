@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 9.10 Karmic Koala już jest!
-link: http://www.zalas.pl/ubuntu-910-karmic-koala-juz-jest
-author: admin
+slug: ubuntu-910-karmic-koala-juz-jest
+author: Jakub Zalas
 description: 
 post_id: 371
 created: 2009/10/29 17:34:15

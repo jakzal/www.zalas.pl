@@ -1,7 +1,7 @@
 ---
 title: Inicjatywa na rzecz standardów PHP (PHP Standards Initiative)
-link: http://www.zalas.pl/php-standards-initiative
-author: admin
+slug: php-standards-initiative
+author: Jakub Zalas
 description: 
 post_id: 225
 created: 2009/06/08 22:01:38

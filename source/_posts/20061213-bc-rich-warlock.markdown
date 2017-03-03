@@ -1,7 +1,7 @@
 ---
 title: B.C. Rich Warlock
-link: http://www.zalas.pl/bc-rich-warlock
-author: admin
+slug: bc-rich-warlock
+author: Jakub Zalas
 description: 
 post_id: 16
 created: 2006/12/13 06:42:23

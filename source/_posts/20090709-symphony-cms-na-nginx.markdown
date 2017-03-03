@@ -1,7 +1,7 @@
 ---
 title: Symphony CMS na nginx
-link: http://www.zalas.pl/symphony-cms-na-nginx
-author: admin
+slug: symphony-cms-na-nginx
+author: Jakub Zalas
 description: 
 post_id: 284
 created: 2009/07/09 15:56:40

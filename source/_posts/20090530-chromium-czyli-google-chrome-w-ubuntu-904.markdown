@@ -1,7 +1,7 @@
 ---
 title: Chromium, czyli Google Chrome w Ubuntu 9.04
-link: http://www.zalas.pl/chromium-czyli-google-chrome-w-ubuntu-904
-author: admin
+slug: chromium-czyli-google-chrome-w-ubuntu-904
+author: Jakub Zalas
 description: 
 post_id: 208
 created: 2009/05/30 09:15:54

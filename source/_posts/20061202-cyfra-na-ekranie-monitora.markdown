@@ -1,7 +1,7 @@
 ---
 title: Cyfra+ na ekranie monitora
-link: http://www.zalas.pl/cyfra-na-ekranie-monitora
-author: admin
+slug: cyfra-na-ekranie-monitora
+author: Jakub Zalas
 description: 
 post_id: 9
 created: 2006/12/02 23:13:32

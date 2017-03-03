@@ -1,7 +1,7 @@
 ---
 title: Optymalizacja FFdecsa
-link: http://www.zalas.pl/optymalizacja-ffdecsa
-author: admin
+slug: optymalizacja-ffdecsa
+author: Jakub Zalas
 description: 
 post_id: 19
 created: 2006/12/21 16:15:34

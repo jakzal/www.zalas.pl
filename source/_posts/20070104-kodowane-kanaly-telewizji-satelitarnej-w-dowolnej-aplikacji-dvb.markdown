@@ -1,7 +1,7 @@
 ---
 title: Kodowane kanały telewizji satelitarnej w dowolnej aplikacji DVB
-link: http://www.zalas.pl/kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb
-author: admin
+slug: kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb
+author: Jakub Zalas
 description: 
 post_id: 22
 created: 2007/01/04 00:46:11

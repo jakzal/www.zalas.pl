@@ -1,7 +1,7 @@
 ---
 title: Sklep Muzyczny w Ubuntu - Ubuntu One Music Store
-link: http://www.zalas.pl/sklep-muzyczny-w-ubuntu-ubuntu-one-music-store
-author: admin
+slug: sklep-muzyczny-w-ubuntu-ubuntu-one-music-store
+author: Jakub Zalas
 description: 
 post_id: 545
 created: 2010/03/22 23:51:35

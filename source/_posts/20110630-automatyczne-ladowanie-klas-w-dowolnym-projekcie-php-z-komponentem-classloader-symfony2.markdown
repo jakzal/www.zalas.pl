@@ -1,7 +1,7 @@
 ---
 title: Automatyczne ładowanie klas w dowolnym projekcie PHP z komponentem ClassLoader Symfony2
-link: http://www.zalas.pl/automatyczne-ladowanie-klas-w-dowolnym-projekcie-php-z-komponentem-classloader-symfony2
-author: admin
+slug: automatyczne-ladowanie-klas-w-dowolnym-projekcie-php-z-komponentem-classloader-symfony2
+author: Jakub Zalas
 description: 
 post_id: 933
 created: 2011/06/30 19:42:39

@@ -1,7 +1,7 @@
 ---
 title: Automatyczne publikowanie aplikacji PHP
-link: http://www.zalas.pl/automatyczne-publikowanie-aplikacji-php
-author: admin
+slug: automatyczne-publikowanie-aplikacji-php
+author: Jakub Zalas
 description: 
 post_id: 499
 created: 2010/03/14 02:33:46

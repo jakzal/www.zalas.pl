@@ -1,7 +1,7 @@
 ---
 title: Nowości w komponencie formularzy Symfony2
-link: http://www.zalas.pl/nowosci-w-komponencie-formularzy-symfony2
-author: admin
+slug: nowosci-w-komponencie-formularzy-symfony2
+author: Jakub Zalas
 description: 
 post_id: 822
 created: 2011/03/31 06:20:21

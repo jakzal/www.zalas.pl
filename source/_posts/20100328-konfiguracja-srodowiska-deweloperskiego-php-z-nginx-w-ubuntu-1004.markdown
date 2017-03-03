@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja środowiska deweloperskiego PHP z nginx w Ubuntu 10.04
-link: http://www.zalas.pl/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004
-author: admin
+slug: konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004
+author: Jakub Zalas
 description: 
 post_id: 556
 created: 2010/03/28 22:10:32

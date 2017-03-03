@@ -1,7 +1,7 @@
 ---
 title: Zarządzanie konstrukcją obiektów w PHP z komponentem DependencyInjection Symfony2
-link: http://www.zalas.pl/zarzadzanie-konstrukcja-obiektow-w-php-z-komponentem-dependencyinjection-symfony2
-author: admin
+slug: zarzadzanie-konstrukcja-obiektow-w-php-z-komponentem-dependencyinjection-symfony2
+author: Jakub Zalas
 description: 
 post_id: 993
 created: 2011/09/07 08:00:01

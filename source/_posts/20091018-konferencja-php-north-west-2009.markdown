@@ -1,7 +1,7 @@
 ---
 title: Konferencja PHP North West 2009
-link: http://www.zalas.pl/konferencja-php-north-west-2009
-author: admin
+slug: konferencja-php-north-west-2009
+author: Jakub Zalas
 description: 
 post_id: 348
 created: 2009/10/18 09:32:13

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Surface
-link: http://www.zalas.pl/microsoft-surface
-author: admin
+slug: microsoft-surface
+author: Jakub Zalas
 description: 
 post_id: 24
 created: 2007/06/15 08:09:16

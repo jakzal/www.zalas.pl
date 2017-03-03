@@ -1,7 +1,7 @@
 ---
 title: Zaciemnianie kodu
-link: http://www.zalas.pl/zaciemnianie-kodu
-author: admin
+slug: zaciemnianie-kodu
+author: Jakub Zalas
 description: 
 post_id: 21
 created: 2007/01/02 23:46:00

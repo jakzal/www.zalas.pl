@@ -1,7 +1,7 @@
 ---
 title: Recenzja: php|architect's Guide to PHP Design Patterns
-link: http://www.zalas.pl/recenzja-phparchitects-guide-to-php-design-patterns
-author: admin
+slug: recenzja-phparchitects-guide-to-php-design-patterns
+author: Jakub Zalas
 description: 
 post_id: 180
 created: 2009/05/26 22:47:45

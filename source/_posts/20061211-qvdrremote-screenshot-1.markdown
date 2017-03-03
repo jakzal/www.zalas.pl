@@ -1,7 +1,7 @@
 ---
 title: QVdrRemote Screenshot 1
-link: http://www.zalas.pl/qvdrremote-screenshot-1
-author: admin
+slug: qvdrremote-screenshot-1
+author: Jakub Zalas
 description: 
 post_id: 13
 created: 2006/12/11 01:44:00

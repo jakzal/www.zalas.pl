@@ -1,7 +1,7 @@
 ---
 title: Rejestracja na Symfony Day Cologne 2010 jest już otwarta
-link: http://www.zalas.pl/rejestracja-na-symfony-day-cologne-2010-otwarta
-author: admin
+slug: rejestracja-na-symfony-day-cologne-2010-otwarta
+author: Jakub Zalas
 description: 
 post_id: 628
 created: 2010/07/14 20:10:27

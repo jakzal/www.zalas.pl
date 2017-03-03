@@ -1,7 +1,7 @@
 ---
 title: Skakanie do definicji klas, metod i zmiennych w vimie przy pomocy exuberant ctags
-link: http://www.zalas.pl/skakanie-do-definicji-klas-metod-i-zmiennych-w-vimie-przy-pomocy-exuberant-ctags
-author: admin
+slug: skakanie-do-definicji-klas-metod-i-zmiennych-w-vimie-przy-pomocy-exuberant-ctags
+author: Jakub Zalas
 description: 
 post_id: 599
 created: 2010/05/03 07:46:42

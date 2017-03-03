@@ -1,7 +1,7 @@
 ---
 title: CSS przodem, JavaScript tyłem
-link: http://www.zalas.pl/css-przodem-javascript-tylem
-author: admin
+slug: css-przodem-javascript-tylem
+author: Jakub Zalas
 description: 
 post_id: 222
 created: 2009/06/11 15:20:01

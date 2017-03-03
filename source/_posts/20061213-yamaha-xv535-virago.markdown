@@ -1,7 +1,7 @@
 ---
 title: Yamaha XV535 Virago 
-link: http://www.zalas.pl/yamaha-xv535-virago
-author: admin
+slug: yamaha-xv535-virago
+author: Jakub Zalas
 description: 
 post_id: 15
 created: 2006/12/13 06:41:03

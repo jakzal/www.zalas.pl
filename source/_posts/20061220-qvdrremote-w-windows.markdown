@@ -1,7 +1,7 @@
 ---
 title: QVdrRemote w Windows
-link: http://www.zalas.pl/qvdrremote-w-windows
-author: admin
+slug: qvdrremote-w-windows
+author: Jakub Zalas
 description: 
 post_id: 18
 created: 2006/12/20 23:46:38

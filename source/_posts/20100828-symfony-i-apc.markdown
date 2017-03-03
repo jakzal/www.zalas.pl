@@ -1,7 +1,7 @@
 ---
 title: Symfony i APC
-link: http://www.zalas.pl/symfony-i-apc
-author: admin
+slug: symfony-i-apc
+author: Jakub Zalas
 description: 
 post_id: 646
 created: 2010/08/28 18:47:04

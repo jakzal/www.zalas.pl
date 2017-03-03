@@ -1,7 +1,7 @@
 ---
 title: QVdrRemote
-link: http://www.zalas.pl/qvdrremote
-author: admin
+slug: qvdrremote
+author: Jakub Zalas
 description: 
 post_id: 12
 created: 2006/12/11 01:53:11

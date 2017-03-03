@@ -1,7 +1,7 @@
 ---
 title: Encje Doctrine poza bundlami Symfony
-link: http://www.zalas.pl/encje-doctrine-poza-bundlami-symfony
-author: admin
+slug: encje-doctrine-poza-bundlami-symfony
+author: Jakub Zalas
 description: 
 post_id: 1053
 created: 2013/01/26 23:59:38

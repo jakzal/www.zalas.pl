@@ -1,7 +1,7 @@
 ---
 title: EpgDownloader przenosi się na gita
-link: http://www.zalas.pl/epgdownloader-przenosi-sie-na-gita
-author: admin
+slug: epgdownloader-przenosi-sie-na-gita
+author: Jakub Zalas
 description: 
 post_id: 439
 created: 2010/02/02 00:53:44

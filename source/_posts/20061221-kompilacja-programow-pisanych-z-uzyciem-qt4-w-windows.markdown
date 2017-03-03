@@ -1,7 +1,7 @@
 ---
 title: Kompilacja programów QT4 w Windows
-link: http://www.zalas.pl/kompilacja-programow-pisanych-z-uzyciem-qt4-w-windows
-author: admin
+slug: kompilacja-programow-pisanych-z-uzyciem-qt4-w-windows
+author: Jakub Zalas
 description: 
 post_id: 17
 created: 2006/12/21 00:03:51

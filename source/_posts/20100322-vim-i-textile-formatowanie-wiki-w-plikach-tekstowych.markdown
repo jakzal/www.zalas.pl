@@ -1,7 +1,7 @@
 ---
 title: Vim i Textile - formatowanie wiki w plikach tekstowych
-link: http://www.zalas.pl/vim-i-textile-formatowanie-wiki-w-plikach-tekstowych
-author: admin
+slug: vim-i-textile-formatowanie-wiki-w-plikach-tekstowych
+author: Jakub Zalas
 description: 
 post_id: 540
 created: 2010/03/22 07:32:04

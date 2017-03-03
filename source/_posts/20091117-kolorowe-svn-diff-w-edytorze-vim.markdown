@@ -1,7 +1,7 @@
 ---
 title: Kolorowe svn diff w edytorze vim
-link: http://www.zalas.pl/kolorowe-svn-diff-w-edytorze-vim
-author: admin
+slug: kolorowe-svn-diff-w-edytorze-vim
+author: Jakub Zalas
 description: 
 post_id: 412
 created: 2009/11/17 16:28:33

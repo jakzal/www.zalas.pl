@@ -1,7 +1,7 @@
 ---
 title: Doctrine2 i Symfony2
-link: http://www.zalas.pl/doctrine2-i-symfony2
-author: admin
+slug: doctrine2-i-symfony2
+author: Jakub Zalas
 description: 
 post_id: 724
 created: 2011/02/20 12:01:10

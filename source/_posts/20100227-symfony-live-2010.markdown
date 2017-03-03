@@ -1,7 +1,7 @@
 ---
 title: Symfony Live 2010
-link: http://www.zalas.pl/symfony-live-2010
-author: admin
+slug: symfony-live-2010
+author: Jakub Zalas
 description: 
 post_id: 456
 created: 2010/02/27 22:34:45

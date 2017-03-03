@@ -1,7 +1,7 @@
 ---
 title: Instalacja Oracle 10g w Gentoo
-link: http://www.zalas.pl/instalacja-oracle-10g-w-gentoo-czesc-1
-author: admin
+slug: instalacja-oracle-10g-w-gentoo-czesc-1
+author: Jakub Zalas
 description: 
 post_id: 25
 created: 2007/07/31 22:19:52

@@ -1,7 +1,7 @@
 ---
 title: Przegląd klas, metod i zmiennych w vimie z pluginem TagList
-link: http://www.zalas.pl/przeglad-klas-metod-i-zmiennych-w-vimie-z-pluginem-taglist
-author: admin
+slug: przeglad-klas-metod-i-zmiennych-w-vimie-z-pluginem-taglist
+author: Jakub Zalas
 description: 
 post_id: 623
 created: 2010/05/22 19:35:11

@@ -1,7 +1,7 @@
 ---
 title: Symfony Live Londyn 2012
-link: http://www.zalas.pl/symfony-live-londyn-2012
-author: admin
+slug: symfony-live-londyn-2012
+author: Jakub Zalas
 description: 
 post_id: 1023
 created: 2012/09/19 23:24:43

@@ -1,7 +1,7 @@
 ---
 title: Tydzień przed Symfony Live 2011
-link: http://www.zalas.pl/tydzien-przed-symfony-live-2011
-author: admin
+slug: tydzien-przed-symfony-live-2011
+author: Jakub Zalas
 description: 
 post_id: 739
 created: 2011/02/22 06:48:32

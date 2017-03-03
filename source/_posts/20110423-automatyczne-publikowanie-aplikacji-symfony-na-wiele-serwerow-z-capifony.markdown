@@ -1,7 +1,7 @@
 ---
 title: Automatyczne publikowanie aplikacji Symfony na wiele serwerów z Capifony
-link: http://www.zalas.pl/automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony
-author: admin
+slug: automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony
+author: Jakub Zalas
 description: 
 post_id: 837
 created: 2011/04/23 10:53:29

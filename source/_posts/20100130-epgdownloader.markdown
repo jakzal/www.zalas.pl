@@ -1,7 +1,7 @@
 ---
 title: EpgDownloader
-link: http://www.zalas.pl/epgdownloader
-author: admin
+slug: epgdownloader
+author: Jakub Zalas
 description: 
 post_id: 160
 created: 2010/01/30 20:52:52

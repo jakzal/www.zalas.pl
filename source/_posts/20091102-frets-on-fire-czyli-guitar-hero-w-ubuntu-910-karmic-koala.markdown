@@ -1,7 +1,7 @@
 ---
 title: Frets on Fire, czyli Guitar Hero w Ubuntu 9.10 (Karmic Koala)
-link: http://www.zalas.pl/frets-on-fire-czyli-guitar-hero-w-ubuntu-910-karmic-koala
-author: admin
+slug: frets-on-fire-czyli-guitar-hero-w-ubuntu-910-karmic-koala
+author: Jakub Zalas
 description: 
 post_id: 406
 created: 2009/11/02 22:58:47

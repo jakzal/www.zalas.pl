@@ -1,7 +1,7 @@
 ---
 title: Kolorowanie wyniku svn diff
-link: http://www.zalas.pl/kolorowanie-wyniku-svn-diff
-author: admin
+slug: kolorowanie-wyniku-svn-diff
+author: Jakub Zalas
 description: 
 post_id: 257
 created: 2009/06/17 05:10:38

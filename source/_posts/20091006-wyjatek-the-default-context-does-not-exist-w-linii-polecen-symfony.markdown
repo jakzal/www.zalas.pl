@@ -1,7 +1,7 @@
 ---
 title: Wyjątek 'The "default" context does not exist.' w linii poleceń symfony
-link: http://www.zalas.pl/wyjatek-the-default-context-does-not-exist-w-linii-polecen-symfony
-author: admin
+slug: wyjatek-the-default-context-does-not-exist-w-linii-polecen-symfony
+author: Jakub Zalas
 description: 
 post_id: 322
 created: 2009/10/06 22:40:47

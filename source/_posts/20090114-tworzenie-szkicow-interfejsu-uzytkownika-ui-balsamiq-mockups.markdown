@@ -1,7 +1,7 @@
 ---
 title: Tworzenie szkiców interfejsu użytkownika (UI mockups)
-link: http://www.zalas.pl/tworzenie-szkicow-interfejsu-uzytkownika-ui-balsamiq-mockups
-author: admin
+slug: tworzenie-szkicow-interfejsu-uzytkownika-ui-balsamiq-mockups
+author: Jakub Zalas
 description: 
 post_id: 82
 created: 2009/01/14 01:07:16

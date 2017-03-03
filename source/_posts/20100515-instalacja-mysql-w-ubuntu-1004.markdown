@@ -1,7 +1,7 @@
 ---
 title: Instalacja MySQL w Ubuntu 10.04
-link: http://www.zalas.pl/instalacja-mysql-w-ubuntu-1004
-author: admin
+slug: instalacja-mysql-w-ubuntu-1004
+author: Jakub Zalas
 description: 
 post_id: 611
 created: 2010/05/15 23:29:30

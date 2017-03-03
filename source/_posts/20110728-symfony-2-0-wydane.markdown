@@ -1,7 +1,7 @@
 ---
 title: Symfony 2.0 wydane!
-link: http://www.zalas.pl/symfony-2-0-wydane
-author: admin
+slug: symfony-2-0-wydane
+author: Jakub Zalas
 description: 
 post_id: 982
 created: 2011/07/28 12:24:02

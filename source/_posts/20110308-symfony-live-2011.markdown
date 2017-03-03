@@ -1,7 +1,7 @@
 ---
 title: Symfony Live 2011
-link: http://www.zalas.pl/symfony-live-2011
-author: admin
+slug: symfony-live-2011
+author: Jakub Zalas
 description: 
 post_id: 753
 created: 2011/03/08 11:11:20

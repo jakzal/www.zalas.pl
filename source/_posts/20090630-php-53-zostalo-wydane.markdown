@@ -1,7 +1,7 @@
 ---
 title: PHP 5.3 zostało wydane
-link: http://www.zalas.pl/php-53-zostalo-wydane
-author: admin
+slug: php-53-zostalo-wydane
+author: Jakub Zalas
 description: 
 post_id: 269
 created: 2009/06/30 23:33:40

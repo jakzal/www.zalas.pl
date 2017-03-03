@@ -1,7 +1,7 @@
 ---
 title: Jakub Zalas - Curriculum Vitae
-link: http://www.zalas.pl/jakub-zalas-curriculum-vitae
-author: admin
+slug: jakub-zalas-curriculum-vitae
+author: Jakub Zalas
 description: 
 post_id: 10
 created: 2006/12/05 21:42:51

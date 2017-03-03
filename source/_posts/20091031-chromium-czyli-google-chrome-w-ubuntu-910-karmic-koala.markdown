@@ -1,7 +1,7 @@
 ---
 title: Chromium, czyli Google Chrome w Ubuntu 9.10 (Karmic Koala)
-link: http://www.zalas.pl/chromium-czyli-google-chrome-w-ubuntu-910-karmic-koala
-author: admin
+slug: chromium-czyli-google-chrome-w-ubuntu-910-karmic-koala
+author: Jakub Zalas
 description: 
 post_id: 389
 created: 2009/10/31 14:35:16

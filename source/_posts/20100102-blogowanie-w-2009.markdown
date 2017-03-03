@@ -1,7 +1,7 @@
 ---
 title: Blogowanie w 2009
-link: http://www.zalas.pl/blogowanie-w-2009
-author: admin
+slug: blogowanie-w-2009
+author: Jakub Zalas
 description: 
 post_id: 423
 created: 2010/01/02 12:15:14

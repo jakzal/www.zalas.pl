@@ -1,7 +1,7 @@
 ---
 title: Wyszukiwanie plików i katalogów w PHP z komponentem Finder Symfony2
-link: http://www.zalas.pl/wyszukiwanie-plikow-i-katalogow-w-php-z-komponentem-finder-symfony2
-author: admin
+slug: wyszukiwanie-plikow-i-katalogow-w-php-z-komponentem-finder-symfony2
+author: Jakub Zalas
 description: 
 post_id: 965
 created: 2011/07/07 18:38:18

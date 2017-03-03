@@ -1,7 +1,7 @@
 ---
 title: Aparat fotograficzny Canon PowerShot A610
-link: http://www.zalas.pl/aparat-fotograficzny-canon-a610-w-linuksie
-author: admin
+slug: aparat-fotograficzny-canon-a610-w-linuksie
+author: Jakub Zalas
 description: 
 post_id: 6
 created: 2006/11/27 20:49:01

@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 10.04 Lucid Lynx jest już tuż za rogiem
-link: http://www.zalas.pl/ubuntu-1004-lucid-lynx-jest-juz-za-rogiem
-author: admin
+slug: ubuntu-1004-lucid-lynx-jest-juz-za-rogiem
+author: Jakub Zalas
 description: 
 post_id: 520
 created: 2010/03/20 19:16:49

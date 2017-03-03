@@ -1,7 +1,7 @@
 ---
 title: Symfony 2 opublikowane (podczas Symfony Live 2010)
-link: http://www.zalas.pl/symfony-2-opublikowane-podczas-symfony-live-2010
-author: admin
+slug: symfony-2-opublikowane-podczas-symfony-live-2010
+author: Jakub Zalas
 description: 
 post_id: 480
 created: 2010/03/01 23:36:01

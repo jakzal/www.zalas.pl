@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja Nginx dla projektów Symfony
-link: http://www.zalas.pl/konfiguracja-nginx-dla-projektow-symfony
-author: admin
+slug: konfiguracja-nginx-dla-projektow-symfony
+author: Jakub Zalas
 description: 
 post_id: 856
 created: 2011/04/29 06:25:46

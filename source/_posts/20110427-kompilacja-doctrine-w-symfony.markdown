@@ -1,7 +1,7 @@
 ---
 title: Kompilacja Doctrine w symfony 1.4
-link: http://www.zalas.pl/kompilacja-doctrine-w-symfony
-author: admin
+slug: kompilacja-doctrine-w-symfony
+author: Jakub Zalas
 description: 
 post_id: 871
 created: 2011/04/27 21:05:10

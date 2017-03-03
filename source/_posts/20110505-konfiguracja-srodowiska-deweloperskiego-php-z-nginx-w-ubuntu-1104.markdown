@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04
-link: http://www.zalas.pl/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104
-author: admin
+slug: konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104
+author: Jakub Zalas
 description: 
 post_id: 898
 created: 2011/05/05 21:38:02

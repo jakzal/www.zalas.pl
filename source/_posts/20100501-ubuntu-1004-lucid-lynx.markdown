@@ -1,7 +1,7 @@
 ---
 title: Ubuntu 10.04 Lucid Lynx
-link: http://www.zalas.pl/ubuntu-1004-lucid-lynx
-author: admin
+slug: ubuntu-1004-lucid-lynx
+author: Jakub Zalas
 description: 
 post_id: 570
 created: 2010/05/01 08:17:22

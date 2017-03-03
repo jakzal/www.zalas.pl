@@ -1,7 +1,7 @@
 ---
 title: Nieprawidłowe wyświetlanie plików PNG w MS Internet Explorer
-link: http://www.zalas.pl/nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer
-author: admin
+slug: nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer
+author: Jakub Zalas
 description: 
 post_id: 23
 created: 2007/02/19 22:31:55

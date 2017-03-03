@@ -1,7 +1,7 @@
 ---
 title: Nauka Symfony2 przez pisanie testów jednostkowych
-link: http://www.zalas.pl/nauka-symfony2-pisanie-testow-jednostkowych
-author: admin
+slug: nauka-symfony2-pisanie-testow-jednostkowych
+author: Jakub Zalas
 description: 
 post_id: 789
 created: 2011/03/24 16:11:02

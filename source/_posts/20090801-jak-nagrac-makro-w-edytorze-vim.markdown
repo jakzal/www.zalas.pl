@@ -1,7 +1,7 @@
 ---
 title: Jak nagrać makro w edytorze vim?
-link: http://www.zalas.pl/jak-nagrac-makro-w-edytorze-vim
-author: admin
+slug: jak-nagrac-makro-w-edytorze-vim
+author: Jakub Zalas
 description: 
 post_id: 304
 created: 2009/08/01 17:41:51

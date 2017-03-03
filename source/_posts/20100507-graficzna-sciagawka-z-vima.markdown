@@ -1,7 +1,7 @@
 ---
 title: Graficzna ściągawka z vima
-link: http://www.zalas.pl/graficzna-sciagawka-z-vima
-author: admin
+slug: graficzna-sciagawka-z-vima
+author: Jakub Zalas
 description: 
 post_id: 608
 created: 2010/05/07 23:48:11

@@ -1,7 +1,7 @@
 ---
 title: Instalacja PostgreSQL w Ubuntu 10.04
-link: http://www.zalas.pl/instalacja-postgresql-w-ubuntu-1004
-author: admin
+slug: instalacja-postgresql-w-ubuntu-1004
+author: Jakub Zalas
 description: 
 post_id: 615
 created: 2010/05/16 07:53:41
