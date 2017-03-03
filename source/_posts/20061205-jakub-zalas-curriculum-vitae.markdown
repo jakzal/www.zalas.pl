@@ -9,7 +9,7 @@ created_gmt: 2006/12/05 20:42:51
 comment_status: open
 post_name: jakub-zalas-curriculum-vitae
 status: attachment
-post_type: post
+layout: post
 ---
 
 # Jakub Zalas - Curriculum Vitae

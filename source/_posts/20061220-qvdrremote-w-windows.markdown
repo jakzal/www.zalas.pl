@@ -9,7 +9,7 @@ created_gmt: 2006/12/20 22:46:38
 comment_status: open
 post_name: qvdrremote-w-windows
 status: attachment
-post_type: post
+layout: post
 ---
 
 # QVdrRemote w Windows

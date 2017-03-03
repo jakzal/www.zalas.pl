@@ -9,7 +9,7 @@ created_gmt: 2009/05/26 21:47:45
 comment_status: open
 post_name: recenzja-phparchitects-guide-to-php-design-patterns
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Wzorce projektowe sprawdzają się bez względu od użytej technologii, jednak sposób implementacji często różni się w zależności od tego co oferuje dany język programowania. Ksiązka "php|architect's Guide to PHP Design Patterns" autorstwa Jasona Sweat'a przedstawia kilkanaście wzorców projektowych przydatnych przy pisaniu aplikacji internetowych w PHP 4 i 5. Chociaż tematyką książki są wzorce, to stanowi ona także świetny przykład zastowania metodyki Test Driven Development (TDD).-->

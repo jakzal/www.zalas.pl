@@ -9,7 +9,7 @@ created_gmt: 2010/03/20 18:16:49
 comment_status: open
 post_name: ubuntu-1004-lucid-lynx-jest-juz-za-rogiem
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Wczoraj wydano pierwszą wersję beta Ubuntu 10.04 (Lucid Lynx). Postanowiłem ją przetestować i zaktualizowałem swój biurkowy komputer, na którym uchowało się jeszcze Ubuntu 9.04.-->

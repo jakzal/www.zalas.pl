@@ -9,7 +9,7 @@ created_gmt: 2011/02/20 11:01:10
 comment_status: open
 post_name: doctrine2-i-symfony2
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Wciąż poznaję Symfony2. Nadszedł czas na wybranie i przetestowanie ORMa. Symfony2 jest wystarczająco elastyczne, aby współpracować z praktycznie dowolnym (nowoczesnym) PHPowym ORMem. Równocześnie dostajemy rozsądną domyślną opcję w postaci Doctrine2.-->

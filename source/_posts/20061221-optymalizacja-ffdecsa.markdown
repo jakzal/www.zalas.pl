@@ -9,7 +9,7 @@ created_gmt: 2006/12/21 15:15:34
 comment_status: open
 post_name: optymalizacja-ffdecsa
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--FFdecsa to szybka implementacja algorytmu deszyfrującego CSA dla pakietów MPEG TS. Algorytm ten jest używany w telewizji cyfrowej DVB do szyfrowania obrazu video. Korzystą z niego między innymi posiadacze kart DVB bez sprzętowego dekodera, którzy używają VDR do oglądania telewizji satelitarnej.-->

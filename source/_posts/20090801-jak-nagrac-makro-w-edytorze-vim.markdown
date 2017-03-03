@@ -9,7 +9,7 @@ created_gmt: 2009/08/01 16:41:51
 comment_status: open
 post_name: jak-nagrac-makro-w-edytorze-vim
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Makro to zestaw instrukcji wykonanych w jednym kroku. Podczas programowania makra pomagają nam na automatyzjację powtażalnych czynności, które stają się dzięki temu mniej nudne i podatne na błędy. Vim jako jeden z najpotężniejszych edytorów tekstu posiada tą funkcjonalność wbudowaną.-->

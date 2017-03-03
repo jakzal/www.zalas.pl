@@ -9,7 +9,7 @@ created_gmt: 2007/01/02 22:46:00
 comment_status: open
 post_name: zaciemnianie-kodu
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Zaciemnianie kodu (code obfuscation) to proces czyniący go trudnym do przeczytania i zrozumienia, jednak pozostawiający nadal wykonywalnym. Perl ze swoimi zwariowanymi możliwościami składniowymi idealnie nadaje się do takich zabaw.-->

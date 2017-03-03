@@ -9,7 +9,7 @@ created_gmt: 2009/07/04 07:43:25
 comment_status: open
 post_name: cachowanie-stron-internetowych-za-pomoca-skryptu-bash-i-pliku-htaccess
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Powierzono mi ostatnio zadanie uczynienia kompletnie niewydajnej strony www na tyle wydajną, aby dać zespołowi czas  na jej naprawienie. Nie znałem kodu i technologii wspomnianej aplikacji, nie miałem też wystarczającej ilości czasu na jej poznanie.-->

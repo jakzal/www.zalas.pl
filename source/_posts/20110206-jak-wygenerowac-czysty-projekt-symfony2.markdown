@@ -9,7 +9,7 @@ created_gmt: 2011/02/06 22:14:56
 comment_status: open
 post_name: jak-wygenerowac-czysty-projekt-symfony2
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Symfony2 nie jest jeszcze skończone, a jego wydanie planowane jest na marzec tego roku. Nie mogąc już dłużej czekać, zacząłem bawić się tym frameworkiem nieco poważniej. 

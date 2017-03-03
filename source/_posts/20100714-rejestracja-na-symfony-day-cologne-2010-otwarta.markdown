@@ -9,7 +9,7 @@ created_gmt: 2010/07/14 19:10:27
 comment_status: open
 post_name: rejestracja-na-symfony-day-cologne-2010-otwarta
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Rejestracja na mający miejsce w niemieckiej Kolonii dzień symfony została wczoraj otwarta. Opublikowano także większość programu. Zeszłoroczne, pierwsze wydanie Symfony Day okazało się dużym sukcesem. W tym roku także nie zabraknie atrakcji.-->

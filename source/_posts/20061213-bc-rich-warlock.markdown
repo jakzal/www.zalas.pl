@@ -9,7 +9,7 @@ created_gmt: 2006/12/13 05:42:23
 comment_status: open
 post_name: bc-rich-warlock
 status: attachment
-post_type: post
+layout: post
 ---
 
 # B.C. Rich Warlock

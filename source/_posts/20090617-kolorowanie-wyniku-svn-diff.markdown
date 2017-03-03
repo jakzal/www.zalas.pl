@@ -9,7 +9,7 @@ created_gmt: 2009/06/17 04:10:38
 comment_status: open
 post_name: kolorowanie-wyniku-svn-diff
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Polecenie svn diff umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Ponieważ jego wyjście nie zawsze jest czytelne, możemy nieco ułatwić sobie pracę przez instalację colordiff. Program opakowuje polecenie diff i zwraca taki sam rezultat, jednak pokolorowany.-->

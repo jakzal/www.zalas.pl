@@ -9,7 +9,7 @@ created_gmt: 2010/08/28 17:47:04
 comment_status: open
 post_name: symfony-i-apc
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Do niedawna byłem wyłącznie użytkownikiem XCache (jeśli chodzi o akceleratory PHP). Ostatnio potrzebowałem użyć APC w aplikacji symfony. Poszło mi całkiem gładko jako, że framework bardzo ładnie integruje się z najpopularniejszymi rozwiązaniami tego typu.-->

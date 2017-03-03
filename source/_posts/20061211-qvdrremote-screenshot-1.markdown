@@ -9,7 +9,7 @@ created_gmt: 2006/12/11 00:44:00
 comment_status: open
 post_name: qvdrremote-screenshot-1
 status: attachment
-post_type: post
+layout: post
 ---
 
 # QVdrRemote Screenshot 1

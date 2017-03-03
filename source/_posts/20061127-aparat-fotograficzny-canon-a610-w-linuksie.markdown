@@ -9,7 +9,7 @@ created_gmt: 2006/11/27 19:49:01
 comment_status: open
 post_name: aparat-fotograficzny-canon-a610-w-linuksie
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Stałem się niedawno zadowolonym posiadaczem aparatu fotograficznego Canon PowerShot A610. Jak przed zakupem każdego sprzętu sprawdziłem w google na jakim poziomie jest on wspierany przez system Linux. Z wstępnego rozeznania wynikało, że nie obędzie się bez drobnych problemów, ale da się z niego korzystać. Było jednak inaczej...-->

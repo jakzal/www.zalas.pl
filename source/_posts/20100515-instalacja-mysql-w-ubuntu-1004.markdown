@@ -9,7 +9,7 @@ created_gmt: 2010/05/15 22:29:30
 comment_status: open
 post_name: instalacja-mysql-w-ubuntu-1004
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--MySQL to jednen z popularniejszych relacyjnych systemów baz danych, który jest szeroko stosowany przy budowie aplikacji PHP. Jest dość łatwy w konfiguracji i obsłudze. Oto krótki opis instalacji MySQL w najnowszej wersji Ubuntu. -->

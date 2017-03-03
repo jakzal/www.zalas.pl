@@ -9,7 +9,7 @@ created_gmt: 2006/12/11 00:53:11
 comment_status: open
 post_name: qvdrremote
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Steruję VDR za pomocą pilota PCMAK, podłączanego do portu COM. Musiałem poświęcić ten port dla programatora PHOENIX, aby legalnie korzystać z karty cyfry+. Pojawił się problem z dostępem do VDR. Jest on tak zaprojektowany, że umożliwia sterowanie z użyciem klawiatury, jednak nie jest to wygodne. Można oczywiście użyć xine, jednak nigdy nie lubiłem tego rozwiązania (przypisane VDR klawisze kłóciły się z tymi z xine). Na szczęście do VDR można wysyłać komendy z użyciem SVDRP (Simple Video Disk Recorder Protocol), dzięki czemu bardzo łatwo jest tworzyć aplikacje z nim współpracujące.-->

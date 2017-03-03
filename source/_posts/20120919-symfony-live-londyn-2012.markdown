@@ -9,7 +9,7 @@ created_gmt: 2012/09/19 21:24:43
 comment_status: open
 post_name: symfony-live-londyn-2012
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Świetne prezentacje, przyjaźni prelegenci i wspaniała społeczność. Pierwsza konferencja Symfony Live w Londynie okazała się dużym sukcesem. Cieszę się z tego podwójnie, jako że niedawno dołączyłem do ekipy Sensio Labs UK, organizatora konferencji ;)-->

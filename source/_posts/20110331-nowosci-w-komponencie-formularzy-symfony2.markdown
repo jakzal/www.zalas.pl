@@ -9,7 +9,7 @@ created_gmt: 2011/03/31 05:20:21
 comment_status: open
 post_name: nowosci-w-komponencie-formularzy-symfony2
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Refaktoryzacja formularzy to ostatnia z wielkich zmian i najbardziej oczekiwany pull request w Symfony2. Prace nie są jeszcze w pełni skończone, ale kod jest gotowy do połączenia z główną gałęzią. Jak tylko zmiany zostaną zaakceptowane (lub odrzucone) możemy spodziewać się wydania bety.-->

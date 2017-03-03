@@ -9,7 +9,7 @@ created_gmt: 2009/05/30 08:15:54
 comment_status: open
 post_name: chromium-czyli-google-chrome-w-ubuntu-904
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Chromium to projekt umożliwiający uruchomienie przeglądarki Google Chrome w Linuksie. W repozytoriach launchpad dostępne są źródła dla Ubuntu, dzięki czemu instalacja sprowadza się do rutynowych kroków: dodanie źródeł oprogramowania i klucza do autoryzacji, aktualizacja pakietów i zainstalowanie aplikacji.-->

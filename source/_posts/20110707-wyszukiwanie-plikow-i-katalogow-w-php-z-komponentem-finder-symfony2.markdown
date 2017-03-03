@@ -9,7 +9,7 @@ created_gmt: 2011/07/07 16:38:18
 comment_status: open
 post_name: wyszukiwanie-plikow-i-katalogow-w-php-z-komponentem-finder-symfony2
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Komponent Finder sprawia, że wyszukiwanie plików i katalogów w PHP przestaje być męczące. Pozwala na filtrowanie po nazwie, wzorcu, rozmiarze, dacie modyfikacji i kilku innych kryteriach. W wyniku dostaniemy listę obiektów klasy SplFileInfo, która oferuje wygodny interfejs do pozyskiwania szczegółów na temat plików i katalogów.-->

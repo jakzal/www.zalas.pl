@@ -9,7 +9,7 @@ created_gmt: 2011/07/28 10:24:02
 comment_status: open
 post_name: symfony-2-0-wydane
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Dziś, 28go lipca 2011, wydano stabilną wersję Symfony 2. Czekaliśmy nieco dłużej niż planowano, ale było warto!-->

@@ -9,7 +9,7 @@ created_gmt: 2006/12/13 05:41:03
 comment_status: open
 post_name: yamaha-xv535-virago
 status: attachment
-post_type: post
+layout: post
 ---
 
 # Yamaha XV535 Virago 

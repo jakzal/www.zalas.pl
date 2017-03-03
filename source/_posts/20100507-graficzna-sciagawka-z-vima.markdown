@@ -9,7 +9,7 @@ created_gmt: 2010/05/07 22:48:11
 comment_status: open
 post_name: graficzna-sciagawka-z-vima
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Oto graficzna ściągawka z vima, którą znalazłem na stronie ViEmu. Znajdziecie tam także tutorial. Naprawdę użyteczna rzecz. Nie tylko dla początkujących!-->

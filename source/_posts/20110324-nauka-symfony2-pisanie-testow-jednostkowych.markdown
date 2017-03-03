@@ -9,7 +9,7 @@ created_gmt: 2011/03/24 15:11:02
 comment_status: open
 post_name: nauka-symfony2-pisanie-testow-jednostkowych
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Podczas Hacking Day na Symfony Live postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla Symfony2. Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że pisanie testów dla istniejącego kodu może sprawić tyle radości.

@@ -9,7 +9,7 @@ created_gmt: 2007/06/15 07:09:16
 comment_status: open
 post_name: microsoft-surface
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Nie jestem wielkim fanem firmy Microsoft (wręcz przeciwnie), jednak to co zobaczyłem w prezentacji na stronie on10.net zrobiło na mnie duże wrażenie. Microsoft Surface to komputer z Windows Vista, wciśnięty w stolik z IKEI ;) Preferuję stoliki z IKEI nad Windows Vistę, ale nie o to tutaj chodzi...-->

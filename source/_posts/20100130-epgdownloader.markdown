@@ -9,7 +9,7 @@ created_gmt: 2010/01/30 19:52:52
 comment_status: open
 post_name: epgdownloader
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--EpgDownloader narodził się czerwcu 2005 roku jako prosty, perlowy skrypt. Parsował wtedy program telewizyjny wirtualnej polski i konwertował go do formatu akceptowanego przez VDR. Przyczyna jego powstania była bardzo prosta. Używałem VDR do oglądania telewizji satelitarnej, która w tamtym czasie nadawała EPG tylko na najbliższe dwie audycje. Nastawienie nagrywania w przyszłości stawało się uciążliwe, a zwykłe przejrzenie programu telewizyjnego niemożliwe. EpgDownloader pozwalał mi cieszyć się programem telewizyjnym w VDR na całe siedem dni naprzód.-->

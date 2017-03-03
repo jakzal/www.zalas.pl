@@ -9,7 +9,7 @@ created_gmt: 2013/01/26 22:59:38
 comment_status: open
 post_name: encje-doctrine-poza-bundlami-symfony
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--DoctrineBundle i bridge odpowiadają za integracje Doctrine ORM z frameworkiem Symfony. Jedną z funkcjonalności jaką oferuje DoctrineBundle jest automatyczna rejestracja mapowań w bundlach.-->

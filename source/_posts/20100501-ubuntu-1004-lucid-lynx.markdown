@@ -9,7 +9,7 @@ created_gmt: 2010/05/01 07:17:22
 comment_status: open
 post_name: ubuntu-1004-lucid-lynx
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Stabilne Ubuntu 10.04 Lucid Lynx ujrzało światło dzienne dwa dni temu. Wczoraj zagościło na moim laptopie. Ponieważ wcześniej używałem wersji beta, wiedziałem czego się spodziewać. I nie zawiodłem się.-->

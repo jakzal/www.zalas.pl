@@ -9,7 +9,7 @@ created_gmt: 2009/06/11 14:20:01
 comment_status: open
 post_name: css-przodem-javascript-tylem
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Załączanie arkuszy styli CSS na górze strony, a skryptów JavaScript jak najpóźniej to tylko dwie z 34 dobrych praktyk opisanych przez Yahoo w Best Practices for Speeding Up Your Website. Stosowanie się do nich pozwoli zmniejszyć wizualnie czas generowania strony w przeglądarce. Oto prosty przykład jak to osiągnąć w symfony.-->

@@ -9,7 +9,7 @@ created_gmt: 2011/02/22 05:48:32
 comment_status: open
 post_name: tydzien-przed-symfony-live-2011
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Został już tylko tydzień do tegorocznego Symfony Live w Paryżu. Już wiemy, że Symfony 2.0 nie ujrzy światła dziennego na konferencji. Możemy liczyć na stabilne API, jednak ostateczne wydanie planowane jest na koniec marca. Mimo to konferencja zapowiada się ekscytująco.-->

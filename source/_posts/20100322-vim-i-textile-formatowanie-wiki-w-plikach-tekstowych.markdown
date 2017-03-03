@@ -9,7 +9,7 @@ created_gmt: 2010/03/22 06:32:04
 comment_status: open
 post_name: vim-i-textile-formatowanie-wiki-w-plikach-tekstowych
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Textile to prosty język formatowania tekstu używany na wielu forach, CMSach, czy stronach wiki (np. w Redmine). Osobiście lubię go stosować w zwykłych plikach tekstowych do robienia notatek. Plugin Textile dodaje do vima podświetlanie składni oraz możliwość podglądu i konwersji do htmla. -->

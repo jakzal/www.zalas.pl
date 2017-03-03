@@ -9,7 +9,7 @@ created_gmt: 2007/01/03 23:46:11
 comment_status: open
 post_name: kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Sasc-ng jest programowym modułem warunkowego dostępu (SoftCAM) nowej generacji, przeznaczonym dla systemów linuksowych. Pozwala na oglądanie kodowanych kanałów za pomocą dowolnej aplikacji, posiadającej wsparcie dla DVB, bez modyfikacji jej kodu źródłowego. Dekrypcja odbywa się w tle i jest przezroczysta dla programu DVB, który traktuje wszystkie kanały jak FTA.-->

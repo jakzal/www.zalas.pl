@@ -9,7 +9,7 @@ created_gmt: 2011/04/29 05:25:46
 comment_status: open
 post_name: konfiguracja-nginx-dla-projektow-symfony
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Z okazji wydania wersji 1.0.0 odświeżyłem nieco swoją wiedzę o Nginx. Od czasu, kiedy po raz pierwszy go konfigurowałem, wzbogacił się o kilka nowych dyrektyw i zmiennych. Dzięki temu mogłem uprościć swoją konfigurację dla projektów Symfony (zarówno symfony 1.x jak i Symfony2).-->

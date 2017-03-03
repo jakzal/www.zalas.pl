@@ -9,7 +9,7 @@ created_gmt: 2010/03/22 22:51:35
 comment_status: open
 post_name: sklep-muzyczny-w-ubuntu-ubuntu-one-music-store
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Piszę tego posta słuchając pierwszego utworu, który pobrałem kilka minut temu z Ubuntu One Music Store. Kosztował mnie 3zł (79 euro centów). Sklep muzyczny Ubuntu One został dzisiaj otwarty!-->

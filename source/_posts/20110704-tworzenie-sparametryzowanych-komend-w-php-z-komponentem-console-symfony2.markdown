@@ -9,7 +9,7 @@ created_gmt: 2011/07/04 02:00:09
 comment_status: open
 post_name: tworzenie-sparametryzowanych-komend-w-php-z-komponentem-console-symfony2
 status: publish
-post_type: post
+layout: post
 ---
 
 <!--Komponent Console Symfony2 ułatwia tworzenie sparametryzowanych komend w PHP. Odpowiada za niewdzięczną pracę parsowania wejścia i pisania na wyjście.-->
