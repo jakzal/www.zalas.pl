@@ -4,11 +4,8 @@ title: Home
 generator: pagination
 pagination:
     max_per_page: 5
-talks:
-    count: 0
 use:
     - posts
-    - talks
 ---
 
 <section class="posts">
@@ -44,30 +41,3 @@ use:
         {% endif %}
     </ul>
 </section>
-
-{% if page.talks.count > 0 %}
-<section class="talks">
-  {% set talksDisplayed = 0 %}
-  {% for talk in data.talks[0:page.talks.count] if talk.promoted %}
-  <h2>Recent talks and workshops</h2>
-  <article class="talk" itemscope itemtype="http://schema.org/Event">
-    <a href="{{ talk.url }}" itemprop="url" title="{{ talk.title }}"><h3>{{ talk.title }}</h3></a>
-    <span itemprop="startDate" content="{{ talk.date | date('Y-m-d\TH:i') }}">{{ talk.date | date('d M Y') }}</span>,
-    <span itemscope itemtype="http://schema.org/Event">{{ talk.event }}</span>
-    <p>{{ talk.content|raw }}</p>
-  </article>
-  {% set talksDisplayed = talksDisplayed + 1 %}
-  {% endfor %}
-  {% if page.talks.count > talksDisplayed %}
-  <ul>
-    {% for talk in data.talks[0:page.talks.count-talksDisplayed] if not talk.promoted %}
-    <li class="talk" itemscope itemtype="http://schema.org/Event">
-      <a href="{{ talk.url }}" itemprop="url" title="{{ talk.title }}"><h3 itemprop="name">{{ talk.title }}</h3></a>
-      <span itemprop="startDate" content="{{ talk.date | date('Y-m-d\TH:i') }}">{{ talk.date | date('d M Y') }}</span>,
-      <span itemscope itemtype="http://schema.org/Event">{{ talk.event }}</span>
-    </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-</section>
-{% endif %}
