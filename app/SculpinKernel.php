@@ -10,7 +10,6 @@ final class SculpinKernel extends AbstractKernel
     protected function getAdditionalSculpinBundles()
     {
         return [
-            \Zalas\AppBundle\AppBundle::class,
         ];
     }
 }
