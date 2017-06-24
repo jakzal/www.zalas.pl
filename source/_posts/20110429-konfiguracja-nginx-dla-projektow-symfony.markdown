@@ -126,8 +126,3 @@ Wszystkie żądania do PHP zostaną przekierowane do demona fastcgi (działając
         }
 
 Ignorujemy apache'owe pliki .htaccess, które dla nginx są tylko zwykłymi, tekstowymi plikami (nie chcemy żeby były dostępne przez przeglądarkę).
-
-## Comments
-
-**[Włodzimierz Gajda](#3084 "2012-02-13 21:18:07"):** Krótko i na temat. Wielkie dzięki :-)
-

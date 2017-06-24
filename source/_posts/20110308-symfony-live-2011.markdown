@@ -51,10 +51,3 @@ Na otwartym dla wszystkich Hacking Day zjawiła się spora grupa ludzi. Pracowal
 ## I co dalej?
 
 Wracam zainspirowany, z głową pełną pomysłów. Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. W międzyczasie planuję nadrobić braki ze znajomości protokołu HTTP, czytając w końcu specyfikację. Chcę też przyjrzeć się bliżej kolejkom z [RabbitMQ](http://www.rabbitmq.com/), cachowaniu HTTP i [Varnish](http://www.varnish-cache.org/)owi. Na listę "do przeczytania" wędruje książka "[High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites)".  [ Zdjęcia z Symfony Live 2011](https://picasaweb.google.com/jzalas/SymfonyLive2011?feat=directlink#)
-
-## Comments
-
-**[xis](#3035 "2011-03-08 03:11:17"):** Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. Są specjalne sposoby leczenia czegoś takiego ;) Nie mogę się doczekać sf2 i zacieram niecierpliwie ręce. Liczę, że i dla niego wyjdzie coś w stylu "kalendarzy adwentowych" poprzedników.
-
-**[Kuba](#3036 "2011-03-08 04:32:53"):** Coś w stylu "kalendarzy" będzie z pewnością przygotowane. Dopóki API nie będzie stabilne ciężko jest nad czymś takim pracować :)
-

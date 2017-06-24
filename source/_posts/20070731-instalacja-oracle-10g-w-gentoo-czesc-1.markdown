@@ -148,10 +148,3 @@ Na koniec konfiguracji ustawimy jeszcze kilka zmiennych środowiskowych dla orac
     TZ=GMT
 
 Oprócz dostosowania powyższych ścieżek do własnych preferencji powinniśmy również zdefiniować SID instancji naszej bazy dancyh (ORACLE_SID). Korzystać z tych zmiennych będzie nie tylko działająca instancja oracle'a, ale także instalator.
-
-## Comments
-
-**[xis](#2026 "2007-08-01 11:52:46"):** No, no :) Długa przerwa w pisaniu, ale tym jednym postem nadrobiłeś ;) Tylko dlaczego nie udostępniłeś ebuilda? :P
-
-**[Jakub Zalas](#2033 "2007-08-01 15:35:43"):** Nie pisałem ebuilda :P ten opis to tylko przygotowanie środowiska, aby instalator ruszył bez większych komplikacji ;)
-

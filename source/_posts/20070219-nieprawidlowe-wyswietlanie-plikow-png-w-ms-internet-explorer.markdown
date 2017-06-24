@@ -92,20 +92,3 @@ _ __ _
 _ __ _
   * _[JavaScriptowa biblioteka IE7](http://dean.edwards.name/IE7/)_
 _____________ ____________________________ _
-
-## Comments
-
-**[Vipa](#13 "2007-03-28 10:39:47"):** Dalej nie ma przezroczystości, jeżeli przezroczysty PNG jest wstawiony jako tło. :(
-
-**[xis](#10 "2007-02-20 07:40:23"):** Hej, dziwię Ci się, że w ogóle się za to wziąłeś :) Myślałem, że w IE 7 poprawili już tą dolegliwość, ale sądząc po Twoim skrypcie, chyba nie. BTW, super narzędzie :)
-
-**[Jakub Zalas](#11 "2007-02-20 08:51:29"):** IE 7 ma to już poprawione, ale nadal wiele osób używa IE 6 ;) Znalazłem to przez przypadek, nie to żebym specjalnie szukał Dla ścisłości: to nie mój skrypt, a wykopany z sieci :)
-
-**[ziom](#752 "2007-07-09 09:22:44"):** wcale nie jest tak fajnie z ta przezroczystościa - bo ten obrazek png jest przezroczysty do samego tła, tzn. jesli za tło masz ustawiony kolor to wszystko jest ok, ale jak za tło ustawiony masz inny obrazek to i tak pojawi sie kolor tła. Chyba prosciej jest juz sie pobawic zeby nasz png zamienił sie w dobrze wkomponowany jpeg.
-
-**[Jakub Zalas](#895 "2007-07-11 06:30:18"):** No tak... jak widać rozwiązanie nie jest idealne :D
-
-**[Robert](#2987 "2010-03-09 03:07:18"):** hmm siedze własnie na moim wydziale mat-inf w łodzi na uniwerku i chciałem przetestować te metodę... więc zrobiłem stroną składającą się tylko z tego kodu co podałeś wciskając między body img.png który posiada kanał alfa... i nie działa ani z tłem ani bez tła... nie próbowałem za to wrzucać tego img jako tło ale to i tak mnie nie interesuje... także zweryfikuj to lepiej... nie wiem gdzie mogłem popełnić błąd w kopiowaniu dwóch tekstów i stworzeniu dwóch plików... jedyny wysiłek ode mnie był taki że w google znalazłem png z kanałem alfa... i go umieściłem w kodzie...
-
-**[Kuba](#2990 "2010-03-10 10:48:34"):** Ta metoda działa tylko na IE6, którym już bym się nie przejmował ;)
-

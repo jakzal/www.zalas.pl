@@ -126,12 +126,3 @@ Uruchamiamy php-fpm i Nginx:
     sudo service nginx start
 
 Gdy teraz odwiedzimy _http://info.dev_ w przeglądarce, powinniśmy zobaczyć informacje o naszej instalacji PHP. ![](/uploads/wp/2011/05/phpinfo-400x367.png)
-
-## Comments
-
-**[NIXin](#3075 "2011-09-27 02:33:04"):** Hej Po co tak kombinujesz z: try_files $uri $uri/ @rewrite; location @rewrite { rewrite ^/(.*)$ /index.php/$1; } Z tego co pamiętam wystarczy: try_files $uri $uri/ /index.php?$args Całość ew. objąć location /. Poza tym rewrite jest ciut mniej wydajny od czystego try_files, nie mówiąc o powolnym regexpie ;) Pozdrawiam
-
-**[joshi](#3090 "2012-10-20 02:55:45"):** Mam problem z konfiguracją w 12.10:[error] 4039#0: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: domain.dev, request: "GET / HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "domain.dev"
-
-**[joshi](#3091 "2012-10-20 03:04:25"):** Ok, pomogła podmiana z listen = /var/run/php5-fpm.sock na listen = 127.0.0.1:9000 w /etc/php5/fpm/pool.d/www.conf
-

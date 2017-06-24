@@ -240,33 +240,3 @@ Aby program uruchamiany był ze startem Ubuntu wykonujemy:
 
 Mam nadzieję, że opis jest wystarczająco przejrzysty. Czekam na ewentualne sugestie, czy też inne komentarze ;)
 
-## Comments
-
-**[Mick](#3010 "2010-12-13 12:31:40"):** To rzeczywiście działa ? Na jakiej DVB testowałeś ? Pozdrawiam
-
-**[Kuba](#3011 "2010-12-17 00:29:32"):** @Mick Cały czas korzystam z tego zestawu. Mam kartę SkyStar (już dość wysłużoną).
-
-**[Marcin](#3019 "2011-02-11 13:10:44"):** Świetny poradnik :)Mam problem przy "sudo modprobe dvbloopback" wywala miFATAL: Error inserting dvbloopback (/lib/modules/2.6.32-28-server/misc/dvbloopback.ko): Unknown symbol in module, or unknown parameter (see dmesg)dmesqFeb 11 22:07:30 box kernel: [ 3469.124069] dvbloopback: disagrees about version of symbol dvb_register_adapterFeb 11 22:07:30 box kernel: [ 3469.124079] dvbloopback: Unknown symbol dvb_register_adapterFeb 11 22:07:30 box kernel: [ 3469.124622] dvbloopback: disagrees about version of symbol dvb_unregister_deviceFeb 11 22:07:30 box kernel: [ 3469.124627] dvbloopback: Unknown symbol dvb_unregister_deviceFeb 11 22:07:30 box kernel: [ 3469.125911] dvbloopback: disagrees about version of symbol dvb_register_deviceFeb 11 22:07:30 box kernel: [ 3469.125916] dvbloopback: Unknown symbol dvb_register_deviceFeb 11 22:07:30 box kernel: [ 3469.126130] dvbloopback: disagrees about version of symbol dvb_unregister_adapterFeb 11 22:07:30 box kernel: [ 3469.126135] dvbloopback: Unknown symbol dvb_unregister_adapterMój systemUbuntu Server 10.04 LTS2.6.32-28-serverKarta SkyStar HD2 (stery s2-liplianin-dkms)Czy szanowny autor może poratować ?
-
-**[Kuba](#3020 "2011-02-13 07:09:57"):** @Marcin Wygląda, że problem leży po stronie sterowników do Twojej karty. Nie wiem o na to poradzić, oprócz google'a. Sporo ludzi miało podobny problem.
-
-**[Marcin](#3023 "2011-02-14 01:16:39"):** Dzięki za odpowiedz, będę walczyć dalej :)Tak na marginesie, jak nazywa się ten dodatek captcha z obrazkami ?
-
-**[Kuba](#3024 "2011-02-14 04:43:24"):** YELLOcaptcha: http://captcha.goyello.com/
-
-**[Marcin](#3027 "2011-02-16 02:36:35"):** To znowu ja :) Zostawię dla potomnych :) SASC-NG kompiluje się tylko z jajem do wersji 2.6.33, jest możliwość kompilacji w wyższej wersji jaja, ale trzeba podmieniać nagłówki itp. przy ./configure trzeba wskazać sterowniki do karty DVB np. ./configure --dvb-dir=/usr/src/s2-liplianin Pozdrawiam
-
-**[kamiKAC](#3037 "2011-03-22 04:19:44"):** W jakiej wersji gcc i g++ oraz na jakim procku kompiluje wam się vdr-sasc-ng? Ja miałem wcześniej P4 i ładnie się kompilowało i działało. Zmieniłem procka na Athlona XP i przy kompilacji mam warningi. Po załadowaniu modułu dvbloopback nie mam błędów w dmesg, jednak po włączeniu kodowanego programu sasc-ng zawiesza się i obciąża bardzo mocno procka. Pomaga tylko ubicie sasc-ng.Ma ktoś jakieś pomysły?
-
-**[Kuba](#3038 "2011-03-25 16:34:47"):** @kamiKAC: ja też mam Athlona XP. Nie mogę teraz sprawdzić wersji gcc i g++, ale są to domyślnie dostępne w Ubuntu 10.10.
-
-**[pio](#3043 "2011-05-04 16:37:24"):** Hi,Mi tak po prostu nie działa, niby wszystko poszło gładko, tyle że nic nie widać żadnego obrazu nie ma, sasc-ng sypie czymś takim, chyba to samo jak testowo wyjęłem karte, poradzisz coś?May 5 01:26:17.191 CAM(core.ecm): 0.1: descriptor 18 13 e9 cf 02 00 68May 5 01:26:17.191 CAM(core.ecm): 0.1: found 1813(0000) (Nagra2) id 0000 with ecm 9cf/80 (dup) (already present)May 5 01:26:17.199 CAM(core.ecm): 0.1: try system Seca (0100) id 0068 with ecm 9cf (pri=-10)May 5 01:26:17.199 CAM(core.ecm): 0.1: stopping message log until valid key is foundMay 5 01:27:13.792 CAM(core.auStats): EMM packet load average (1/4/10min) 239 59 23 pks/sMay 5 01:28:13.843 CAM(core.auStats): EMM packet load average (1/4/10min) 231 117 47 pks/sMay 5 01:29:13.892 CAM(core.auStats): EMM packet load average (1/4/10min) 237 148 59 pks/sMay 5 01:30:13.902 CAM(core.auStats): EMM packet load average (1/4/10min) 227 205 82 pks/sMay 5 01:31:13.913 CAM(core.auStats): EMM packet load average (1/4/10min) 219 230 104 pks/sMay 5 01:32:13.915 CAM(core.auStats): EMM packet load average (1/4/10min) 214 224 125 pks/sMay 5 01:33:13.964 CAM(core.auStats): EMM packet load average (1/4/10min) 169 207 142 pks/s
-
-**[Kuba](#3044 "2011-05-05 09:20:03"):** @pio: Łatkę nałożyłeś? Jeśli tak, to wielę nie pomogę. Jeśli nie, nałóż :)
-
-**[pio](#3045 "2011-05-05 22:16:31"):** Tak, nałożyłem.
-
-**[Komuch](#3064 "2011-08-10 06:47:44"):** Niestety nie kompiluje się, próbowałem w wersjach 10.04LTS, 10.10, 11.04. Za każdym razem to:g++ -Wall -D__user= -g -o objs/sasccam.o -c -DRELEASE_VERSION=\"0.0.2\" -D__KERNEL_STRICT_NAMES -Isc/PLUGINS/src/sc-src -I./sc/include -Idvbloopback/module -I/lib/modules/2.6.32-22-generic/build/include sc/sasccam.cppsc/sasccam.cpp: In constructor ‘sascCam::sascCam(int)’:sc/sasccam.cpp:64: error: ‘class cSascDvbDevice’ has no member named ‘Cam’sc/sasccam.cpp: In member function ‘void sascCam::AddPrg(int, int*, const unsigned char*, int)’:sc/sasccam.cpp:80: error: invalid use of incomplete type ‘struct cPrg’sc/PLUGINS/src/sc-src/cam.h:41: error: forward declaration of ‘struct cPrg’sc/sasccam.cpp:81: error: invalid use of incomplete type ‘struct cPrg’sc/PLUGINS/src/sc-src/cam.h:41: error: forward declaration of ‘struct cPrg’sc/sasccam.cpp:83: error: ‘cPrgPid’ was not declared in this scopesc/sasccam.cpp:83: error: ‘pid’ was not declared in this scopesc/sasccam.cpp:83: error: expected type-specifier before ‘cPrgPid’sc/sasccam.cpp:83: error: expected ‘;’ before ‘cPrgPid’sc/sasccam.cpp:84: error: invalid use of incomplete type ‘struct cPrg’sc/PLUGINS/src/sc-src/cam.h:41: error: forward declaration of ‘struct cPrg’make: *** [objs/sasccam.o] Błąd 1
-
-**[Mesiu](#3078 "2011-10-05 07:39:20"):** Witam, tak przypadkiem natrafiłem na ten fajny opis, bo chciałem ponownie wrócić do opensascng, ale niestety on już od dawna nie jest rozwijany. Mam pytanie z bardzo innej beczki. Może ktoś wie dlaczego różne aplikacje przy skanowaniu satelity znajdują różną liczbę kanałów? Od czego to może zależeć?
-

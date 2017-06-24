@@ -41,10 +41,3 @@ Teraz możemy tworzyć bazy danych bez konta administracyjnego:
     mysqladmin -p create wordpress
 
 **Uwaga**: O instalacji PostgreSQL, alternatywy dla MySQLa, możecie przeczytać w moim kolejnym poście: [Instalacja PostgreSQL w Ubuntu 10.04](/instalacja-postgresql-w-ubuntu-1004).
-
-## Comments
-
-**[leppakaklifoth](#3087 "2012-03-06 09:51:56"):** Świetny post.
-
-**[Marcin](#3094 "2014-06-06 00:20:30"):** Krótko. Rzeczowo. Dzięki Wielkie!
-

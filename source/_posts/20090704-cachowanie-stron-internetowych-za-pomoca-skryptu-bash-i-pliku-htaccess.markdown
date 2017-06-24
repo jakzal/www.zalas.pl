@@ -78,10 +78,3 @@ Rozwiązanie jest proste i działa świetnie, ale ma kilka minusów. Przede wszy
 ## Wnioski
 
 Zbyt często programiści zapominają o cachowaniu danych, które nie zmieniają się zbyt często lub są kosztowne do wygenerowania. Poza tym dobrą praktyką jest ograniczenie żądań potrzebnych do wyświetlenia jednej strony www. Szczególnie tyczy się to wysoce obciążonych serwisów. Mam nadzieję, że pokazałem iż za wydajnym cachowaniem nie musi stać skomplikowane rozwiązanie.  Z drugiej strony optymalizacja dynamicznych stron nastręcza pewnych problemów i wymaga szczególnego traktowania. Dobranie odpowiednich narzędzi do rozwiązania danego problemu jest bardzo ważne. Wspomniany serwis niestety nie był napisany w technologii umożliwiającej szybką implementację cachowania.
-
-## Comments
-
-**[Jurek](#2975 "2009-07-15 07:28:13"):** Fajne :) A jak człowiek pomyśli o memcached, opcode cacherach, klastrach i innych "dziwach" przyspieszających strone - GENIALNE :)
-
-**[BrakU](#3056 "2011-07-14 05:42:27"):** Cache można by czyścić przy wyskakującym komunikacie na żądanie lub przy zmianie danych z poziomu przeglądarki lub aplikacji. Tylko kod musiałby uwzględniać opcje dla wielu przeglądarek, technologii.
-

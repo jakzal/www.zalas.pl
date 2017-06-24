@@ -45,10 +45,3 @@ Istnieją gotowe rozwiązania Open Source, które pozwolą Wam zautomatyzować p
 Jak publikujecie swoje aplikacje? Czy Wasz proces jest już zautomatyzowany? 
 
 Type the name of a command and press enter to execute it, or **help** for assistance.
-
-## Comments
-
-**[xis](#2991 "2010-03-15 03:31:29"):** Ja robię tak: \- na stacji roboczej robię commit do svn, \- na serwerze robię svn up i wszystko leci na beta.mojadomena.pl, \- testuję czy beta działa poprawnie, \- jak beta jest OK i wszystko się wgrało to robie rsync na produkcję. Metoda prosta i nawet działa, ale nie jest wolna od wad: brak możliwości wycofania w przypadku ewentualnego problemu, no i wciąć ręcznie trzeba się zajmować wgrywanie patchy do bazy danych. Ten Capistrano to naprawdę dobry pomysł, chętnie wypróbuję w wolnej chwili :)
-
-**[Kuba](#2992 "2010-03-15 12:08:46"):** To tez jest pewna automatyzacja. Dopóki sam nad wszystkim panujesz, to nie zawsze jest sens zaprzegac capistrano :)
-

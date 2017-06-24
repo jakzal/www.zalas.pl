@@ -80,24 +80,3 @@ Do VDR łączymy się poprzez frontend xine. Po uruchomieniu xine wystarczy klik
     xine xvdr://
 
 ## ![VDR](/uploads/wp//2010/11/vdr-tvn7-400x250.png)
-
-## Comments
-
-**[skywalker](#3012 "2010-12-23 09:37:02"):** Po wykonaniu komendy "sudo service vdr start" dostaję komunikat"Starting Linux Video Disk Recorder: vdr - aborted (to enable the daemon, edit /etc/default/vdr)."Po uruchomieniu xine i użyciu zakładki DVB dostaję"Sorry no valid chanels.conf found "nie wiem co robić , uprzejmie proszę o pomoc .
-
-**[Kuba](#3013 "2010-12-24 06:21:17"):** @skywalker: Wygląda jakbyś nie skonfigurował VDR w /etc/default/vdr (to mówi komunikat). Potrzebujesz conajmniej ustawić opcję ENABLED na 1 i wskazać katalog na nagrania (zmienna VIDEO_DIR).
-
-**[skywalker](#3014 "2010-12-27 03:07:17"):** Witam ! Mój /etc/default/vdr : # /etc/default/vdr # # See also /usr/share/doc/vdr/README.Debian.gz # # Change to 1 to enable vdr's init-script ENABLED=1 # Change this to 1 if you want vdr to be able to shutdown the # computer ENABLE_SHUTDOWN=1 # Options that will be passed to vdr's commandline # for example: OPTIONS="-w 15" OPTIONS="-w 60" VIDEO_DIR="/home/skywalker/Wideo/vdr" Po wydaniu polecenia " sudo mv /var/lib/vdr/channels.conf /var/lib/vdr/channels.conf.default sudo echo 'TV POLONIA;CYFRA +:11488:HC56M2O0S0:S13.0E:27500:160=2:80=pol@4:500:0:5101:318:1500:0' > /var/lib/vdr/channels.conf " otrzymywałem komunikat o braku dostępu . pomogło ustawienie uprawnień root " sudo su" po powtórnym wykonaniu : "sudo mv /var/lib/vdr/channels.conf /var/lib/vdr/channels.conf.default sudo echo 'TV POLONIA;CYFRA +:11488:HC56M2O0S0:S13.0E:27500:160=2:80=pol@4:500:0:5101:318:1500:0' > /var/lib/vdr/channels.conf" vdr zaczął poprawnie działać . Muszę jeszcze poszukać listy kanałów TnK . Pozdrawiam !!
-
-**[miro](#3042 "2011-05-02 09:26:19"):** Gotową listę kanałów można pobrać opd adresem http://www.linowsat.com/settings/vdr.htmlPozdrawiam
-
-**[Robert](#3079 "2011-10-27 06:59:25"):** Ziłem zgodnie z opisem jednak po jakimś czasie vdr włącza się sam
-
-**[Robert](#3080 "2011-10-27 07:02:37"):** Przepraszam oczywisty błąd (Zrobiłem)
-
-**[Robert](#3081 "2011-10-27 07:05:00"):** Zrobiłem jak w opisie ale po jakimś czasie vdr wyłącza się sam a ma pracować cały czas gdzie błąd?
-
-**[mariusz](#3088 "2012-05-15 12:26:46"):** a da się jakoś vdr skonfigurować aby dekodował płatne kanały? w tej chwili mam zainstalowany tvheadend z Oscamem, hula fajnie ale epg jest niekompletne..
-
-**[Kuba](#3089 "2012-05-16 16:52:28"):** @mariusz da sie, zobacz tutaj: http://www.zalas.pl/instalacja-sasc-ng-ubuntu-1010 Opis troche stary. Juz sie tym nie bawie.
-

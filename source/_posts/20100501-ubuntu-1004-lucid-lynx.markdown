@@ -42,10 +42,3 @@ Co mnie ucieszyło nie mniej to fakt, że przeglądarka Chromium jest już dost�
   * [Take the Ubuntu Tour](http://www.ubuntu.com/products/whatisubuntu/1004features)
   * [Download Ubuntu](http://www.ubuntu.com/getubuntu/download)
 Jeśli programujecie w PHP powinien zainteresować Was wpis: [Konfiguracja środowiska deweloperskiego PHP z nginx w Ubuntu 10.04](/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004). ![Ubuntu 10.04 Lucid Lynx](/uploads/wp//2010/05/ubuntu1004-02-400x250.png)
-
-## Comments
-
-**[yanoo](#2999 "2010-05-01 01:51:27"):** "W pierwszej chwili, gdy spróbujemy odegrać plik nie wspierany przez otwartą bibliotekę, otrzymamy propozycję instalacji biblioteki o zamkniętej licencji." nie dam głowy, ale wydaje mi się, że już w poprzedniej edycji tak było
-
-**[Kuba](#3000 "2010-05-01 01:54:31"):** Hm... W takim razie jakoś to przeoczyłem i robiłem na około ;)
-

@@ -41,10 +41,3 @@ Opcja '-j 0:1' wskazuje na numery odpowiednio prawdziwego (0) i wirtualnego urz�
     ~/ $ mplayer -dvbin card=2 dvb://"TVN"
 
 W przypadku VDR dobrze jest wybrać w '_Ustawienia_' -> _'DVB_' -> '_Aktualizuj kanały_' opcje **inne niż** '_Nazwy i PIDy_', czy '_Tylko PIDy_'. W przeciwnym razie [VDR](http://www.cadsoft.de/vdr/) oznaczy nam odpowiednie kanały jako kodowane i przy próbie ich nastawienia wyświetli komunikat '_Kanał niedostępny_'. W pliku [channels.conf](http://www.vdr-wiki.de/wiki/index.php/Channels.conf) trzeba zmienić [CAID](http://www.vdr-wiki.de/wiki/index.php/Channels.conf#CAID) każdego z kanałów na 0. [VDR](http://www.cadsoft.de/vdr/) należy uruchomić z opcją -D, wskazującą na urządzenie wirtualne. Pomysł jest na prawdę dobry, jednak prace nad implementacją nadal trwają. Kod jest wysoce eksperymentalny, często mało elegancki i pełny błędów. Lista możliwości zmienia się z każdym dniem, dlatego po więcej szczegółów najlepiej udać się na stronę [wiki](https://opensvn.csie.org/traccgi/sascng/wiki/SascIndex) projektu i forum [dvbn](http://dvbn.happysat.org/viewtopic.php?t=38235). Strona [wiki](https://opensvn.csie.org/traccgi/sascng/wiki/SascIndex) stanowi systematycznie uzupełniananą dokumentację, a na [forum](http://dvbn.happysat.org/viewtopic.php?t=38235) można znaleźć najświeższe informacje dotyczące programu oraz rozwiązania na potencjalnie napotkane problemy.
-
-## Comments
-
-**[kakadu](#2969 "2009-05-15 13:27:04"):** Warto uzupełnić, że obecnie zamiast sasc-ng rozwijany jest open-sasc-ng: https://opensvn.csie.org/traccgi/opensascng/
-
-**[Kuba](#2970 "2009-05-16 14:59:10"):** Dzięki! Tematem już się dawno nie zajmowałem. Raczej używam VDR. Może czas ponownie spróbować sasc-ng (jako opensascng).
-

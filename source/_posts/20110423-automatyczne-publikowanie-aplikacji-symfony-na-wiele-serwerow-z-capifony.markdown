@@ -88,8 +88,3 @@ W praktyce taski i namespace'y rzadko różnią się pomiędzy etapami. Najczę�
     
     
     set :symfony_env_prod, "new_prod_env"
-
-## Comments
-
-**[dominik](#3041 "2011-04-27 03:59:39"):** Ja wciąż utknąłem przy phingu i jego operacjach, ale mam stosunkowo łatwo wydawalne projekty, więc nie ma co się rozwodzić nad tym, dodatkowe plusy to to że można dodać nie tylko wydawanie, ale i inne dodatki. Przy produkcji natomiast ciągle trzeba uważać, coby nie rozwalić realnych danych. Jak będzie sposobność to z pewnością sprawdzę capifony, brzmi ciekawie :)jedna uwaga techniczna - w pl. nie używamy apostrofów, ale piszemy normalnie, nawet zamieniając iks (chociaż od tego jest drobna dwuznaczność) :) np w linkuksie, a nie w linux'sie itd. :)
-

@@ -102,22 +102,3 @@ W prawdziwych projektach ilość klas jest raczej duża. ClassLoader może mieć
     $legacyHelloWorld = new Legacy_Acme_Tools_HelloWorld();
 
 **Uwaga**: Przykłady uruchamiane są w konsoli, więc nie zyskamy na wydajności używając APC. Możemy nawet stracić, bo cache inicjalizowany będzie przy każdym uruchomieniu. Jest to ograniczenie APC.
-
-## Comments
-
-**[Dawid](#3046 "2011-06-30 13:13:37"):** No i gdzie teraz masz przycisk „Lubię to”, żebym mógł Cię łatwo wypromować za ciekawy wpis? ;)
-
-**[Kuba](#3047 "2011-06-30 13:20:19"):** Heh... mam przycisk "tweet", nie nada się? :P
-
-**[Dawid](#3048 "2011-06-30 13:28:13"):** Niestety, ale większość moich kontaktów na tweeterze to strony, których nie obserwuję na rssach :]
-
-**[Kuba](#3049 "2011-06-30 13:45:55"):** W każdym razie jakoś nie wpadłem na dodanie like'a. Muszę to naprawić ;) Dzięki za komentarze!
-
-**[Mat](#3060 "2011-07-30 03:25:18"):** Z ApcUniversalClassLoader u mnie działa wolniej niż bez :))Nie wiem, być może to wina windowsa albo ostatnich optymalizacji S2 przed finalnym releasem ;)Mógłbyś porównać wydajność obu rozwiązań?
-
-**[Kuba](#3061 "2011-07-30 10:42:01"):** @Mat jak masz skonfigurowane PHP? Dane w APC żyją nie dłużej niż proces PHP. Jeśli proces umiera, to APC jest przy każdym żądaniu puste i cache musi się wygenerować. Nie wiem jak to się odbywa na windowsie. Jeśli nie masz odpowiednika fastcgi lub modułu apache, których procesy używane są do obsługi wielu żądań, to w tym może być problem. Na przykład w zwykłym CGI przy każdym żądaniu tworzony jest nowy proces PHP. Zysku z APC nie ma, bo jest inicjalizowane za każdym razem od nowa. Jeśli już musisz pracować na Windowsie, to polecam przenieść chociaż środowisko programistyczne na wirtualną maszynę z systemem Linuksowym (np na VirtualBoksie).
-
-**[Kuba](#3062 "2011-07-30 10:44:48"):** @Mat napisałem Ci odpowiedź, po czym uświadomiłem sobie, że moje przykłady uruchamiane są w konsoli. W takim przypadku zysk z APC jest żaden, bo każde uruchomienie skryptu z konsoli to nowy proces. W skryptach konsolowych nie ma więc sensu używać ApcUniversalClassLoader. Może się wręcz okazać, że tak jak w Twoim przypadku stracimy na wydajności. Dzięki za zwrócenie uwagi!
-
-**[Mat](#3063 "2011-08-07 00:44:19"):** Czesc, do developmentu na windowsie uzywam WAMP. Do stress testow - ab. Potestuje jeszcze to na produkcji.
-

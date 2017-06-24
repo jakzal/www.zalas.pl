@@ -31,12 +31,3 @@ Repozytoria zostaną dodane wraz z odpowiednimi kluczami GPG za nas. Teraz tylko
     sudo aptitude install chromium-browser
 
 Nie musimy już wykonywać dodatkowych czynności, aby dodać obsługę flash.
-
-## Comments
-
-**[Czarek](#2982 "2009-12-28 03:07:03"):** a dodanie klucza ?
-
-**[Jakub Zalas](#2983 "2010-01-02 03:00:54"):** Jawne dodanie klucza nie jest konieczne. Polecenie add-apt-repository automatycznie dodaje klucz do repozytoriów launchpad.
-
-**[Jakub Zalas](#2998 "2010-04-30 05:52:54"):** W Ubuntu 10.04 wystarczy zrobić 'sudo aptitude install chromium-browser'. Chromium jest w domyślnych repozytoriach Ubuntu :)
-

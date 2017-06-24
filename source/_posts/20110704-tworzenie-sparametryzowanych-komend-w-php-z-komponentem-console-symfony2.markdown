@@ -178,18 +178,3 @@ W ten sposób skrypt nie zakończy działania zaraz po uruchomieniu, ale będzie
     php consoleshell.php
 
 ![](/uploads/wp/2011/06/console-shell-363x400.png)
-
-## Comments
-
-**[Zyx](#3052 "2011-07-09 23:40:31"):** Symfony Console to jeden z lepszych komponentów Symfony. Jedyne, co naprawdę wkurza, podobnie jak w przypadku całego Symfony, to masakryczna dokumentacja, a właściwie w tym przypadku jej kompletny brak, wliczając w to jakiekolwiek przykłady.
-
-**[Kuba](#3053 "2011-07-10 00:29:24"):** @Zyx dlatego zdecydowałem się opisać komponenty. Obecnie trwają prace nad stabilizacją frameworka. Myślę, że gdy tylko to nastąpi, komponenty doczekają się swojej dokumentacji. Co do dokumentacji samego Symfony2 nie zgodzę się z Tobą. Myślę, że jest obecnie całkiem przyzwoita (a framework nie jest jeszcze wydany). Z tygodnia na tydzień jej przybywa.
-
-**[adam](#3065 "2011-08-15 02:55:57"):** a ja mam pytanie laika.jak korzystać w danym zadaniu (command) z jakichś dodatkowych klas dołączanych?np. http://sourceforge.net/projects/php-aws-ses/files/php-aws-ses-0.8.2/ => ses.php
-
-**[Kuba](#3066 "2011-08-17 23:42:46"):** @adam możesz użyć autoloadu, by skorzystać z dowolnych dodatkowych klas. Mógłbyś też spróbować require_once, ale pierwsze wyjście jest bardziej elastyczne.
-
-**[Bazyli](#3076 "2011-09-29 08:28:49"):** Pozwoliłem sobie nawiązać do Twojego artykułu: http://improwizuj.pl/programowanie/latwe-rozszerzanie-funkcjonalnosci-komponentu-symfony2-console-dzieki-dependency-injection/
-
-**[Kuba](#3077 "2011-09-29 13:05:17"):** @Bazyli Dzięki! Dobry artykuł :)
-

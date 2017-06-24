@@ -102,18 +102,3 @@ W encji musimy wskazać Doctrine klasę repozytorium, której chcemy użyć zami
 ## Co dalej?
 
 Będę kontynuował naukę Doctrine2 podczas pracy  nad projektem w Symfony2. Jest jeszcze sporo ciekawych zagadnień, które znam bardzo pobieżnie (takie jak zdarzenia, walidatory, dziedziczenie). Poza tym Doctrine udostępnia sporą ilość anotacji, o których tu nie wspomniałem (jak [związki](http://www.doctrine-project.org/docs/orm/2.0/en/reference/association-mapping.html) pomiędzy obiektami).
-
-## Comments
-
-**[dominik](#3028 "2011-02-21 01:39:46"):** Też się przyglądam z ciekawości tym nowościom, ale dalej nie jestem przekonany co do tego czy to taka dobra droga. Po prostu dorabianie jakiejkolwiek funkcjonalności w komentarzach jest dla mnie brzydką sprawą. W javie jest tak samo, ale to o czymkolwiek nie świadczy. var_dumpować można zawsze konkretne dane, wtedy nie będzie miliona stron. Jedyny realnie ważny powód to te zasoby przy alokacji pamięci dla takich obiektów. W sumie to zobaczymy jak to się ułoży. Oby pojawiło się przynajmniej rozsądne wsparcie dla eclipse do tychże encji, przy generowanych klasach świetnie sobie z tym radził, a bez tego teraz to może być chwilami niewygodnie.
-
-**[Kuba](#3029 "2011-02-21 03:41:32"):** @Dominik nie musisz korzystać z anotacji. "Stary" sposób nadal działa. Moim zdaniem anotacje to bardzo eleganckie rozwiązanie. Metaprogramowanie ograniczaja ilość kodu, którą musisz napisać, a co za tym idzie ograniczaja ilość błędów.
-
-**[dominik](#3030 "2011-02-22 01:55:51"):** Problem z adnotacjami polega na tym, że składniowo nie jest to POHO, więc póki edytory się tego nie nauczą to będzie zwykły komentarz. Jak popsujesz w metodzie czy zmiennej coś to o ile nie ma za wiele magiczności to dostaniesz błąd, który boli od razu. Takie adnotacje zostaną komentarzem. No ale jak wspominałem - trzeba się z tym oswoić, zobaczymy jak się będzie to sprawować, bo to "szemrane" połączenie może fajnie działać ;)
-
-**[xis](#3031 "2011-02-23 23:21:01"):** YMLe w tej chwili też nie są takie łatwe do "wciągnięcia" dla edytorów (brak jakiegoś odpowiednika DTD), więc kwestia konfiguracji upraszcza się w tej kwestii, że mapowanie jest w tym samym miejscu co klasa. Doctrine2 jak dla mnie wygląda super, bardzo przypomina Hibernate, którego bardzo lubię :)
-
-**[json burn](#3032 "2011-03-01 12:11:37"):** Bardzo interesująca w D2 jest też obsługa mongoDB out of the box. Nie miałem okazji jeszcze korzystać z tej (quasi)bazy ale jak będę miał wbudowaną w ORM wygodną obsługę to na pewno się pokuszę.
-
-**[Kuba](#3034 "2011-03-03 14:29:35"):** @json MongoDB jest częścią ODM (Object Document Mapper). Na oficjalne Doctrine2 składają się trzy komponenty: DBAL, ORM i ODM. Apropo ODM, to szykuje się też wsparcie dla CouchDB: https://github.com/doctrine/couchdb-odm
-

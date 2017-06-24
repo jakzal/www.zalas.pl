@@ -64,14 +64,3 @@ Symfony 1.x pożyczyło wiele istniejących pomysłów, czy narzędzi z innych p
 ## Kod jest już dostępny!
 
 Podczas konferencji pierwsza publiczna wersja kodu Symfony 2 została pchnięta do repozytorium [git na github](http://github.com/symfony/symfony)ie. Możecie go ściągać i testować. Pamiętajcie tylko, że jest to wersja aktywnie rozwijana i wiele rzeczy ulegnie zmianie. Symfony 2 nie jest gotowe na produkcyjne systemy. Specjalnie po to, aby uczyć i informować o Symfony 2, uruchomiono stronę [Symfony Reloaded](http://symfony-reloaded.org/). Na koniec zamieszczam prezentację i jej nagranie wideo z konferencji.
-
-## Comments
-
-**[Mr. Boo](#2996 "2010-04-02 10:35:16"):** Szkoda, że nie ma tego jeszcze. Zapowiada się bardzo ciekawe.Super było by widzieć zbudowane Magento na Symfony 2. W końcu by mniej do nauki było i łatwo było można modyfikować sklep.Liczę też, że dokumentacja będzie bardzo prosta. Bo z prezentacji nauka samego działania framerowka nie będzie problemem tylko co formularzami, mechanizmami generujące panele administracyjne itd.Ciekawi mnie czy od razu też dadzą gotowe bundle (pluginy) do obsługi logowania, rejestrowania użytkowników, mechanizmy do wysyłania emaili itd.Był bym w niebie jak bym mógł tworzyć stronę jak z klocków lego domek czy nawet zabawkę.
-
-**[Kuba](#2997 "2010-04-03 05:25:49"):** Liczę, że core team Symfony zadba o odpowiednią dokumentację. Nigdy na nią nie narzekałem. Jeśli chodzi o bundle, to wiem, że szukuje się coś specjalnego. Jeszcze nie wiem co, ale ma to związek z zadbaniem o ich jakość.
-
-**[darl](#3001 "2010-06-11 01:32:29"):** Wygląda całkiem smakowicie, mimo to wszystko to na razie hasła, ale wieżę w praktyce fabien i spółka nie dadzą ciała.. już nie mogę się doczekać
-
-**[Kuba](#3003 "2010-06-12 15:00:35"):** @darl te hasla są już konwertowane na kod, którego codziennie przybywa: http://github.com/symfony/symfonyJuż za niecałe dwa tygodnie będzie można posłuchać o aktualnym stanie prac nad Symfony 2: http://www.symfony-project.org/blog/2010/05/31/the-state-of-symfony-2-online-conference
-

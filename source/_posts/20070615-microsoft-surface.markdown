@@ -23,16 +23,3 @@ Nie jestem wielkim fanem firmy Microsoft (wręcz przeciwnie), jednak to co zobac
 
   * [Microsoft Surface](http://www.microsoft.com/surface/)
   * Prezentacja na [on10.net](http://on10.net/Blogs/larry/first-look-microsoft-surfacing-computing/) lub [dailymotion ](http://www.dailymotion.com/us/cluster/tech/featured/video/x24b5d_microsoftsurfacingon10)
-
-## Comments
-
-**[Jakub Zalas](#49 "2007-06-16 07:16:27"):** Heh... to raczej nie jest przeznaczone do codziennej, ośmio godzinnej pracy programisty :) myślę, że powinni to sprzedawać jako mebel :P
-
-**[xis](#45 "2007-06-15 21:42:21"):** A wyobrażasz sobie pracę na tym przez osiem godzin dziennie? :)
-
-**[xis](#51 "2007-06-16 09:25:07"):** Czyli wreszcie mają zastosowanie do swojego nowego systemu :) MS Windows Vista - 90% mebli już wie! :P
-
-**[sl01k](#2976 "2009-08-14 07:22:00"):** surface juz troche istnieje (napewno ponad rok) ... jednak zgodzę się szokuje, a czy burzy barierę miedzy światem wirtualnym a fizycznym ... hmm :) lepiej spojrzyj na nowy projekt Microsofu http://www.youtube.com/watch?v=oACt9R9z37U
-
-**[Jakub Zalas](#2977 "2009-08-16 02:27:12"):** Surface istnieje już ponad dwa lata, bo wtedy napisałem posta :) Przy Project Natal, Surface wymięka :)
-

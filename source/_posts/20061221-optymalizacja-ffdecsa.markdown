@@ -86,16 +86,3 @@ PARALLEL_128_2MMX
 PARALLEL_128_SSE
 Naruszenie ochrony pamięci
 Najlepszym wyborem (podobnie jak u autora) jest tryb PARALLEL_64_MMX. Prawdopodobnie będzie tak w przypadku większości procesorów. Tryb PARALLEL_32_INT nie okazał się wiele gorszym, a skoro jest bardziej przenośnym, często może być lepszym wyborem (dlatego jest wartością domyślną). PARALLEL_128_SSE spowodował naruszenie ochrony pamięci i w sumie nie bardzo wiem dlaczego (bug gcc? specyfika instrukcji sse w athlonie?). Polecam przeprowadzenie testów u siebie choćby dla kilku wyróżniających się trybów :D
-
-## Comments
-
-**[Misiolap](#2 "2007-01-05 15:19:16"):** W starszych wersjach ffdcsa, które nie by ły dołączone do vdr-sc PARALLEL_128_SSE nie powoduje segfaulta.
-
-**[Jakub Zalas](#3 "2007-01-05 18:03:22"):** Masz dostęp do starszej wersji? FFdecsa 1.0.0 jest już dostępna od bardzo dawna i trudno znaleźć poprzednią.
-
-**[Misiolap](#4 "2007-01-06 01:08:20"):** W tej wersji SSE działa u mnie prawidłowo: http://vdr.bluox.org/download/vdr-sc/archives/FFdecsa-1.0.0.tar.bz2 W tej z paczki vdr-sc zrzuca segfault.
-
-**[Michał Górny](#14 "2007-04-07 10:28:54"):** Uch, ja nawet SSE nie próbowałem, ze względu na kompatybilność z drugą maszyną (tam czystej krwi Athlon). Widzę, że wiele nie straciłem ( ;.
-
-**[Jakub Zalas](#15 "2007-04-08 10:26:01"):** Mój Athlon obsługuje sse ;)
-

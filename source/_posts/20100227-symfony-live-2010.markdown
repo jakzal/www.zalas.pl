@@ -48,16 +48,3 @@ Integracja z uczestnikami i organizatorami jest zawsze jedną z ważniejszych cz
 ## Imprezy Symfony w 2010
 
 Jeśli przegapiliście lub po prostu nie mieliście szczęścia uczestniczyć w Symfony Live to nie wszystko stracone. W dniach 25-26 czerwca w Holandii odbędzie się [Symfony Camp](http://www.symfonycamp.com/). 8 października w Niemczech planowany jest kolejny [Symfony Day](http://www.symfonyday.com/en/).
-
-## Comments
-
-**[wowo](#2984 "2010-03-03 13:57:45"):** Niezła relacja, przypadkowo tu trafiłem, ale co raz bardziej podoba mi się ten blog :-)
-
-**[Jakub Zalas](#2985 "2010-03-04 22:49:36"):** Dzięki! Zapraszam ponownie :)
-
-**[str](#2988 "2010-03-10 06:58:31"):** Świetny blog. Dwójki juz nie moge się doczekać. Code even less. Do even more. CAPTHCHA POPRAW albo napisz dla debili takich jak ja zeby Ctrl przytrzymali :) Pozdrawiam
-
-**[Jakub Zalas](#2989 "2010-03-10 10:45:49"):** Ctrl? W jakiej przeglądarce? U mnie captcha działa bez ctrl :)
-
-**[mtr](#2993 "2010-03-22 16:32:34"):** tak, nastepnym razem sie jakos zgadamy :)
-

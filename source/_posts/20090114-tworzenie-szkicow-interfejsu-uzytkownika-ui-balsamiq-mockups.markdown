@@ -24,10 +24,3 @@ Od dawna brakowało mi aplikacji, która pozwoliłaby w łatwy i przyjemny spos�
 ![Balsamiq Mockups](/uploads/wp/2009/01/balsamiqmockups-300x244.png)
 
 Balsamiq Mockups dostępne jest w kilku wersjach (webowych i biurkowej) na kilka systemów operacyjnych (Linux, MacOSX, Windows). Aplikacja na biurko kosztuje 79 dolarów. Wprawdzie można pobrać ją za darmo, jednak w ten sposób stracimy dostęp do kilku ważnych opcji, w tym zapisywania szkiców (co czyni ją raczej wersją demo, gdyż do codziennej pracy jest niestety bezużyteczna).
-
-## Comments
-
-**[pba](#2967 "2009-05-07 14:08:17"):** Widziałem coś podobnego, nazywa się Denim, ale chyba uboższe http://dub.washington.edu/denim
-
-**[Kuba](#2968 "2009-05-09 04:28:27"):** Fajne w Denim jest to, że można zrobić eksport do html i przeklikać się przez szkice. Z drugiej strony Balsamiq Mockups już oferuje przejścia między szkicami, więc to chyba tylko kwestia czasu, kiedy udostępnią eksport.
-

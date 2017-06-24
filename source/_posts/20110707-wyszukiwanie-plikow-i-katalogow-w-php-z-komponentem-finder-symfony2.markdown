@@ -86,14 +86,3 @@ Główną klasą komponentu, z którą będziemy pracować, to _Finder._ Po utwo
     }
 
 Proste, nieprawdaż?
-
-## Comments
-
-**[dominik](#3050 "2011-07-08 00:57:41"):** Wygląda ślicznie, tylko martwi mnie skąd "until" dostało dodatkową literkę? Czy on to tak rozumie (!), czy to literówka?
-
-**[Kuba](#3051 "2011-07-08 01:40:52"):** @dominik: literówka, poprawione, dzięki :)
-
-**[dominik](#3054 "2011-07-11 01:12:49"):** Jeszcze zostało "echo" tego problemu kawałek dalej ;) A klasa wygląda rzeczywiście bardzo ładnie, jak tylko będzie trochę operacji dyskowych to się chętnie z nią bliżej poznam :)
-
-**[Kuba](#3055 "2011-07-11 07:44:13"):** Jak dobrze, gdy jest ktoś, kto poprawi Twoje błędy ;)
-

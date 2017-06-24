@@ -23,10 +23,3 @@ Kompilacja programu napisanego w [Qt](http://www.trolltech.com/products/qt) wyma
 
   1. <http://qtnode.net/wiki/Hello_World>
   2. <http://www.computerhope.com/issues/ch000549.htm>
-
-## Comments
-
-**[Gienek](#3004 "2010-08-13 10:58:07"):** Wszystko ładnie pięknie dopóki robimy na dynamicznych bibliotekach. Ja się już 2 dzień męczę żeby zrobić je statycznymi i żeby działało :\ może więc jakiś łopatologiczny przykład jak to zrobić??
-
-**[Kuba](#3005 "2010-08-14 03:06:51"):** Niestety nie zajmowałem się kompilowanymi programami od czasu tego postu :)
-

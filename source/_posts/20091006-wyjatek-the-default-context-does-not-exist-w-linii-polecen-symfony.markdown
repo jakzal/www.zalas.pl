@@ -72,12 +72,3 @@ Dzięki temu nie będzie konieczne wpisywanie jej w linii poleceń.
 ## sfContext::getInstance() to zło
 
 Jak zaznaczyłem we wstępie dobrą praktyką jest unikanie bezpośredniego odwoływania się do kontekstu. Bywa to trudne, ale należy mieć na uwadze, że używając singletona wiążemy klasy problematyczną zależnością. Dobre argumenty popierające tą tezę przedstawiono w artykule "[Why sfContext::getInstance() Is Bad](http://webmozarts.com/2009/07/01/why-sfcontextgetinstance-is-bad/)" i prezentacji "[30 Symfony Best Practices (slajd 58)](http://www.slideshare.net/nperriault/30-symfony-best-practices)".
-
-## Comments
-
-**[Shapha](#2980 "2009-12-03 05:20:47"):** Dzieki za artykul. Wreszcie moj task w cronie zaczal normalnie dzialac, nie musialem nic robic "na okolo" ;)
-
-**[chris](#3092 "2013-01-08 08:22:00"):** zdarza się, nie zdaża
-
-**[Kuba](#3093 "2013-01-11 05:34:22"):** @chris dzieki
-

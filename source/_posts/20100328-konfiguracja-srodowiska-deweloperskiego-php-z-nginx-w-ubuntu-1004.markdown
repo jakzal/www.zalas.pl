@@ -216,18 +216,3 @@ Uruchamiamy php-cgi i nginx:
     sudo service nginx start
 
 W końcu odwiedzamy http://info.dev w przeglądarce internetowej i cieszymy się widokiem skonfigurowanego PHP z nginx.
-
-## Comments
-
-**[iczek](#3006 "2010-08-16 10:28:48"):** Chciałbym się dowiedzieć, co robi ten fragment w pliku konfiguracyjnym domeny dev.conf:"rewrite ^(.*) /index.php last;"Bo uniemożliwia mi dostanie się do podkatalogów, np. nie wyświetla /wp-admin, nginx odrzuca żądanie i przekierowuje do /index.php. Tego fragmentu też nie ma w innych konfiguracjach, które znalazłem na sieci.
-
-**[Kuba](#3007 "2010-08-16 13:28:41"):** @iczek ten fragment przepisuje wszystko do index.php, aby działały mi "ładne URLe" w stylu "/artykuly/o-nas". Przykładowo http://strona.dev/artykuly/o-nas będzie równoważne z http://strona.dev/index.php/artykuly/o-nas.
-
-**[iczek](#3008 "2010-08-17 02:46:23"):** Właśnie chodzi o to, że powoduje to efekt opisany przeze mnie. Zainstalowałem w maszynie wirtualnej pod Windowsem Ubuntu 10.04 i próbowałem zaistalować przy tej konfiguracji Wordpress 3. Po zalogowaniu w okienku logowania do panelu admina wywala mnie zamiast do Kokpitu na stronę główną (czyli przekierowało mnie na /indeh.php) i nie pozwala dostać się do /wp-admin. Po zahaszowaniu tego fragmentu konfiguracji wszystko działa jak należy.
-
-**[Kuba](#3009 "2010-08-17 11:32:40"):** @iczek to zrozumiałe, bo wszystko jest przepisywane na index.php. Mój opis skupia się na konfiguracji php+nginx, a nie na szczegółach nginx. Przedstawiona konfiguracja jest przykładowa, można powiedzieć wyjściowa. Niestety nginx nie dysponuje mechanizmem typu htaccess znanym z apache i więcej trzeba robić na poziomie głównego pliku konfiguracyjnego. Ja zwykle działam z kilkoma kontrolerami w katalogu głównym, stad takie a nie inne domyślne zestawienie. Do Twoich potrzeb musisz dostosować nieco plik konfiguracyjny nginx (tym bardziej dla WordPressa). W necie jest wiele przykładów, ale może to dobry temat na kolejny wpis :) Dzięki za zaintersowanie!
-
-**[xis](#3017 "2011-02-08 01:59:08"):** Dzięki za tip z "server_name *.dev;" i $host w nginx! Nie miałem o tym pojęcia wcześniej i tworzyłem dla każdego projektu nowy plik w sites-available :)
-
-**[Kuba](#3018 "2011-02-09 07:53:47"):** @xis te opcje nie zawsze były dostępne. Warto śledzić zmiany w nginx, bo aktywnie się rozwija ;)
-
