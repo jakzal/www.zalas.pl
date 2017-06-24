@@ -10,6 +10,9 @@ comment_status: open
 post_name: konferencja-php-north-west-2009
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [php,konferencja]
 ---
 
 <!--Tydzień temu miałem okazję uczestniczyć w konferencji PHP North West w Manchester. Wszystko zaczęło się imprezą w pubie Lass O' Gowrie w piątkowy wieczór przed konferencją. Wielką przyjemnością było dla mnie poznać i rozmawiać z tyloma ludźmi zaangażowanych w społeczność PHP. Wszyscy, bez względu na doświadczenie, byli przyjaźni i chętni do wymiany punktu widzenia. Nieformalne spotkania przy piwie i grach wideo niewątpliwie sprzyjają poszerzaniu grona znajomych o wiele lepiej, niż krótkie rozmowy między konferencyjnymi prezentacjami.-->

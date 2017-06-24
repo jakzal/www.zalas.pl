@@ -10,6 +10,9 @@ comment_status: open
 post_name: konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ubuntu,php,nginx]
 ---
 
 <!--Nginx to lekki serwer http i proxy. Potrafi także działać jako load balancer. Stanowi poważną alternatywę dla przeładowanego apache. W środowisku prodykcyjnym nginx zaskakuje wydajnością oraz małym zużyciem pamięci. W warunkach deweloperskich cenię jego prostą i elastyczną konfigurację. Oto opis jak szybko przygotować środowisko deweloperskie PHP z nginx w Ubuntu 10.04 (Lucid Lynx).-->

@@ -10,6 +10,9 @@ comment_status: open
 post_name: vdr-w-ubuntu-1010
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ubuntu,vdr]
 ---
 
 <!--Jestem użytkownikiem VDR od lat. Do tej pory zwykle kompilowałem go ze źródeł. Nie jest to skomplikowany proces, ale od kiedy jestem także użytkownikiem Ubuntu zrobiłem się nieco leniwy. Przy okazji instalacji nowego wydania Ubuntu zainstalowałem VDR z pakietów dostępnych w dystrybucji.-->

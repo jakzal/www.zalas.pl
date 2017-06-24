@@ -10,6 +10,9 @@ comment_status: open
 post_name: przeglad-klas-metod-i-zmiennych-w-vimie-z-pluginem-taglist
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [vim]
 ---
 
 <!--Plugin TagList dodaje do vima funkcjonalność przeglądania listy klas, metod, zmiennych i innych słów kluczowych indeksowanych przez ctags. TagList pokazuje tagi w kontekście edytowanych plików i grupuje je po typie. Do tagów możemy skakać, otwierać je w nowym oknie lub zakładkach.-->

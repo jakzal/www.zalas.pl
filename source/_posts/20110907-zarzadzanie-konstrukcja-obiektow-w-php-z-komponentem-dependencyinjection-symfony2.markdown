@@ -10,15 +10,21 @@ comment_status: open
 post_name: zarzadzanie-konstrukcja-obiektow-w-php-z-komponentem-dependencyinjection-symfony2
 status: publish
 layout: post
+comments: true
+expired: true
+tags:
+- components
+- DependencyInjection
+- DIC
+- php
+- Symfony2
 ---
 
-<!--Komponent DependencyInjection Symfony2 to PHPowa implementacja kontenera usług (z ang. Dependency Injection Container). Dodatkowo, komponent zawiera kilka przydatnych narzędzi, pozwalających na import i eksport definicji w różnych formatach (np XML).-->
+Komponent [DependencyInjection](https://github.com/symfony/DependencyInjection) Symfony2 to PHPowa implementacja **kontenera usług** (z ang. **Dependency Injection Container**). Dodatkowo, komponent zawiera kilka przydatnych narzędzi, pozwalających na import i eksport definicji w różnych formatach (np _XML_).
 
-# Zarządzanie konstrukcją obiektów w PHP z komponentem DependencyInjection Symfony2
-
-Komponent [DependencyInjection](https://github.com/symfony/DependencyInjection) Symfony2 to PHPowa implementacja **kontenera usług** (z ang. **Dependency Injection Container**). Dodatkowo, komponent zawiera kilka przydatnych narzędzi, pozwalających na import i eksport definicji w różnych formatach (np _XML_). 
-
-![](/uploads/wp/2011/08/injection1.png)źródło zdjęcia: <http://www.flickr.com/photos/alexnormand/3132689510/>
+<div class="text-center">
+    <img src="/uploads/wp/2011/08/injection.png" title="Injection - oryginał zdjęcia: http://www.flickr.com/photos/alexnormand/3132689510/" alt="Injection - oryginał zdjęcia: http://www.flickr.com/photos/alexnormand/3132689510/" class="img-responsive" />
+</div>
 
 Jeśli chcecie dowiedzieć się więcej o kontenerze usług lub wstrzykiwaniu zależności, polecam świetną serię artykułów autorstwa Fabiena Potencier: [What is Dependency Injection?](http://fabien.potencier.org/article/11/what-is-dependency-injection) **Uwaga**: Kod z tego artykułu dostępny jest na githubie: <https://github.com/jakzal/SymfonyComponentsExamples>
 
@@ -153,8 +159,3 @@ Załadowanie usług do kontenera jest trywialne. Tworzymy _CotnainerBuilder_ i 
     
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
-
-## Comments
-
-**[Str](#3074 "2011-09-15 01:59:51"):** Swietny artykul. Keep up the good work m8
-

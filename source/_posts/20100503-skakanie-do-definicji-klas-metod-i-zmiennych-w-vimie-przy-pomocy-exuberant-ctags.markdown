@@ -10,6 +10,9 @@ comment_status: open
 post_name: skakanie-do-definicji-klas-metod-i-zmiennych-w-vimie-przy-pomocy-exuberant-ctags
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [vim]
 ---
 
 <!--Dzięki exuberant ctags możemy skakać do definicji klas, metod, zmiennych i innych konstrukcji językowych w vimie. Narzędzie potrafi wygenerować plik z indeksem słów kluczowych (tagów) dla jednego spośród 41 wspieranych języków programowania. Indeks ten jest używany w edytorach typu vim do szybkiego odnajdywania powiązanych słów kluczowych.-->

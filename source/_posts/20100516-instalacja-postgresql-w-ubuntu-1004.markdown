@@ -10,6 +10,9 @@ comment_status: open
 post_name: instalacja-postgresql-w-ubuntu-1004
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ubuntu,postgresql]
 ---
 
 <!--PostgreSQL jest rozbudowanym i niezawodnym obiektowo-relacyjnym systemem baz danych. Stanowi doskonałą alternatywę dla popularnego MySQLa. PostgreSQL jest tak samo łatwy w obsłudze, sprawuje się lepiej i oferuje więcej.-->

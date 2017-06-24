@@ -10,13 +10,18 @@ comment_status: open
 post_name: nowosci-w-komponencie-formularzy-symfony2
 status: publish
 layout: post
+tags:
+- doctrine2
+- form
+- onTheEdge
+- php
+- Symfony2
+- twig
+expired: true
+comments: true
 ---
 
-<!--Refaktoryzacja formularzy to ostatnia z wielkich zmian i najbardziej oczekiwany pull request w Symfony2. Prace nie są jeszcze w pełni skończone, ale kod jest gotowy do połączenia z główną gałęzią. Jak tylko zmiany zostaną zaakceptowane (lub odrzucone) możemy spodziewać się wydania bety.-->
-
-# Nowości w komponencie formularzy Symfony2
-
-![](/uploads/wp/2011/03/sflogo.png)Refaktoryzacja formularzy to ostatnia z wielkich zmian i najbardziej oczekiwany [pull request](https://github.com/symfony/symfony/pull/399) w Symfony2. Prace nie są jeszcze w pełni skończone, ale kod jest gotowy do połączenia z główną gałęzią. Jak tylko zmiany zostaną zaakceptowane (lub odrzucone) możemy spodziewać się **wydania bety**. Refaktoryzacja dotyczy głównie właściwego **wstrzykiwania zależności** i ich rozluźnienia wewnątrz komponentu. Ma to w największej mierze wpływ na sposób, w jaki będziemy tworzyć obiekty. Polecam przyjrzeć się [przykładowemu projektowi](https://github.com/beberlei/AcmePizzaBundle) i [fragmentom kodu na Gist](https://gist.github.com/883293). Nie mamy pewności, że poprawki zostaną zaakceptowane w obecnym stanie. Możliwe, że coś się jeszcze zmieni, ale postanowiłem już teraz przyjrzeć się nieco bliżej temu komponentowi. Jest kilka rzeczy, które bardzo polubiłem. Większość z nich itak wejdzie do stabilnego wydania Symfony. Tylko sposób w jaki tworzyć będziemy formularze jest niepewny. 
+![](/uploads/wp/2011/03/sflogo.png)Refaktoryzacja formularzy to ostatnia z wielkich zmian i najbardziej oczekiwany [pull request](https://github.com/symfony/symfony/pull/399) w Symfony2. Prace nie są jeszcze w pełni skończone, ale kod jest gotowy do połączenia z główną gałęzią. Jak tylko zmiany zostaną zaakceptowane (lub odrzucone) możemy spodziewać się **wydania bety**. Refaktoryzacja dotyczy głównie właściwego **wstrzykiwania zależności** i ich rozluźnienia wewnątrz komponentu. Ma to w największej mierze wpływ na sposób, w jaki będziemy tworzyć obiekty. Polecam przyjrzeć się [przykładowemu projektowi](https://github.com/beberlei/AcmePizzaBundle) i [fragmentom kodu na Gist](https://gist.github.com/883293). Nie mamy pewności, że poprawki zostaną zaakceptowane w obecnym stanie. Możliwe, że coś się jeszcze zmieni, ale postanowiłem już teraz przyjrzeć się nieco bliżej temu komponentowi. Jest kilka rzeczy, które bardzo polubiłem. Większość z nich itak wejdzie do stabilnego wydania Symfony. Tylko sposób w jaki tworzyć będziemy formularze jest niepewny.
 
 ## Konfiguracja
 
@@ -130,20 +135,9 @@ Sam formularz niewiele wie o walidacji. W razie potrzeby pyta model, czy ten zaw
 ## Szablony
 
 W symfony 1.x komponenty interfejsu (_widgets_) generowane są przez odpowiadające im klasy. Nie jest to najlepsze miejsce dla szablonów we frameworku MVC. W Symfony2 sytuacja znacząco się poprawiła. Możemy tworzyć specjalne szablony dla kontrolek, z których każda definiowana jest w osobnym bloku. Dzięki temu mamy możliwość przeciążyć tylko wybrane elementy, a nawet dodać nowe. Poniżej wkleiłem przykład szablonu twig z [dokumentacji Symfony](http://symfony.com/doc/2.0/book/forms/view.html#defining-the-html-representation): 
-    
-    
+
+    {% verbatim %}
     {% block textarea_field %}
         <textarea {% display field_attributes %}>{{ field.displayedData }}</textarea>
     {% endblock textarea_field %}
-    
-    
-    assert
-
-** **
-
-## Comments
-
-**[xis](#3039 "2011-03-31 00:30:39"):** Bardzo podoba mi się pomysł na walidację w osobnych obiektach, które możemy połączyć z formularzem lub nie :) No i, jak pewnie każdy, cieszę się, że wywalono to "echowanie" kodu html w metodzie render() i zastąpiono ją templatkami.
-
-**[Łukasz](#3040 "2011-04-13 05:59:11"):** Inicjatywa Symfony2 jest bardzo obiecująca, zwłaszcza annotacje zaczerpnięte z Javy EJB oraz Springa. Cieszę się, że powoli programiści PHP nie mają się czego wstydzić jeśli chodzi o rozwiązania typu IoC czy metaprogramowanie.Oczywiście duża w tym zasługa twórców Doctrine, ale integracja pomiędzy projektami cieszy na pewno
-
+    {% endverbatim %}

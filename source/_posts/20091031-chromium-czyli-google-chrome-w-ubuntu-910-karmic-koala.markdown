@@ -10,6 +10,9 @@ comment_status: open
 post_name: chromium-czyli-google-chrome-w-ubuntu-910-karmic-koala
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ubuntu]
 ---
 
 <!--Google Chrome nie jest jeszcze dostępny pod Linuksem. Jest za to Chromium, czyli przeglądarka Open Source na bazie której zbudowany jest Chrome. Właściwe to obie aplikacje odróżnia tylko logo.-->

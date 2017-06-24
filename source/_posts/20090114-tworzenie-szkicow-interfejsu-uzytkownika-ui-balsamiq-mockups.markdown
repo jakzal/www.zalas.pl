@@ -10,6 +10,9 @@ comment_status: open
 post_name: tworzenie-szkicow-interfejsu-uzytkownika-ui-balsamiq-mockups
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ux]
 ---
 
 <!--Od dawna brakowało mi aplikacji, która pozwoliłaby w łatwy i przyjemny sposób stworzyć szkic interfejsu użytkownika podczas specyfikowania wymagań. Takie rysunki pozwalają znaleźć wspólny język z klientem, wzbogacić scenariusze użytkowników (User Stories), a po definicji wymagań obrazują programiście co ma właściwie zakodować ;) Wprawdzie natknąłem się na kilka programów tego typu, jednak albo nie były przyjemne w obsłudze, albo nie oferowały elementów interfejsu strony www, czy były po prostu przydkie ;) Moje poszukiwania dobiegły końca, dzięki nowemu adwentowemu tutorialowi Symfony - Jobeet, gdzie w drugim dniu zastosowano Balsamiq Mockups. Program jest dla mnie niemal idealny.-->

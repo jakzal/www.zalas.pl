@@ -10,6 +10,9 @@ comment_status: open
 post_name: wyjatek-the-default-context-does-not-exist-w-linii-polecen-symfony
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [symfony]
 ---
 
 <!--Jeśli w taskach symfony spróbujemy użyć kontekstu poprzez wywołanie sfContext::getInstance(), otrzymamy wyjątek klasy sfException z komunikatem 'The "default" context does not exist'. Klasa sfContext reprezentuje kontekst aplikacji i dlatego nie jest on inicjowany w linii poleceń. Dobrą praktyką jest NIE używanie sfContext::getInstance(). Zdarza się niestety, że nie mamy innego wyboru (np. gdy korzystamy z obcego pluginu).-->

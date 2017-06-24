@@ -10,6 +10,9 @@ comment_status: open
 post_name: php-standards-initiative
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [php]
 ---
 
 <!--Podczas tegorocznej konferencji php|tek w Chicago spontanicznie zorganizowano spotkanie na temat standardów kodowania w PHP. Uczestniczyła w nim grupa ludzi pracujących nad kilkoma znaczącymi projektami PHP: Zend Framework, PEAR, Solar, Agavi, CakePHP, symfony i phing. Niestety nie było mi dane uczestniczyć w konferencji, ale znaleziona na blogu Left On The Web informacja o spotkaniu, bardzo mnie ucieszyła.-->

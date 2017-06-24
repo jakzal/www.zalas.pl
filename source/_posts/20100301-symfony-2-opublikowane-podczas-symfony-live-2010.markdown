@@ -10,6 +10,9 @@ comment_status: open
 post_name: symfony-2-opublikowane-podczas-symfony-live-2010
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [symfony,konferencja,Symfony2]
 ---
 
 <!--Podczas pierwszej międzynarodowej konferencji Symfony Live, Fabien Potencier upublicznił Symfony 2. Nowoczesne podejście i sprawdzone praktyki, podpatrzone w innych pierwszoligowych projektach Open Source, tworzą wybuchową miksturę, która ma szansę zrewolucjonizować świat PHP.-->

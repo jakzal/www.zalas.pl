@@ -10,6 +10,9 @@ comment_status: open
 post_name: epgdownloader-przenosi-sie-na-gita
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [epgdownloader]
 ---
 
 <!--Niemal od początku EpgDownloader udostępniany był społeczności na SourceForge'u. Jak niedawno pisałem moje zainteresowanie programem zmalało niemal do zera. Jest za to kilka osób, które chętnie włączyłyby się w dalszy jego rozwój. Dlatego postanowiłem przenieść repozytorium do serwisu github.-->

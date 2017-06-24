@@ -10,6 +10,9 @@ comment_status: open
 post_name: ubuntu-910-karmic-koala-juz-jest
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [ubuntu]
 ---
 
 <!--Ubuntu 9.10 Karmic Koala zostało dziś oficjalnie wydane na świat. Wersja jest przełomowa, bo nie zawiera tylko usprawnień, czy aktualizacji. Niektóre z komponentów zostały zastąpione nowymi, bardziej nowoczesnymi. Pełny opis zmian umieszczono na stronie Ubuntu. Przedstawię po krótce tylko te, na które czekałem.-->

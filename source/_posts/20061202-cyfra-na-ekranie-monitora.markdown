@@ -10,6 +10,9 @@ comment_status: open
 post_name: cyfra-na-ekranie-monitora
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [vdr]
 ---
 
 <!--Cyfra+ jest obecnie jedyną platformą cyfrową umożliwiającą wykupienie abonamentu bez dodatkowych kosztów związanych z kupnem dekodera, czy anteny satelitarnej. O ile bez anteny się nie obejdziemy, to do oglądania tv-sat z użyciem komputera dekoder nie jest nam potrzebny. Wystarczy niskobudżetowa karta DVB-S (na przykład SkyStar2) i programator PHOENIX.-->

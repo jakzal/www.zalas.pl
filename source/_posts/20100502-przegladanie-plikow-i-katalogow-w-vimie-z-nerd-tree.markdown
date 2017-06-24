@@ -10,6 +10,9 @@ comment_status: open
 post_name: przegladanie-plikow-i-katalogow-w-vimie-z-nerd-tree
 status: publish
 layout: post
+expired: true
+comments: true
+tags: [vim]
 ---
 
 <!--Przeglądanie, otwieranie, zmiana nazwy, czy przenoszenie plików i katalogów to czynności wykonywane podczas codziennego pisania kodu. W popularnych IDE odbywa się to zwykle przy pomocy eksploratora plików. W vimie lubię używać do tego celu pluginu NERD tree.-->
