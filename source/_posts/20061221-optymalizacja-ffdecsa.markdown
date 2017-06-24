@@ -15,11 +15,7 @@ comments: true
 tags: [ffdecsa]
 ---
 
-<!--FFdecsa to szybka implementacja algorytmu deszyfrującego CSA dla pakietów MPEG TS. Algorytm ten jest używany w telewizji cyfrowej DVB do szyfrowania obrazu video. Korzystą z niego między innymi posiadacze kart DVB bez sprzętowego dekodera, którzy używają VDR do oglądania telewizji satelitarnej.-->
-
-# Optymalizacja FFdecsa
-
-FFdecsa to szybka implementacja algorytmu deszyfrującego [CSA](http://pl.wikipedia.org/wiki/Common_Scrambling_Algorithm) dla pakietów [MPEG TS](http://en.wikipedia.org/wiki/Transport_stream). Algorytm ten jest używany w telewizji cyfrowej [DVB](http://pl.wikipedia.org/wiki/DVB) do szyfrowania obrazu video. Korzystą z niego między innymi posiadacze kart [DVB](http://pl.wikipedia.org/wiki/DVB) bez sprzętowego dekodera, którzy używają [VDR](http://www.cadsoft.de/vdr/) do oglądania telewizji satelitarnej. Jak podaje autor, jego implementacja jest ponad 800% szybsza niż najszybsza, którą znalazł. Wyjaśnia to nazwę programu, której skrót jest rowinięty w jednym z pytań w FAQ (dołączonym do źródeł). Dzięki takiemu wzrostowi wydajności zyskujemy między innymi następujące właściwości: 
+FFdecsa to szybka implementacja algorytmu deszyfrującego [CSA](http://pl.wikipedia.org/wiki/Common_Scrambling_Algorithm) dla pakietów [MPEG TS](http://en.wikipedia.org/wiki/Transport_stream). Algorytm ten jest używany w telewizji cyfrowej [DVB](http://pl.wikipedia.org/wiki/DVB) do szyfrowania obrazu video. Korzystą z niego między innymi posiadacze kart [DVB](http://pl.wikipedia.org/wiki/DVB) bez sprzętowego dekodera, którzy używają [VDR](http://www.cadsoft.de/vdr/) do oglądania telewizji satelitarnej. Jak podaje autor, jego implementacja jest ponad 800% szybsza niż najszybsza, którą znalazł. Wyjaśnia to nazwę programu, której skrót jest rowinięty w jednym z pytań w FAQ (dołączonym do źródeł). Dzięki takiemu wzrostowi wydajności zyskujemy między innymi następujące właściwości:
 
   * deszyfracja strumienia 8Mb/s zabiera 5% czasu procesora zamiast 40%,
   * deszyfracja całego transpondera (z wszystkimi kanałami lub z dużym strumieniem HDTV) niosącego 38Mb/s zabiera 23% czasu procesora zamiast 190% (>100%, nie do odszyfrowania w czasie rzeczywistym),

@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Ubuntu 9.10 Karmic Koala zostało dziś oficjalnie wydane na świat. Wersja jest przełomowa, bo nie zawiera tylko usprawnień, czy aktualizacji. Niektóre z komponentów zostały zastąpione nowymi, bardziej nowoczesnymi. Pełny opis zmian umieszczono na stronie Ubuntu. Przedstawię po krótce tylko te, na które czekałem.-->
-
-# Ubuntu 9.10 Karmic Koala już jest!
-
-**Ubuntu 9.10 Karmic Koala** zostało dziś oficjalnie wydane na świat. Wersja jest przełomowa, bo nie zawiera tylko usprawnień, czy aktualizacji. Niektóre z komponentów zostały zastąpione nowymi, bardziej nowoczesnymi. Pełny opis zmian umieszczono na stronie [Ubuntu](http://www.ubuntu.com/getubuntu/releasenotes/910overview). Przedstawię po krótce tylko te, na które czekałem. 
+**Ubuntu 9.10 Karmic Koala** zostało dziś oficjalnie wydane na świat. Wersja jest przełomowa, bo nie zawiera tylko usprawnień, czy aktualizacji. Niektóre z komponentów zostały zastąpione nowymi, bardziej nowoczesnymi. Pełny opis zmian umieszczono na stronie [Ubuntu](http://www.ubuntu.com/getubuntu/releasenotes/910overview). Przedstawię po krótce tylko te, na które czekałem.
 
 ## Czas uruchamiania
 

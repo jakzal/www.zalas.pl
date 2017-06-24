@@ -15,11 +15,7 @@ comments: true
 tags: [symfony,php]
 ---
 
-<!--sfWebBrowser to klasa emulująca wywołania przeglądarki internetwej. Dzięki niej możemy zaprogramować nawigację po stronie www przy pomocy przyjemnego, obiektowego interfejsu. Odpowiedź może zostać zwrócona jako element SimpleXML, co umożliwia wykonywanie zapytań xpath na parsowanym dokumencie. Niestety strony www rzadko są poprawnymi dokumentami XML. W większości przypadków sfWebBrowser raczej wyrzuci wyjątek, niż zwróci coś interesującego. Jest jednak sposób, aby temu zaradzić.-->
-
-# Parsowanie stron internetowych z użyciem sfWebBrowser i SimpleXML
-
-[sfWebBrowser](http://www.symfony-project.org/plugins/sfWebBrowserPlugin) to klasa emulująca wywołania przeglądarki internetowej. Dzięki niej możemy zaprogramować nawigację po stronie www przy pomocy przyjemnego, obiektowego interfejsu. Odpowiedź może zostać zwrócona jako element [SimpleXML](http://pl2.php.net/simplexml), co umożliwia wykonywanie zapytań xpath na parsowanym dokumencie. Z łatwością możemy dostać część strony, która nas interesuje przy pomocy prostego wywołania: 
+[sfWebBrowser](http://www.symfony-project.org/plugins/sfWebBrowserPlugin) to klasa emulująca wywołania przeglądarki internetowej. Dzięki niej możemy zaprogramować nawigację po stronie www przy pomocy przyjemnego, obiektowego interfejsu. Odpowiedź może zostać zwrócona jako element [SimpleXML](http://pl2.php.net/simplexml), co umożliwia wykonywanie zapytań xpath na parsowanym dokumencie. Z łatwością możemy dostać część strony, która nas interesuje przy pomocy prostego wywołania:
     
     
     $xml->xpath('//table[@class="main"]//tr[@class="odd" or @class="even"]');

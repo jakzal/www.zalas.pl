@@ -19,13 +19,7 @@ expired: true
 comments: true
 ---
 
-<!--Symfony2 nie jest jeszcze skończone, a jego wydanie planowane jest na marzec tego roku. Nie mogąc już dłużej czekać, zacząłem bawić się tym frameworkiem nieco poważniej. 
-
-Ponieważ lubię wiedzieć co się dzieje, po kilku testach z gotowym szkieletem projektu (tzw sandbox) zapragnąłem wygenerować czysty. -->
-
-# Jak wygenerować czysty projekt Symfony2?
-
-[Symfony2](http://symfony-reloaded.org/) nie jest jeszcze skończone, a jego wydanie planowane jest na marzec tego roku. Nie mogąc już dłużej czekać, zacząłem bawić się tym frameworkiem nieco poważniej. Ponieważ lubię wiedzieć co się dzieje, po kilku testach z gotowym szkieletem projektu (tzw sandbox) zapragnąłem wygenerować czysty. **Uwaga:** opisywany tutaj symfony-bootstrapper został zarzucony i jest już nie utrzymywany. Jest już kilka artykułów na ten temat. Wszystkie opisują [symfony-bootstrapper](https://github.com/symfony/symfony-bootstrapper): 
+[Symfony2](http://symfony-reloaded.org/) nie jest jeszcze skończone, a jego wydanie planowane jest na marzec tego roku. Nie mogąc już dłużej czekać, zacząłem bawić się tym frameworkiem nieco poważniej. Ponieważ lubię wiedzieć co się dzieje, po kilku testach z gotowym szkieletem projektu (tzw sandbox) zapragnąłem wygenerować czysty. **Uwaga:** opisywany tutaj symfony-bootstrapper został zarzucony i jest już nie utrzymywany. Jest już kilka artykułów na ten temat. Wszystkie opisują [symfony-bootstrapper](https://github.com/symfony/symfony-bootstrapper):
 
   * [Make your own Symfony2 sandbox (the easy way)](http://www.webpragmatist.com/2010/11/make-your-own-symfony2-sandbox.html) (by [@webPragmatist](http://twitter.com/webPragmatist))
   * [Symfony2 project initialization](http://blog.bearwoods.dk/symfony2-project-initilization) (by [@henrikbjorn](http://twitter.com/henrikbjorn))

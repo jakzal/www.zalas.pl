@@ -15,13 +15,7 @@ comments: true
 tags: [ubuntu,sasc-ng]
 ---
 
-<!--Jak już kiedyś pisałem, sasc-ng pozwala na oglądanie kodowanych kanałów w dowolnej aplikacji obsługującej standard dvb. Sama aplikacja nie musi "wiedzieć", że kanał jest kodowany. Moduł jądra kompilowany z sasc-ng tworzy dodatkowe urządzenie, na którym dostępny jest odkodowany sygnał. Jedyne do czego musimy zmusić aplikację DVB, to wskazać właściwe urządzenie.
-
-Sasc-ng nie jest dostępny w oficjalnych repozytoriach Ubuntu, dlatego trzeba go skompilować.-->
-
-# Instalacja sasc-ng w Ubuntu 10.10
-
-![Matrix](/uploads/wp//2010/11/matrix.png) Źródło zdjęcia: http://picasaweb.google.com/lh/photo/JMArfIS7cNM4bAtfH4_blQ Jak [już kiedyś pisałem](/kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb), sasc-ng pozwala na oglądanie kodowanych kanałów w dowolnej aplikacji obsługującej standard dvb. Sama aplikacja nie musi "wiedzieć", że kanał jest kodowany. Moduł jądra kompilowany z sasc-ng tworzy dodatkowe urządzenie, na którym dostępny jest odkodowany sygnał. Jedyne do czego musimy zmusić aplikację DVB, to wskazać właściwe urządzenie. Sasc-ng nie jest dostępny w oficjalnych repozytoriach Ubuntu, dlatego trzeba go skompilować. 
+![Matrix](/uploads/wp//2010/11/matrix.png) Źródło zdjęcia: http://picasaweb.google.com/lh/photo/JMArfIS7cNM4bAtfH4_blQ Jak [już kiedyś pisałem](/kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb), sasc-ng pozwala na oglądanie kodowanych kanałów w dowolnej aplikacji obsługującej standard dvb. Sama aplikacja nie musi "wiedzieć", że kanał jest kodowany. Moduł jądra kompilowany z sasc-ng tworzy dodatkowe urządzenie, na którym dostępny jest odkodowany sygnał. Jedyne do czego musimy zmusić aplikację DVB, to wskazać właściwe urządzenie. Sasc-ng nie jest dostępny w oficjalnych repozytoriach Ubuntu, dlatego trzeba go skompilować.
 
 ## Instalacja zależności
 

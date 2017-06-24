@@ -15,11 +15,7 @@ comments: true
 tags: [bash]
 ---
 
-<!--Powierzono mi ostatnio zadanie uczynienia kompletnie niewydajnej strony www na tyle wydajną, aby dać zespołowi czas  na jej naprawienie. Nie znałem kodu i technologii wspomnianej aplikacji, nie miałem też wystarczającej ilości czasu na jej poznanie.-->
-
-# Cachowanie stron internetowych za pomocą skryptu bash i pliku .htaccess
-
-Powierzono mi ostatnio zadanie uczynienia kompletnie niewydajnej strony www na tyle wydajną, aby dać zespołowi czas  na jej naprawienie. Nie znałem kodu i technologii wspomnianej aplikacji, nie miałem też wystarczającej ilości czasu na jej poznanie. Głównym skutkiem działania aplikacji było wysokie obciążenie serwera przy stosunkowo niskiej ilości użytkowników. Jedną z przyczyn tego stanu była duża ilość dodatkowych żądań wykonywanych przez już załadowaną stronę. Każde jej wyświetlenie skutkowało kolejnymi połączeniami do serwera w celu pobrania kilku plików XML. Generowanie tych plików było kosztowne, a nie zmieniały się one zbyt często. Stanowiły idealny materiał do umieszczenia w cache'u. Moje rozwiązanie miało być napisane natychmiast i działać tylko tymczasowo. Szybko stworzyłem prosty skrypt w bashu, który sprostał zadaniu wyśmienicie. Skrypt analizuje logi apache i wyszukuje adresy URL, które powinny być cachowane. Znalezione podstrony zapisywane są na dysku. Oto cały skrypt: 
+Powierzono mi ostatnio zadanie uczynienia kompletnie niewydajnej strony www na tyle wydajną, aby dać zespołowi czas  na jej naprawienie. Nie znałem kodu i technologii wspomnianej aplikacji, nie miałem też wystarczającej ilości czasu na jej poznanie. Głównym skutkiem działania aplikacji było wysokie obciążenie serwera przy stosunkowo niskiej ilości użytkowników. Jedną z przyczyn tego stanu była duża ilość dodatkowych żądań wykonywanych przez już załadowaną stronę. Każde jej wyświetlenie skutkowało kolejnymi połączeniami do serwera w celu pobrania kilku plików XML. Generowanie tych plików było kosztowne, a nie zmieniały się one zbyt często. Stanowiły idealny materiał do umieszczenia w cache'u. Moje rozwiązanie miało być napisane natychmiast i działać tylko tymczasowo. Szybko stworzyłem prosty skrypt w bashu, który sprostał zadaniu wyśmienicie. Skrypt analizuje logi apache i wyszukuje adresy URL, które powinny być cachowane. Znalezione podstrony zapisywane są na dysku. Oto cały skrypt:
     
     
     #!/bin/bash

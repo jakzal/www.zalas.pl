@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu,postgresql]
 ---
 
-<!--PostgreSQL jest rozbudowanym i niezawodnym obiektowo-relacyjnym systemem baz danych. Stanowi doskonałą alternatywę dla popularnego MySQLa. PostgreSQL jest tak samo łatwy w obsłudze, sprawuje się lepiej i oferuje więcej.-->
-
-# Instalacja PostgreSQL w Ubuntu 10.04
-
-![PostgreSQL](/uploads/wp//2010/05/postgresql.png)[PostgreSQL](http://www.postgresql.org/) jest rozbudowanym i niezawodnym obiektowo-relacyjnym systemem baz danych. Stanowi doskonałą alternatywę dla popularnego MySQLa. PostgreSQL jest tak samo łatwy w obsłudze, sprawuje się lepiej i oferuje więcej. Instalacja PostgreSQL w Ubuntu sprowadza się do jednej komendy: 
+![PostgreSQL](/uploads/wp//2010/05/postgresql.png)[PostgreSQL](http://www.postgresql.org/) jest rozbudowanym i niezawodnym obiektowo-relacyjnym systemem baz danych. Stanowi doskonałą alternatywę dla popularnego MySQLa. PostgreSQL jest tak samo łatwy w obsłudze, sprawuje się lepiej i oferuje więcej. Instalacja PostgreSQL w Ubuntu sprowadza się do jednej komendy:
     
     
     sudo aptitude install postgresql

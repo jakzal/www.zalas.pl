@@ -19,11 +19,7 @@ expired: true
 comments: true
 ---
 
-<!--Został już tylko tydzień do tegorocznego Symfony Live w Paryżu. Już wiemy, że Symfony 2.0 nie ujrzy światła dziennego na konferencji. Możemy liczyć na stabilne API, jednak ostateczne wydanie planowane jest na koniec marca. Mimo to konferencja zapowiada się ekscytująco.-->
-
-# Tydzień przed Symfony Live 2011
-
-![Symfony Live](/uploads/wp//2011/02/symfony-live-logo.png)Został już tylko tydzień do tegorocznego [Symfony Live w Paryżu](http://www.symfony-live.com/paris). Już wiemy, że** Symfony 2.0** nie ujrzy światła dziennego na konferencji. Możemy liczyć na stabilne **API**, jednak ostateczne wydanie planowane jest na **koniec marca**. Mimo to konferencja zapowiada się **ekscytująco**. 
+![Symfony Live](/uploads/wp//2011/02/symfony-live-logo.png)Został już tylko tydzień do tegorocznego [Symfony Live w Paryżu](http://www.symfony-live.com/paris). Już wiemy, że** Symfony 2.0** nie ujrzy światła dziennego na konferencji. Możemy liczyć na stabilne **API**, jednak ostateczne wydanie planowane jest na **koniec marca**. Mimo to konferencja zapowiada się **ekscytująco**.
 
 ## Szkolenie (2 Marca)
 

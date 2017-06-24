@@ -15,11 +15,7 @@ comments: true
 tags: [nginx]
 ---
 
-<!--Zdecydowałem się przetetsować CMS o nazwie Symphony z dwóch powodów. Pierwszym były dokładnie określone fazy tworzenia stron internetowych, które wymusza sam CMS. Drugim powodem był oparty o XSLT system szablonów. Jak większość aplikacji PHP, Symphony zostało stworzone głównie z myślą o serwerze apache. Ponieważ od pewnego czasu preferuję używać nginx-a, napotkałem na małe problemy konfiguracyjne.-->
-
-# Symphony CMS na nginx
-
-Zdecydowałem się przetetsować CMS o nazwie [Symphony](http://symphony-cms.com/) z dwóch powodów. Pierwszym były dokładnie określone fazy tworzenia stron internetowych, które wymusza sam CMS. Drugim powodem był oparty o XSLT system szablonów. Jak większość aplikacji PHP, Symphony zostało stworzone głównie z myślą o serwerze apache. Ponieważ od pewnego czasu preferuję używać [nginx](http://nginx.net/)-a, napotkałem na małe problemy konfiguracyjne. Podczas instalacji Symphony tworzy plik .htaccess z regułkami dla czystych URLi. Oczywiste jest, że działa to tylko w apache'u. Regułki musiały zostać przetłumaczone na format akceptowany przez nginx i dodane do definicji wirtualnego hosta. Oto moja w pełni działająca konfiguracja dla domen obsługujących Symphony (powinna zostać umieszczona w sekcji http): 
+Zdecydowałem się przetetsować CMS o nazwie [Symphony](http://symphony-cms.com/) z dwóch powodów. Pierwszym były dokładnie określone fazy tworzenia stron internetowych, które wymusza sam CMS. Drugim powodem był oparty o XSLT system szablonów. Jak większość aplikacji PHP, Symphony zostało stworzone głównie z myślą o serwerze apache. Ponieważ od pewnego czasu preferuję używać [nginx](http://nginx.net/)-a, napotkałem na małe problemy konfiguracyjne. Podczas instalacji Symphony tworzy plik .htaccess z regułkami dla czystych URLi. Oczywiste jest, że działa to tylko w apache'u. Regułki musiały zostać przetłumaczone na format akceptowany przez nginx i dodane do definicji wirtualnego hosta. Oto moja w pełni działająca konfiguracja dla domen obsługujących Symphony (powinna zostać umieszczona w sekcji http):
     
     
     server {

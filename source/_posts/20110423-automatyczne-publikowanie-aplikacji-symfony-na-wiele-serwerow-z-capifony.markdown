@@ -21,11 +21,7 @@ expired: true
 comments: true
 ---
 
-<!--Capifony to zestaw recept Capistrano do publikowania aplikacji napisanych w symfony lub Symfony2. Multistage jest rozszerzeniem Capistrano. Ułatwia publikację kodu na kilka serwerów, które różnią się nieco konfiguracją lub procesem publikacji.-->
-
-# Automatyczne publikowanie aplikacji Symfony na wiele serwerów z Capifony
-
-**![](/uploads/wp/2011/04/Symfony2-capistrano-multistage-files-227x400.png)Capifony** to zestaw recept **Capistrano** do publikowania aplikacji napisanych w **symfony** lub **Symfony2**. **Multistage** jest rozszerzeniem Capistrano. Ułatwia publikację kodu na wiele serwerów, które różnią się nieco konfiguracją lub procesem publikacji. **Uwaga**: Jeśli nie znasz [capistrano](https://github.com/capistrano/capistrano/wiki) lub [capifony](http://capifony.org/) to jest właściwy moment, aby odwiedzić ich strony i poczytać o automatycznym publikowaniu kodu. O zaletach tego typu rozwiązań pisałem już w artykule[ "Automatyczne publikowanie aplikacji PHP](/automatyczne-publikowanie-aplikacji-php)". 
+**![](/uploads/wp/2011/04/Symfony2-capistrano-multistage-files-227x400.png)Capifony** to zestaw recept **Capistrano** do publikowania aplikacji napisanych w **symfony** lub **Symfony2**. **Multistage** jest rozszerzeniem Capistrano. Ułatwia publikację kodu na wiele serwerów, które różnią się nieco konfiguracją lub procesem publikacji. **Uwaga**: Jeśli nie znasz [capistrano](https://github.com/capistrano/capistrano/wiki) lub [capifony](http://capifony.org/) to jest właściwy moment, aby odwiedzić ich strony i poczytać o automatycznym publikowaniu kodu. O zaletach tego typu rozwiązań pisałem już w artykule[ "Automatyczne publikowanie aplikacji PHP](/automatyczne-publikowanie-aplikacji-php)".
 
 ## Dlaczego multistage?
 

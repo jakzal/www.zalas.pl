@@ -18,11 +18,7 @@ expired: true
 comments: true
 ---
 
-<!--Wciąż poznaję Symfony2. Nadszedł czas na wybranie i przetestowanie ORMa. Symfony2 jest wystarczająco elastyczne, aby współpracować z praktycznie dowolnym (nowoczesnym) PHPowym ORMem. Równocześnie dostajemy rozsądną domyślną opcję w postaci Doctrine2.-->
-
-# Doctrine2 i Symfony2
-
-![Symfony2 i Doctrine](/uploads/wp//2011/02/symfony2-doctrine-logos.png)Wciąż poznaję [Symfony2](http://symfony-reloaded.org/). Nadszedł czas na wybranie i przetestowanie** ORM**a. Symfony2 jest wystarczająco elastyczne, aby współpracować z praktycznie dowolnym (nowoczesnym) PHPowym ORMem. Równocześnie dostajemy rozsądną **domyślną opcję** w postaci [Doctrine2](http://www.doctrine-project.org/). Już dawno zrezygnowałem z Propela na rzecz Doctrine 1.2. Odkąd pojawiło się Doctrine 2.0, innych rozwiązań poważnie nie rozważam. Na dzień dzisiejszy Doctrine2 jest bezkonkurencyjny. Naukę zacząłem od zapisu i odczytu danych. **Uwaga**: Nie jest to tutorial, ale przegląd podstaw Doctrine2. Tutoriale możemy znaleźć w [dokumentacji Doctrine2](http://www.doctrine-project.org/docs/orm/2.0/en/#tutorials) i [Symfony2](http://docs.symfony-reloaded.org/guides/doctrine/orm/index.html). 
+![Symfony2 i Doctrine](/uploads/wp//2011/02/symfony2-doctrine-logos.png)Wciąż poznaję [Symfony2](http://symfony-reloaded.org/). Nadszedł czas na wybranie i przetestowanie** ORM**a. Symfony2 jest wystarczająco elastyczne, aby współpracować z praktycznie dowolnym (nowoczesnym) PHPowym ORMem. Równocześnie dostajemy rozsądną **domyślną opcję** w postaci [Doctrine2](http://www.doctrine-project.org/). Już dawno zrezygnowałem z Propela na rzecz Doctrine 1.2. Odkąd pojawiło się Doctrine 2.0, innych rozwiązań poważnie nie rozważam. Na dzień dzisiejszy Doctrine2 jest bezkonkurencyjny. Naukę zacząłem od zapisu i odczytu danych. **Uwaga**: Nie jest to tutorial, ale przegląd podstaw Doctrine2. Tutoriale możemy znaleźć w [dokumentacji Doctrine2](http://www.doctrine-project.org/docs/orm/2.0/en/#tutorials) i [Symfony2](http://docs.symfony-reloaded.org/guides/doctrine/orm/index.html).
 
 ## Utrwalanie danych
 

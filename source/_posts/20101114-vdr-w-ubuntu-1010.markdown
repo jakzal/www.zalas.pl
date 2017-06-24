@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu,vdr]
 ---
 
-<!--Jestem użytkownikiem VDR od lat. Do tej pory zwykle kompilowałem go ze źródeł. Nie jest to skomplikowany proces, ale od kiedy jestem także użytkownikiem Ubuntu zrobiłem się nieco leniwy. Przy okazji instalacji nowego wydania Ubuntu zainstalowałem VDR z pakietów dostępnych w dystrybucji.-->
-
-# VDR w Ubuntu 10.10
-
-![VDR w Ubuntu 10.10](/uploads/wp//2010/11/vdr-logo-ubuntu.jpg)Używam [VDR](http://www.tvdr.de/) od lat. Do tej pory zwykle kompilowałem go ze źródeł. Nie jest to skomplikowany proces, ale od kiedy jestem także użytkownikiem Ubuntu zrobiłem się nieco leniwy. Przy okazji instalacji nowego wydania Ubuntu zainstalowałem VDR z pakietów dostępnych w dystrybucji. 
+![VDR w Ubuntu 10.10](/uploads/wp//2010/11/vdr-logo-ubuntu.jpg)Używam [VDR](http://www.tvdr.de/) od lat. Do tej pory zwykle kompilowałem go ze źródeł. Nie jest to skomplikowany proces, ale od kiedy jestem także użytkownikiem Ubuntu zrobiłem się nieco leniwy. Przy okazji instalacji nowego wydania Ubuntu zainstalowałem VDR z pakietów dostępnych w dystrybucji.
 
 ## Instalacja
 

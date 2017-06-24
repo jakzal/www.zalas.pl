@@ -15,11 +15,7 @@ comments: true
 tags: [qt]
 ---
 
-<!--Kompilacja programu napisanego w Qt wymaga oczywiście instalacji tej biblioteki. Trzeba będzie także zainstalować MinGW (Minimalist GNU for Windows). Na stronie Trolltech dostępny jest instalator, który pobierze i zainstaluje od razu oba pakiety.-->
-
-# Kompilacja programów QT4 w Windows
-
-Kompilacja programu napisanego w [Qt](http://www.trolltech.com/products/qt) wymaga oczywiście instalacji tej biblioteki. Trzeba będzie także zainstalować [MinGW](http://www.mingw.org/) (Minimalist GNU for Windows). Na stronie [Trolltech](http://www.trolltech.com) dostępny jest [instalator](http://www.trolltech.com/developer/downloads/qt/windows), który pobierze i zainstaluje od razu oba pakiety. Po instalacji trzeba zadbać o to, aby Windows 'widział' nowe narzędzia i biblioteki. Musimy dodać do odpowiednich ścieżek wyszukiwania katalogi lib, include i bin zarówno [Qt](http://www.trolltech.com/products/qt) jak i [MinGW](http://www.mingw.org/). W Windows 2000/Xp można to zrobić klikając 'Mój Komputer' -> 'System' -> 'Zaawansowane' -> 'Zmienne systemowe'. Kolejne ścieżki dopisujemy po średniku. Przed pierwszą kompilacją trzeba utworzyć plik Makefile za pomocą 'qmake' (będąc w katalogu ze źródłami programu). Po tym wywołujemy 'mingw-make' i uruchamiamy plik powstały w katalogu bin. Źródła: 
+Kompilacja programu napisanego w [Qt](http://www.trolltech.com/products/qt) wymaga oczywiście instalacji tej biblioteki. Trzeba będzie także zainstalować [MinGW](http://www.mingw.org/) (Minimalist GNU for Windows). Na stronie [Trolltech](http://www.trolltech.com) dostępny jest [instalator](http://www.trolltech.com/developer/downloads/qt/windows), który pobierze i zainstaluje od razu oba pakiety. Po instalacji trzeba zadbać o to, aby Windows 'widział' nowe narzędzia i biblioteki. Musimy dodać do odpowiednich ścieżek wyszukiwania katalogi lib, include i bin zarówno [Qt](http://www.trolltech.com/products/qt) jak i [MinGW](http://www.mingw.org/). W Windows 2000/Xp można to zrobić klikając 'Mój Komputer' -> 'System' -> 'Zaawansowane' -> 'Zmienne systemowe'. Kolejne ścieżki dopisujemy po średniku. Przed pierwszą kompilacją trzeba utworzyć plik Makefile za pomocą 'qmake' (będąc w katalogu ze źródłami programu). Po tym wywołujemy 'mingw-make' i uruchamiamy plik powstały w katalogu bin. Źródła:
 
   1. <http://qtnode.net/wiki/Hello_World>
   2. <http://www.computerhope.com/issues/ch000549.htm>

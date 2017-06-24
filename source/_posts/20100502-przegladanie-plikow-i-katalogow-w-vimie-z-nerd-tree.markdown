@@ -15,11 +15,7 @@ comments: true
 tags: [vim]
 ---
 
-<!--Przeglądanie, otwieranie, zmiana nazwy, czy przenoszenie plików i katalogów to czynności wykonywane podczas codziennego pisania kodu. W popularnych IDE odbywa się to zwykle przy pomocy eksploratora plików. W vimie lubię używać do tego celu pluginu NERD tree.-->
-
-# Przeglądanie plików i katalogów w vimie z NERD tree
-
-Przeglądanie, otwieranie, zmiana nazwy, czy przenoszenie plików i katalogów to czynności wykonywane podczas codziennego pisania kodu. W popularnych IDE odbywa się to zwykle przy pomocy eksploratora plików. W vimie lubię używać do tego celu [pluginu NERD tree](http://www.vim.org/scripts/script.php?script_id=1658). 
+Przeglądanie, otwieranie, zmiana nazwy, czy przenoszenie plików i katalogów to czynności wykonywane podczas codziennego pisania kodu. W popularnych IDE odbywa się to zwykle przy pomocy eksploratora plików. W vimie lubię używać do tego celu [pluginu NERD tree](http://www.vim.org/scripts/script.php?script_id=1658).
 
 ![NERD tree - plugin vim](/uploads/wp//2010/05/nerdtree-400x275.png)
 

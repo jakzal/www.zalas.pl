@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Właśnie grałem w Frets on Fire - na tyle świetną grę, aby wciągnąć mnie na chwilę i napisać wpis na blogu. Nie zdarza mi się to często. Frets on Fire to klon Guitar Hero na PC (działa na Linuksie, Macu i Windows).-->
-
-# Frets on Fire, czyli Guitar Hero w Ubuntu 9.10 (Karmic Koala)
-
-Właśnie grałem w [Frets on Fire](http://fretsonfire.sourceforge.net/) \- na tyle świetną grę, aby wciągnąć mnie na chwilę i napisać wpis na blogu. Nie zdarza mi się to często. Frets on Fire to klon [Guitar Hero](http://hub.guitarhero.com/) na PC (działa na Linuksie, Macu i Windows). Gra jest dostępna w oficjalnych repozytoriach Ubuntu 9.10. Aby ją zainstalować, wystarczy użyć menadżera pakietów lub wpisać w konsoli: 
+Właśnie grałem w [Frets on Fire](http://fretsonfire.sourceforge.net/) \- na tyle świetną grę, aby wciągnąć mnie na chwilę i napisać wpis na blogu. Nie zdarza mi się to często. Frets on Fire to klon [Guitar Hero](http://hub.guitarhero.com/) na PC (działa na Linuksie, Macu i Windows). Gra jest dostępna w oficjalnych repozytoriach Ubuntu 9.10. Aby ją zainstalować, wystarczy użyć menadżera pakietów lub wpisać w konsoli:
     
     
     sudo aptitude install fretsonfire

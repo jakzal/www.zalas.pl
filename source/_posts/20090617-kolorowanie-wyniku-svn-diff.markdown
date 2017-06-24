@@ -15,11 +15,7 @@ comments: true
 tags: [bash]
 ---
 
-<!--Polecenie svn diff umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Ponieważ jego wyjście nie zawsze jest czytelne, możemy nieco ułatwić sobie pracę przez instalację colordiff. Program opakowuje polecenie diff i zwraca taki sam rezultat, jednak pokolorowany.-->
-
-# Kolorowanie wyniku svn diff
-
-Polecenie _svn diff_ umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Jego wyjście nie zawsze jest czytelne. Na początku zmienionych linii umieszczane są tylko  '+' (jeśli linia została dodana) lub '-' (jeśli została usunięta). 
+Polecenie _svn diff_ umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Jego wyjście nie zawsze jest czytelne. Na początku zmienionych linii umieszczane są tylko  '+' (jeśli linia została dodana) lub '-' (jeśli została usunięta).
 
 ![svn diff in black and white](/uploads/wp//2009/06/svn-diff-before-399x183.png)
 

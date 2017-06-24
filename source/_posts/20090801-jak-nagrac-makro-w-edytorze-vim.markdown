@@ -15,11 +15,7 @@ comments: true
 tags: [vim]
 ---
 
-<!--Makro to zestaw instrukcji wykonanych w jednym kroku. Podczas programowania makra pomagają nam na automatyzjację powtażalnych czynności, które stają się dzięki temu mniej nudne i podatne na błędy. Vim jako jeden z najpotężniejszych edytorów tekstu posiada tą funkcjonalność wbudowaną.-->
-
-# Jak nagrać makro w edytorze vim?
-
-[Makro](http://pl.wikipedia.org/wiki/Makro) to zestaw instrukcji wykonanych w jednym kroku. Podczas programowania makra pomagają nam na automatyzjację powtarzalnych czynności, które stają się dzięki temu mniej nudne i mniej podatne na błędy. [Vim](http://www.vim.org/) jako jeden z najpotężniejszych edytorów tekstu posiada tą funkcjonalność wbudowaną.  Aby nagrać makro: 
+[Makro](http://pl.wikipedia.org/wiki/Makro) to zestaw instrukcji wykonanych w jednym kroku. Podczas programowania makra pomagają nam na automatyzjację powtarzalnych czynności, które stają się dzięki temu mniej nudne i mniej podatne na błędy. [Vim](http://www.vim.org/) jako jeden z najpotężniejszych edytorów tekstu posiada tą funkcjonalność wbudowaną.  Aby nagrać makro:
 
   * wchodzimy w tryb nagrywania: _qa_
   * wykonujemy zestaw instrukcji jak zwykle: _(komendy vim)_

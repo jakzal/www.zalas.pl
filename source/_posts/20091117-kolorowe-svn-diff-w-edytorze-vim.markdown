@@ -15,11 +15,7 @@ comments: true
 tags: [vim]
 ---
 
-<!--Jakiś czas temu tłumaczyłem jak pokolorować wynik svn diff. Możemy uzyskać podobny rezultat przy pomocy vima. Druga metoda okazuje się wygodniejsza, gdy mamy do zatwierdzenia dużą ilość kodu.-->
-
-# Kolorowe svn diff w edytorze vim
-
-Jakiś czas temu tłumaczyłem [jak pokolorować wynik svn diff](/kolorowanie-wyniku-svn-diff). Możemy uzyskać podobny rezultat przy pomocy **vim**a. Druga metoda okazuje się wygodniejsza, gdy mamy do zatwierdzenia dużą ilość kodu. ![Wynik svn diff w edytorze vim](/uploads/wp//2009/11/vim-diff-400x168.png) Wszystko co musimy zrobić to przekierować wynik _svn diff_ na wejście _view_: 
+Jakiś czas temu tłumaczyłem [jak pokolorować wynik svn diff](/kolorowanie-wyniku-svn-diff). Możemy uzyskać podobny rezultat przy pomocy **vim**a. Druga metoda okazuje się wygodniejsza, gdy mamy do zatwierdzenia dużą ilość kodu. ![Wynik svn diff w edytorze vim](/uploads/wp//2009/11/vim-diff-400x168.png) Wszystko co musimy zrobić to przekierować wynik _svn diff_ na wejście _view_:
     
     
     svn diff lib/zWebBrowser.class.php | view -

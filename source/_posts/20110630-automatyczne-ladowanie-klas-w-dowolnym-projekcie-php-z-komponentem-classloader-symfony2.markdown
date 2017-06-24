@@ -20,10 +20,6 @@ expired: true
 comments: true
 ---
 
-<!--ClassLoader to komponent Symfony2, który odpowiada za automatyczne ładowanie klas zgodnie ze standardem PSR-0. Poza współpracą z kodem używającym przestrzeni nazw (ang. namespace), działa ze staromodnym już standardem PEAR (używanym też w Zendzie). Komponent sprawdza się równie dobrze poza Symfony.-->
-
-# Automatyczne ładowanie klas w dowolnym projekcie PHP z komponentem ClassLoader Symfony2
-
 [ClassLoader](https://github.com/symfony/ClassLoader) to komponent [Symfony2](http://symfony.com), który odpowiada za automatyczne ładowanie klas zgodnie ze [standardem PSR-0](http://groups.google.com/group/php-standards/web/psr-0-final-proposal). Poza współpracą z kodem używającym przestrzeni nazw (ang. namespace), działa ze staromodnym już [standardem PEAR](http://pear.php.net/manual/en/standards.naming.php) (używanym też w Zendzie). Komponent sprawdza się równie dobrze poza Symfony. **Uwaga**: Kod tworzony w tym wpisie jest dostępny na githubie: <https://github.com/jakzal/SymfonyComponentsExamples>
 
 ## Instalacja

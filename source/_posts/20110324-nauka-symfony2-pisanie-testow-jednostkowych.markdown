@@ -20,13 +20,7 @@ expired: true
 comments: true
 ---
 
-<!--Podczas Hacking Day na Symfony Live postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla Symfony2. Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że pisanie testów dla istniejącego kodu może sprawić tyle radości.
-
-Odkryłem też, że testowanie jest doskonałą metodą na naukę Symfony2.-->
-
-# Nauka Symfony2 przez pisanie testów jednostkowych
-
-![](/uploads/wp/2011/03/unit-testing.png) Podczas Hacking Day na [Symfony Live](/symfony-live-2011) postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla [Symfony2](http://symfony.com). Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że ich pisanie dla istniejącego kodu może sprawić tyle radości. Odkryłem też, że jest to doskonała metoda na naukę Symfony2. 
+![](/uploads/wp/2011/03/unit-testing.png) Podczas Hacking Day na [Symfony Live](/symfony-live-2011) postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla [Symfony2](http://symfony.com). Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że ich pisanie dla istniejącego kodu może sprawić tyle radości. Odkryłem też, że jest to doskonała metoda na naukę Symfony2.
 
 ## Testuj i ucz się
 

@@ -15,12 +15,7 @@ comments: true
 tags: [gentoo]
 ---
 
-<!--Oracle wspiera instalację swojej bazy danych tylko na niektórych dystrybucjach (np RedHat, SUSE). Wystarczy jednak odpowiednio przygotować system, aby dział na praktycznie każdej nowoczesnej dystrybucji. Przedstawiam opis bazujący na Gentoo, ale w podobny sposób zrobiłem to w Fedorze.
--->
-
-# Instalacja Oracle 10g w Gentoo
-
-[Oracle](http://pl.wikipedia.org/wiki/Oracle_%28baza_danych%29) wspiera instalację swojej bazy danych tylko na niektórych dystrybucjach (np [RedHat](http://www.redhat.com/), [SUSE](http://www.novell.com/linux/)). Wystarczy jednak odpowiednio przygotować system, aby dział na praktycznie każdej nowoczesnej dystrybucji. Przedstawiam opis bazujący na [Gentoo](http://www.gentoo.org), ale w podobny sposób zrobiłem to w [Fedorze](http://fedoraproject.org/). 
+[Oracle](http://pl.wikipedia.org/wiki/Oracle_%28baza_danych%29) wspiera instalację swojej bazy danych tylko na niektórych dystrybucjach (np [RedHat](http://www.redhat.com/), [SUSE](http://www.novell.com/linux/)). Wystarczy jednak odpowiednio przygotować system, aby dział na praktycznie każdej nowoczesnej dystrybucji. Przedstawiam opis bazujący na [Gentoo](http://www.gentoo.org), ale w podobny sposób zrobiłem to w [Fedorze](http://fedoraproject.org/).
 
 ## Użytkownik oracle
 

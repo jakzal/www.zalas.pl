@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu,mysql]
 ---
 
-<!--MySQL to jednen z popularniejszych relacyjnych systemów baz danych, który jest szeroko stosowany przy budowie aplikacji PHP. Jest dość łatwy w konfiguracji i obsłudze. Oto krótki opis instalacji MySQL w najnowszej wersji Ubuntu. -->
-
-# Instalacja MySQL w Ubuntu 10.04
-
-![MySQL](/uploads/wp//2010/05/logo-mysql-110x57.png)[MySQL](http://www.mysql.com/) to jednen z popularniejszych relacyjnych systemów baz danych, który jest szeroko stosowany przy budowie aplikacji PHP. Jest dość łatwy w konfiguracji i obsłudze. Oto krótki opis instalacji MySQL w najnowszej wersji Ubuntu. Serwer MySQL instalujemy krótkim poleceniem: 
+![MySQL](/uploads/wp//2010/05/logo-mysql-110x57.png)[MySQL](http://www.mysql.com/) to jednen z popularniejszych relacyjnych systemów baz danych, który jest szeroko stosowany przy budowie aplikacji PHP. Jest dość łatwy w konfiguracji i obsłudze. Oto krótki opis instalacji MySQL w najnowszej wersji Ubuntu. Serwer MySQL instalujemy krótkim poleceniem:
     
     
     sudo aptitude install mysql-server

@@ -15,10 +15,6 @@ comments: true
 tags: [web]
 ---
 
-<!--Nie jeden webmaster klął na Microsoft&copy; za nieprawidłowe wyświetlanie przezroczystości plików PNG w przeglądarkach Internet Explorer - zamiast niej otrzymujemy szare tło. Jedyne co pozostaje to zastosować GIFa, który rzadko się do tego nadaje. Przezroczyste pliki GIF często są poszarpane, a ich jakość jest oczywiście niższa - to dlatego, że ich przezroczystość ma tylko 8 bitów. Myślałem, że tego nie da się obeść w inny sposób niż zaczekać aż IE będzie niszową, mało znaczącą przeglądarką, albo zostanie wypuszczona jego nowa, poprawiona wersja. A jednak...-->
-
-# Nieprawidłowe wyświetlanie plików PNG w MS Internet Explorer
-
 Nie jeden webmaster klął na Microsoft© za nieprawidłowe wyświetlanie przezroczystości plików [PNG](http://pl.wikipedia.org/wiki/Png) w przeglądarkach Internet Explorer - zamiast niej otrzymujemy szare tło. Jedyne co pozostaje to zastosować [GIF](http://pl.wikipedia.org/wiki/GIF)a, który rzadko się do tego nadaje. Przezroczyste pliki GIF często są poszarpane, a ich jakość jest oczywiście niższa - to dlatego, że ich przezroczystość ma tylko 8 bitów. Myślałem, że tego nie da się obeść w inny sposób niż zaczekać aż IE będzie niszową, mało znaczącą przeglądarką, albo zostanie wypuszczona jego nowa, poprawiona wersja. A jednak... Zostałem mile zaskoczony, gdy dowiedziałem się, że jest możliwe zmusić IE do prawidłowego pokazania plików PNG :D Do tego jest to bardzo proste i sprowadza się do wywołania specjalnego kodu JavaScript. Kod ten jest pomijany przez inne przeglądarki. Rozwiązanie niemal idealne ;) W osobnym pliku js umieszczamy poniższy kod: 
     
     

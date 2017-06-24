@@ -15,10 +15,6 @@ comments: true
 tags: [symfony,php,apc]
 ---
 
-<!--Do niedawna byłem wyłącznie użytkownikiem XCache (jeśli chodzi o akceleratory PHP). Ostatnio potrzebowałem użyć APC w aplikacji symfony. Poszło mi całkiem gładko jako, że framework bardzo ładnie integruje się z najpopularniejszymi rozwiązaniami tego typu.-->
-
-# Symfony i APC
-
 Do niedawna byłem wyłącznie użytkownikiem [XCache](http://xcache.lighttpd.net/) (jeśli chodzi o akceleratory PHP). Ostatnio potrzebowałem użyć [APC](http://php.net/apc) w aplikacji symfony. Poszło mi całkiem gładko jako, że framework bardzo ładnie integruje się z najpopularniejszymi rozwiązaniami tego typu.****
 
 ## Akceleratory PHP w symfony

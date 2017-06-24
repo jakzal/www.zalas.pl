@@ -15,11 +15,7 @@ comments: true
 tags: [symfony,konferencja]
 ---
 
-<!--W dniach 16-17 lutego odbyła się pierwsza międzynarodowa konferencja Symfony Live. Była to nie lada gratka dla użytkowników frameworka symfony, w której miałem wielką przyjemność uczestniczyć. Wiele ciekawych rzeczy dzieje się obecnie wokół symfony (i Symfony (;). Oto skrót z tego co wydarzyło się na konferencji, a także przedsmak tego co nas czeka w niedalekiej przyszłości.-->
-
-# Symfony Live 2010
-
-![sflive2010](/uploads/wp//2010/02/sflive2010.png)W dniach 16-17 lutego w Paryżu odbyła się pierwsza, międzynarodowa konferencja [Symfony Live](http://www.symfony-live.com/). Była to nie lada gratka dla użytkowników  frameworka [symfony](http://www.symfony-project.org/), w której miałem wielką przyjemność uczestniczyć. Wiele ciekawych rzeczy dzieje się obecnie wokół symfony (i Symfony (;). Oto skrót z tego co wydarzyło się na konferencji, a także przedsmak tego co nas czeka w niedalekiej przyszłości. 
+![sflive2010](/uploads/wp//2010/02/sflive2010.png)W dniach 16-17 lutego w Paryżu odbyła się pierwsza, międzynarodowa konferencja [Symfony Live](http://www.symfony-live.com/). Była to nie lada gratka dla użytkowników  frameworka [symfony](http://www.symfony-project.org/), w której miałem wielką przyjemność uczestniczyć. Wiele ciekawych rzeczy dzieje się obecnie wokół symfony (i Symfony (;). Oto skrót z tego co wydarzyło się na konferencji, a także przedsmak tego co nas czeka w niedalekiej przyszłości.
 
 ## CMS w symfony
 

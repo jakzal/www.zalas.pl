@@ -15,11 +15,7 @@ comments: true
 tags: [vim]
 ---
 
-<!--Dzięki exuberant ctags możemy skakać do definicji klas, metod, zmiennych i innych konstrukcji językowych w vimie. Narzędzie potrafi wygenerować plik z indeksem słów kluczowych (tagów) dla jednego spośród 41 wspieranych języków programowania. Indeks ten jest używany w edytorach typu vim do szybkiego odnajdywania powiązanych słów kluczowych.-->
-
-# Skakanie do definicji klas, metod i zmiennych w vimie przy pomocy exuberant ctags
-
-Dzięki [exuberant ctags](http://ctags.sourceforge.net/) możemy skakać do definicji klas, metod, zmiennych i innych konstrukcji językowych w **vim**ie. Narzędzie potrafi wygenerować plik z indeksem słów kluczowych (tagów) dla jednego spośród [41 wspieranych języków programowania](http://ctags.sourceforge.net/languages.html). Indeks ten jest używany w edytorach typu vim do szybkiego odnajdywania powiązanych słów. 
+Dzięki [exuberant ctags](http://ctags.sourceforge.net/) możemy skakać do definicji klas, metod, zmiennych i innych konstrukcji językowych w **vim**ie. Narzędzie potrafi wygenerować plik z indeksem słów kluczowych (tagów) dla jednego spośród [41 wspieranych języków programowania](http://ctags.sourceforge.net/languages.html). Indeks ten jest używany w edytorach typu vim do szybkiego odnajdywania powiązanych słów.
 
 ## Instalacja
 

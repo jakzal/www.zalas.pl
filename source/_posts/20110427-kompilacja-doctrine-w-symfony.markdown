@@ -18,11 +18,7 @@ expired: true
 comments: true
 ---
 
-<!--Z reguły przy profilowaniu aplikacji symfony 1.x wychodzi, że budowanie obiektów przez Doctrine jest jedną z bardziej pracochłonnych operacji. Ostatnio miałem ciekawszy przypadek. Znaczącą część czasu wykonania skryptu zajmowało ładowanie klas ORMa (require_once!). W normalnych warunkach tego typu operacje są prawie niewidoczne.-->
-
-# Kompilacja Doctrine w symfony 1.4
-
-![](/uploads/wp/2011/04/doctrine.png) Z reguły przy profilowaniu aplikacji symfony 1.x wychodzi, że budowanie obiektów przez Doctrine jest jedną z bardziej pracochłonnych operacji. Ostatnio miałem ciekawszy przypadek. Znaczącą część czasu wykonania skryptu zajmowało ładowanie klas ORMa (_require_once_!). W normalnych warunkach tego typu operacje są prawie niewidoczne. Z pomocą przyszedł mechanizm kompilacji, który łączy pliki z głównymi klasami Doctrine w jeden. Dzięki temu większość klas potrzebnych Doctrine podczas żądania załączanych jest tylko raz. W pluginie [sfTaskExtraPlugin](http://www.symfony-project.org/plugins/sfTaskExtraPlugin) znajdziemy task _doctrine:compile_, który realizuje to zadanie. **Notatka**:  serwer, na którym zainstalowano wspomnianą aplikację miał więcej problemów (np źle skonfigurowane APC). Uwydatniły one problem wolnego ładowania klas. Nie mniej jednak kompilacja miała swój wkład w poprawę wydajności. 
+![](/uploads/wp/2011/04/doctrine.png) Z reguły przy profilowaniu aplikacji symfony 1.x wychodzi, że budowanie obiektów przez Doctrine jest jedną z bardziej pracochłonnych operacji. Ostatnio miałem ciekawszy przypadek. Znaczącą część czasu wykonania skryptu zajmowało ładowanie klas ORMa (_require_once_!). W normalnych warunkach tego typu operacje są prawie niewidoczne. Z pomocą przyszedł mechanizm kompilacji, który łączy pliki z głównymi klasami Doctrine w jeden. Dzięki temu większość klas potrzebnych Doctrine podczas żądania załączanych jest tylko raz. W pluginie [sfTaskExtraPlugin](http://www.symfony-project.org/plugins/sfTaskExtraPlugin) znajdziemy task _doctrine:compile_, który realizuje to zadanie. **Notatka**:  serwer, na którym zainstalowano wspomnianą aplikację miał więcej problemów (np źle skonfigurowane APC). Uwydatniły one problem wolnego ładowania klas. Nie mniej jednak kompilacja miała swój wkład w poprawę wydajności.
 
 ## Instalacja sfTaskExtraPlugin
     

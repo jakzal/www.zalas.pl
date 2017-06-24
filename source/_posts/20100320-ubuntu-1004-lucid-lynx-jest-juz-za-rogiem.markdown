@@ -15,10 +15,6 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Wczoraj wydano pierwszą wersję beta Ubuntu 10.04 (Lucid Lynx). Postanowiłem ją przetestować i zaktualizowałem swój biurkowy komputer, na którym uchowało się jeszcze Ubuntu 9.04.-->
-
-# Ubuntu 10.04 Lucid Lynx jest już tuż za rogiem
-
 ![Ubuntu Logo](/uploads/wp/2010/03/blackeubuntulogo-400x105.png)
 
 Wczoraj [wydano pierwszą wersję ](http://fridge.ubuntu.com/node/1998)**[beta Ubuntu 10.04](http://fridge.ubuntu.com/node/1998)** (_Lucid Lynx_). Postanowiłem ją przetestować i zaktualizowałem swój biurkowy komputer, na którym uchowało się jeszcze Ubuntu 9.04. 

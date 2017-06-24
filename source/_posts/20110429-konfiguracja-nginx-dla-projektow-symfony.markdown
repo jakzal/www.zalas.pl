@@ -20,11 +20,7 @@ expired: true
 comments: true
 ---
 
-<!--Z okazji wydania wersji 1.0.0 odświeżyłem nieco swoją wiedzę o Nginx. Od czasu, kiedy po raz pierwszy go konfigurowałem, wzbogacił się o kilka nowych dyrektyw i zmiennych. Dzięki temu mogłem uprościć swoją konfigurację dla projektów Symfony (zarówno symfony 1.x jak i Symfony2).-->
-
-# Konfiguracja Nginx dla projektów Symfony
-
-![](/uploads/wp/2011/04/nginx-symfony.png)Z okazji wydania wersji 1.0.0 odświeżyłem nieco swoją wiedzę o Nginx. Od czasu, kiedy po raz pierwszy go konfigurowałem, wzbogacił się o kilka nowych dyrektyw i zmiennych. Dzięki temu mogłem uprościć swoją konfigurację dla projektów Symfony (zarówno symfony 1.x jak i Symfony2). **Uwaga:** Konfiguracje dostępne w Internecie podatne są na wykonanie pliku niePHPowego jako PHP. Więcej o problemie w "[Setting up PHP-FastCGI and nginx? Don’t trust the tutorials: check your configuration!](https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/)". O samej instalacji Nginx w Ubuntu przeczytacie w "[Konfiguracji środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04](/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104)". 
+![](/uploads/wp/2011/04/nginx-symfony.png)Z okazji wydania wersji 1.0.0 odświeżyłem nieco swoją wiedzę o Nginx. Od czasu, kiedy po raz pierwszy go konfigurowałem, wzbogacił się o kilka nowych dyrektyw i zmiennych. Dzięki temu mogłem uprościć swoją konfigurację dla projektów Symfony (zarówno symfony 1.x jak i Symfony2). **Uwaga:** Konfiguracje dostępne w Internecie podatne są na wykonanie pliku niePHPowego jako PHP. Więcej o problemie w "[Setting up PHP-FastCGI and nginx? Don’t trust the tutorials: check your configuration!](https://nealpoole.com/blog/2011/04/setting-up-php-fastcgi-and-nginx-dont-trust-the-tutorials-check-your-configuration/)". O samej instalacji Nginx w Ubuntu przeczytacie w "[Konfiguracji środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04](/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104)".
 
 ## Konfiguracja
 

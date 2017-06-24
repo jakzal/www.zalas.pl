@@ -15,11 +15,7 @@ comments: true
 tags: [php]
 ---
 
-<!--PHP 5.3 zostało wydane. Wersja była długo oczekiwana z uwagi na wiele usprawnień, nowych funkcjonalności i poprawionych błędów. PHP 5.3 to prawie 6, tylko bez wsparcia dla Unicode. Oto lista rzeczy, na które szczególnie czekałem lub wydały mi się interesujące.-->
-
-# PHP 5.3 zostało wydane
-
-[PHP 5.3 zostało wydane](http://php.net/releases/5_3_0.php). Wersja była długo oczekiwana z uwagi na wiele usprawnień, nowych funkcjonalności i poprawionych błędów. PHP 5.3 to prawie 6, tylko bez wsparcia dla Unicode. Oto lista rzeczy, na które szczególnie czekałem lub wydały mi się interesujące. 
+[PHP 5.3 zostało wydane](http://php.net/releases/5_3_0.php). Wersja była długo oczekiwana z uwagi na wiele usprawnień, nowych funkcjonalności i poprawionych błędów. PHP 5.3 to prawie 6, tylko bez wsparcia dla Unicode. Oto lista rzeczy, na które szczególnie czekałem lub wydały mi się interesujące.
 
 ## Opcjonalny odśmiecacz pamięci
 

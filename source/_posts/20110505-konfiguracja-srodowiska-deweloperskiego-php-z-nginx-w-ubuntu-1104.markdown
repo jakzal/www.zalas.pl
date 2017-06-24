@@ -20,11 +20,7 @@ expired: true
 comments: true
 ---
 
-<!--Opisywałem już jak przygotować PHP do pracy z Nginx w Ubuntu 10.04. W Ubuntu 11.04 (Natty Narwhal) procedura jest dużo prostsza za sprawą PHP 5.3 i obecnego w nim php-fpm. Ponieważ w międzyczasie udało mi się też ulepszyć swoją konfigurację Nginx dla PHP, postanowiłem opisać temat jeszcze raz.-->
-
-# Konfiguracja środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04
-
-![](/uploads/wp/2011/05/nginx-php.png)Opisywałem już [jak przygotować PHP do pracy z Nginx w Ubuntu 10.04](/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004). W Ubuntu **11.04** (Natty Narwhal) procedura jest dużo prostsza za sprawą **PHP 5.3** i obecnego w nim [php-fpm](http://pl.php.net/manual/en/install.fpm.php). Ponieważ w międzyczasie udało mi się też ulepszyć swoją konfigurację **Nginx** dla PHP, postanowiłem opisać temat jeszcze raz. 
+![](/uploads/wp/2011/05/nginx-php.png)Opisywałem już [jak przygotować PHP do pracy z Nginx w Ubuntu 10.04](/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004). W Ubuntu **11.04** (Natty Narwhal) procedura jest dużo prostsza za sprawą **PHP 5.3** i obecnego w nim [php-fpm](http://pl.php.net/manual/en/install.fpm.php). Ponieważ w międzyczasie udało mi się też ulepszyć swoją konfigurację **Nginx** dla PHP, postanowiłem opisać temat jeszcze raz.
 
 ## PHP
 

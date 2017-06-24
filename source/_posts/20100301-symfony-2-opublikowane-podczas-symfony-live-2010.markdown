@@ -15,11 +15,7 @@ comments: true
 tags: [symfony,konferencja,Symfony2]
 ---
 
-<!--Podczas pierwszej międzynarodowej konferencji Symfony Live, Fabien Potencier upublicznił Symfony 2. Nowoczesne podejście i sprawdzone praktyki, podpatrzone w innych pierwszoligowych projektach Open Source, tworzą wybuchową miksturę, która ma szansę zrewolucjonizować świat PHP.-->
-
-# Symfony 2 opublikowane (podczas Symfony Live 2010)
-
-Podczas pierwszej międzynarodowej konferencji [Symfony Live](/symfony-live-2010), Fabien Potencier upublicznił **Symfony 2**. Nowoczesne podejście i sprawdzone praktyki, podpatrzone w innych pierwszoligowych projektach Open Source, tworzą wybuchową miksturę, która ma szansę zrewolucjonizować świat PHP. Stabilna wersja planowana jest na koniec 2010 roku. Mimo to framework już wygląda imponująco. **Symfony zyskuje duże 'S'!** Oto szybki przegląd frameworka nowej generacji. 
+Podczas pierwszej międzynarodowej konferencji [Symfony Live](/symfony-live-2010), Fabien Potencier upublicznił **Symfony 2**. Nowoczesne podejście i sprawdzone praktyki, podpatrzone w innych pierwszoligowych projektach Open Source, tworzą wybuchową miksturę, która ma szansę zrewolucjonizować świat PHP. Stabilna wersja planowana jest na koniec 2010 roku. Mimo to framework już wygląda imponująco. **Symfony zyskuje duże 'S'!** Oto szybki przegląd frameworka nowej generacji.
 
 ## Zabijając magię
 

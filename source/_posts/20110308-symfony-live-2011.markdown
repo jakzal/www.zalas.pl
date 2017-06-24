@@ -19,11 +19,7 @@ expired: true
 comments: true
 ---
 
-<!--Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji Symfony Live. Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują).-->
-
-# Symfony Live 2011
-
-![Symfony Live 2011 Paris](/uploads/wp//2011/03/symfony-live-2011-paris.png)Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji [Symfony Live](http://www.symfony-live.com/). Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują). 
+![Symfony Live 2011 Paris](/uploads/wp//2011/03/symfony-live-2011-paris.png)Piszę tego posta w drodze powrotnej z drugiej już, międzynarodowej konferencji [Symfony Live](http://www.symfony-live.com/). Do Paryża zjechało około 500 programistów z całego świata. Naliczyłem 8 osób z Polski (podejrzewam, że było nas więcej; zauważyłem, że Polacy słabo się integrują).
 
 ## Wykłady
 

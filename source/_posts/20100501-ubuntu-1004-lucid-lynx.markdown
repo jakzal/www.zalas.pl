@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Stabilne Ubuntu 10.04 Lucid Lynx ujrzało światło dzienne dwa dni temu. Wczoraj zagościło na moim laptopie. Ponieważ wcześniej używałem wersji beta, wiedziałem czego się spodziewać. I nie zawiodłem się.-->
-
-# Ubuntu 10.04 Lucid Lynx
-
-![Ubuntu Logo](/uploads/wp//2010/05/ubuntulogo-circle.png)Stabilne Ubuntu 10.04 Lucid Lynx ujrzało światło dzienne dwa dni temu. Wczoraj zagościło na moim laptopie. Ponieważ wcześniej [używałem wersji beta](/ubuntu-1004-lucid-lynx-jest-juz-za-rogiem), wiedziałem czego się spodziewać. I nie zawiodłem się. 
+![Ubuntu Logo](/uploads/wp//2010/05/ubuntulogo-circle.png)Stabilne Ubuntu 10.04 Lucid Lynx ujrzało światło dzienne dwa dni temu. Wczoraj zagościło na moim laptopie. Ponieważ wcześniej [używałem wersji beta](/ubuntu-1004-lucid-lynx-jest-juz-za-rogiem), wiedziałem czego się spodziewać. I nie zawiodłem się.
 
 ## Nowy Wygląd
 

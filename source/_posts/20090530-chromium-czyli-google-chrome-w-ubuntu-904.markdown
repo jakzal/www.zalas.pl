@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Chromium to projekt umożliwiający uruchomienie przeglądarki Google Chrome w Linuksie. W repozytoriach launchpad dostępne są źródła dla Ubuntu, dzięki czemu instalacja sprowadza się do rutynowych kroków: dodanie źródeł oprogramowania i klucza do autoryzacji, aktualizacja pakietów i zainstalowanie aplikacji.-->
-
-# Chromium, czyli Google Chrome w Ubuntu 9.04
-
-[Chromium](http://chromium.org/) to projekt umożliwiający uruchomienie przeglądarki Google Chrome w Linuksie. W repozytoriach [launchpad](https://launchpad.net/chromium-project) dostępne są [źródła dla Ubuntu](https://launchpad.net/~chromium-daily/+archive/ppa), dzięki czemu instalacja sprowadza się do rutynowych kroków: dodanie źródeł oprogramowania i klucza do autoryzacji, aktualizacja pakietów i zainstalowanie aplikacji. **Uwaga**: Opis instalacji w Ubuntu 9.10 (Karmic Koala) w poście "[Chromium, czyli Google Chrome w Ubuntu 9.10 (Karmic Koala)](/chromium-czyli-google-chrome-w-ubuntu-910-karmic-koala)". 
+[Chromium](http://chromium.org/) to projekt umożliwiający uruchomienie przeglądarki Google Chrome w Linuksie. W repozytoriach [launchpad](https://launchpad.net/chromium-project) dostępne są [źródła dla Ubuntu](https://launchpad.net/~chromium-daily/+archive/ppa), dzięki czemu instalacja sprowadza się do rutynowych kroków: dodanie źródeł oprogramowania i klucza do autoryzacji, aktualizacja pakietów i zainstalowanie aplikacji. **Uwaga**: Opis instalacji w Ubuntu 9.10 (Karmic Koala) w poście "[Chromium, czyli Google Chrome w Ubuntu 9.10 (Karmic Koala)](/chromium-czyli-google-chrome-w-ubuntu-910-karmic-koala)".
 
 ![Przeglądarka Chromium](/uploads/wp/2009/05/chromium-goyello-400x291.png)
 

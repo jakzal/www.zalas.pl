@@ -15,11 +15,7 @@ comments: true
 tags: [symfony]
 ---
 
-<!--Jeśli w taskach symfony spróbujemy użyć kontekstu poprzez wywołanie sfContext::getInstance(), otrzymamy wyjątek klasy sfException z komunikatem 'The "default" context does not exist'. Klasa sfContext reprezentuje kontekst aplikacji i dlatego nie jest on inicjowany w linii poleceń. Dobrą praktyką jest NIE używanie sfContext::getInstance(). Zdarza się niestety, że nie mamy innego wyboru (np. gdy korzystamy z obcego pluginu).-->
-
-# Wyjątek 'The "default" context does not exist.' w linii poleceń symfony
-
-Jeśli w taskach symfony spróbujemy użyć kontekstu poprzez wywołanie _sfContext::getInstance()_, otrzymamy wyjątek klasy _sfException_ z komunikatem '_The "default" context does not exist'._ Klasa _sfContext_ reprezentuje **kontekst aplikacji** i dlatego nie jest on inicjowany w linii poleceń. **Dobrą praktyką jest NIE używanie _sfContext::getInstance()._** Zdarza się niestety, że nie mamy innego wyboru (np. gdy korzystamy z obcego pluginu). 
+Jeśli w taskach symfony spróbujemy użyć kontekstu poprzez wywołanie _sfContext::getInstance()_, otrzymamy wyjątek klasy _sfException_ z komunikatem '_The "default" context does not exist'._ Klasa _sfContext_ reprezentuje **kontekst aplikacji** i dlatego nie jest on inicjowany w linii poleceń. **Dobrą praktyką jest NIE używanie _sfContext::getInstance()._** Zdarza się niestety, że nie mamy innego wyboru (np. gdy korzystamy z obcego pluginu).
 
 ![Default context does not exist](/uploads/wp//2009/10/task-default-context-exception.png)
 

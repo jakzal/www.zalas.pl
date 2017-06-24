@@ -15,11 +15,7 @@ comments: true
 tags: [ubuntu]
 ---
 
-<!--Google Chrome nie jest jeszcze dostępny pod Linuksem. Jest za to Chromium, czyli przeglądarka Open Source na bazie której zbudowany jest Chrome. Właściwe to obie aplikacje odróżnia tylko logo.-->
-
-# Chromium, czyli Google Chrome w Ubuntu 9.10 (Karmic Koala)
-
-[Google Chrome](http://www.google.com/chrome) nie jest jeszcze dostępny pod Linuksem. Jest za to [Chromium](http://www.chromium.org/), czyli przeglądarka Open Source na bazie której zbudowany jest Chrome. Właściwe to obie aplikacje odróżnia tylko logo. ![Chromium - Google Chrome w Ubuntu 9.10 \(Karmic Koala\)](/uploads/wp//2009/10/chromium-400x284.png) W [repozytoriach launchpad](https://launchpad.net/chromium-browser) dostępne są [codzinnie budowane pakiety Chromium](https://edge.launchpad.net/~chromium-daily/+archive/ppa). Proces jest automatyczny, więc nie są one przetestowane i bywa, że są zepsute. Używałem ich jednak jeszcze w Ubuntu 9.04 i nie napotkałem na żadne poważne problemy. Ponieważ w **Ubuntu 9.10** proces instalacji stał się nawet prostszy, zachęcam do testów. W **Karmic Koala** nie musimy więcej edytować pliku _/etc/apt/sources.list_, aby dodać nowe źródła. Teraz wystarczy wykonać jedno polecenie: 
+[Google Chrome](http://www.google.com/chrome) nie jest jeszcze dostępny pod Linuksem. Jest za to [Chromium](http://www.chromium.org/), czyli przeglądarka Open Source na bazie której zbudowany jest Chrome. Właściwe to obie aplikacje odróżnia tylko logo. ![Chromium - Google Chrome w Ubuntu 9.10 \(Karmic Koala\)](/uploads/wp//2009/10/chromium-400x284.png) W [repozytoriach launchpad](https://launchpad.net/chromium-browser) dostępne są [codzinnie budowane pakiety Chromium](https://edge.launchpad.net/~chromium-daily/+archive/ppa). Proces jest automatyczny, więc nie są one przetestowane i bywa, że są zepsute. Używałem ich jednak jeszcze w Ubuntu 9.04 i nie napotkałem na żadne poważne problemy. Ponieważ w **Ubuntu 9.10** proces instalacji stał się nawet prostszy, zachęcam do testów. W **Karmic Koala** nie musimy więcej edytować pliku _/etc/apt/sources.list_, aby dodać nowe źródła. Teraz wystarczy wykonać jedno polecenie:
     
     
     sudo add-apt-repository ppa:chromium-daily

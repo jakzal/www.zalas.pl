@@ -15,11 +15,7 @@ comments: true
 tags: [blog]
 ---
 
-<!--2009 to rok, w którym powróciłem do blogowania. Nie pisałem tak dużo jakbym mógł, czy chciał. Dlatego jednym z moich celów na rok 2010 jest pisać więcej i lepiej. Głównie po angielsku.-->
-
-# Blogowanie w 2009
-
-**2009** to rok, w którym powróciłem do blogowania. Nie pisałem tak dużo jakbym mógł, czy chciał. Dlatego jednym z moich celów na rok **2010** jest pisać **więcej** i **lepiej**. Głównie po **angielsku**. Do tej pory udzielałem się na trzech blogach: 
+**2009** to rok, w którym powróciłem do blogowania. Nie pisałem tak dużo jakbym mógł, czy chciał. Dlatego jednym z moich celów na rok **2010** jest pisać **więcej** i **lepiej**. Głównie po **angielsku**. Do tej pory udzielałem się na trzech blogach:
 
   * [prywatny blog (wersja angielska)](http://www.zalas.eu)
   * [prywatny blog (wersja polska)]()
