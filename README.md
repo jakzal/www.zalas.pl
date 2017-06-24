@@ -1,6 +1,6 @@
 # zalas.pl
 
-[![Build Status](https://travis-ci.org/jakzal/zalas.pl.svg?branch=source)](https://travis-ci.org/jakzal/zalas.pl)
+[![Build Status](https://travis-ci.org/jakzal/www.zalas.pl.svg?branch=source)](https://travis-ci.org/jakzal/www.zalas.pl)
 
 To build the site locally you can use the provided docker configuration.
 

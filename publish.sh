@@ -17,4 +17,4 @@ git config user.name 'Jakub Zalas'
 git add .
 git commit -m "Build the website"
 
-git push --force --quiet "https://github.com/jakzal/zalas.pl.git" master:gh-pages
+git push --force --quiet "https://github.com/jakzal/www.zalas.pl.git" master:gh-pages
