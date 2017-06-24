@@ -20,6 +20,7 @@
         <link href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="{{ site.url }}/css/base.css" rel="stylesheet" type="text/css" />
         <link href="{{ site.url }}/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.rul }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,6 +33,7 @@
         {% endblock %}
     </head>
     <body>
+        {% block header %}
         <header>
             {% if not page.hideNavigation %}
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -41,6 +43,8 @@
             </nav>
             {% endif %}
         </header>
+        {% endblock %}
+        {% block body %}
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-sm-12 col-xs-12">
@@ -53,17 +57,25 @@
                         </div>
                         <div class="col-md-12 col-sm-10 cal-xs-8">
                             <h4 itemprop="name">Jakub Zalas</h4>
-                            <p itemprop="title">Programista, Konsultant, Trener</p>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        {% endblock %}
+        {% block footer %}
         <footer>
             <div id="license">
                 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="{{ site.url }}/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
             </div>
         </footer>
+        {% endblock %}
         {% block scripts %}
             {% if site.google_analytics_tracking_id %}
             <script>

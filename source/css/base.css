@@ -115,3 +115,27 @@ ul.post-tag-cloud {
 .author .avatar {
     margin-bottom: 5px;
 }
+
+.home .row {
+}
+.home .author .avatar {
+    margin: 0;
+}
+
+.home .author h1 {
+    margin-top: 0;
+    color: #49515a;
+    font-weight: bold;
+}
+
+.home .author h2 {
+    margin-top: 0;
+    color: #778492;
+}
+
+.home footer {
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
