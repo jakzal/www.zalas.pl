@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tag Archive
+title: Archiwum tagów
 generator: [posts_tag_index, pagination]
 pagination:
     provider: page.tag_posts
@@ -11,24 +11,24 @@ pagination:
     <meta name="robots" content="noindex, follow">
 {% endblock %}
 
-{% block title %}Pages labeled with "{{ page.tag }}"{% endblock %}
+{% block title %}Wpisy oznaczone "{{ page.tag }}"{% endblock %}
 
 {% block content %}
 <section class="posts tag-posts">
-    <h1>Pages labeled with "{{ page.tag }}"</h1>
+    <h1>Wpisy oznaczone "{{ page.tag }}"</h1>
 
     <ul class="list-unstyled">
     {% for post in page.pagination.items %}
         <li>
             <a href="{{ site.url }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
             <span class="post-date">
-                <time itemprop="datePublished" content="{{ post.date | date('Y-m-d') }}" datetime="{{ post.date | date('Y-m-d') }}">{{ post.date | date('d M Y') }}</time>
+                <time itemprop="datePublished" content="{{ post.date | date('Y-m-d') }}" datetime="{{ post.date | date('Y-m-d') }}">{{ post.date | localizeddate('long', 'none', 'pl') }}</time>
             </span>
         </li>
     {% endfor %}
     </ul>
     <ul class="pager">
-        <li><a href="{{ site.url }}/tag/" title="Labels">All labels</a></li>
+        <li><a href="{{ site.url }}/tag/" title="Labels">Wszystkie etykiety</a></li>
     </ul>
 </section>
 {% endblock content %}
