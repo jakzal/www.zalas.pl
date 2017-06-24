@@ -1,30 +1,21 @@
 language: php
-
 php:
   - 7.1
-
 sudo: false
-
 cache:
   directories:
     - "$HOME/.composer/cache"
-
 branches:
   only:
     - source
-
 before_install:
   - echo -e "machine github.com\n  login $GH_TOKEN" >> ~/.netrc
-
 before_script:
   - composer install --prefer-dist
-
 script:
   - sh build.sh
-
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && sh publish.sh
-
 env:
   global:
-    - secure: CLU1UkompEiKiV0nrQh0WRwhypI7y5eW867C2QmaR3OXqycosT6fILFuVk39XW3/pXy/PqQI44k1rzP5dEsIkQtWoJsyYO3EL8nY1JgpaEBMDUlEZeB3/F4Gahyc5/TQUT+zu2u0XroT6c4SabGMTOZpZVjtdtflAVX0i1rnUc4=
+  - secure: PzeXkhv5JqOhI9R3vW26Fmyqj6+aO0Eldgzi7j8tGBwCfPPuujRWGQSe3DP/txt7qbcOQvWhZcU2fE8OiipTc2K5aDOxpIU0cCSCbm7xZ76Nd/cIuuZmfUD73ZhhdzdxANRcO4lWFoiOav7UygP8tNWbAJWCKZDHRlqee7MnLyi8XspkCTJHKP+dA6fJA/wHNE3VUqE8vIS+Nn50Vm5FQ3PAY49Jm4LAF7Z56+MkwXoXoLCCS0VBLHL7HNHDYytk9Tni/KZZDZmOUg6BDo+g/+dTgtEJJZAB3qp3EiweAjpep96AwcnjabDgBeIhAVvc7lsjwXHlJE0HSRNoTnncMVp7PDmWjZAeOw7qtt8ieojwe83EiLs8zZynIZ6OtGdUxZj+KZvIaObzEqutZEZ2SqAF0sJ2DZP81HVF8WDrBriWBYFMU5V9voVHXgl4yWyvrL1ITM+SjpolwEztNNPWTt2ZrSpr2wyCJCvdiBSI+By/tPhT2cGRdC06kCWmVIrkHrUtNuQD7pisWgocs84iB9xh7xcXbesJKCvlD8cUk61F/0kPLmk5ARt2+l5HuVIlb0rzFgzhxx6beb3oYS9WucCBm6+Q+7RjyMIolbmyepxFKyiiOlw4rp5K2nhfaVH8ZcAp86Sl4ju7UcBDaJBQCwHxNOpluLNdIQ7BUfOjxm4=
