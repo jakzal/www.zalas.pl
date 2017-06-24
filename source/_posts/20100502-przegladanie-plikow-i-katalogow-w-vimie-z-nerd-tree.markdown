@@ -40,3 +40,5 @@ Pobieramy źródła [ze strony pluginu](http://www.vim.org/scripts/script.php?sc
 ## Jak korzystać z NERD tree?
 
 Uruchamiamy vima i wpsiujemy _:NERDTreeToggle_ lub _ctrl+n_. Druga wersja zadziała tylko, jeśli utworzyliśmy skrót. W tej chwili powinniśmy zobaczyć strukturę katalogów. Sugeruję zacząć od przeczytania pomocy i poznania podstawowych funkcji pluginu. Pomoc dostępna jest pod klawiszem _?_ (działa, gdy kursor jest w obrębie okna pluginu).
+
+<object width="425" height="344" data="http://www.youtube.com/v/8jWL3wZSOkY&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="src" value="http://www.youtube.com/v/8jWL3wZSOkY&amp;hl=en&amp;fs=1"><param name="allowfullscreen" value="true"></object>

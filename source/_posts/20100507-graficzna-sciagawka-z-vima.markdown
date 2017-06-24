@@ -15,4 +15,8 @@ comments: true
 tags: [vim]
 ---
 
-Oto graficzna ściągawka z vima, którą znalazłem na stronie [ViEmu](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html). Znajdziecie tam także tutorial. Naprawdę użyteczna rzecz. Nie tylko dla początkujących! ![Ściągawka z vima \(vim graphical cheat sheet\)](/uploads/wp//2010/05/vi-vim-cheat-sheet-400x282.gif)
+Oto graficzna ściągawka z vima, którą znalazłem na stronie [ViEmu](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html). Znajdziecie tam także tutorial. Naprawdę użyteczna rzecz. Nie tylko dla początkujących!
+
+<div class="text-center">
+    <a href="/uploads/wp//2010/05/vi-vim-cheat-sheet.gif" title="Ściągawka z vima"><img src="/uploads/wp//2010/05/vi-vim-cheat-sheet-400x282.gif" alt="Vim" /></a>
+</div>

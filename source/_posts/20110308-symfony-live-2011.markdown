@@ -30,6 +30,7 @@ Poziom prezentacji, zarówno tych oficjalnych, jak i [niekonferencyjnych](http:/
   * [Symfony Live 2011 in Paris – Day 2 – (almost) live](http://test.ical.ly/2011/03/04/symfony-live-2011-in-paris-%E2%80%93-day-2-%E2%80%93-almost-live/)
   * [Liveblogging Symfony Live Paris](http://window.punkave.com/2011/03/03/liveblogging-symfony-live-paris/)
   * [Liveblogging Symfony Live Paris: Unconference Day](http://window.punkave.com/2011/03/04/liveblogging-symfony-live-paris-unconference-day/)
+
 Warto też zerknąć na [opinie uczestników konferencji](http://joind.in/event/view/561). ![ElePHPant playing near the Eiffel Tower](/uploads/wp//2011/03/elephpant-eiffel-tower-300x400.jpg)
 
 ## Networking
@@ -46,4 +47,8 @@ Na otwartym dla wszystkich Hacking Day zjawiła się spora grupa ludzi. Pracowal
 
 ## I co dalej?
 
-Wracam zainspirowany, z głową pełną pomysłów. Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. W międzyczasie planuję nadrobić braki ze znajomości protokołu HTTP, czytając w końcu specyfikację. Chcę też przyjrzeć się bliżej kolejkom z [RabbitMQ](http://www.rabbitmq.com/), cachowaniu HTTP i [Varnish](http://www.varnish-cache.org/)owi. Na listę "do przeczytania" wędruje książka "[High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites)".  [ Zdjęcia z Symfony Live 2011](https://picasaweb.google.com/jzalas/SymfonyLive2011?feat=directlink#)
+Wracam zainspirowany, z głową pełną pomysłów. Nie mogę się doczekać, kiedy wrócę z urlopu do pracy i zaczę wdrażać je w życie. W międzyczasie planuję nadrobić braki ze znajomości protokołu HTTP, czytając w końcu specyfikację. Chcę też przyjrzeć się bliżej kolejkom z [RabbitMQ](http://www.rabbitmq.com/), cachowaniu HTTP i [Varnish](http://www.varnish-cache.org/)owi. Na listę "do przeczytania" wędruje książka "[High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.goodreads.com/book/show/1681559.High_Performance_Web_Sites)".
+
+[Zdjęcia z Symfony Live 2011](https://picasaweb.google.com/jzalas/SymfonyLive2011?feat=directlink#)
+
+<object width="400" height="267" type="application/x-shockwave-flash" data="https://picasaweb.google.com/s/c/bin/slideshow.swf"><param name="flashvars" value="host=picasaweb.google.com&amp;captions=1&amp;hl=en_US&amp;feat=flashalbum&amp;RGB=0x000000&amp;feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fjzalas%2Falbumid%2F5581407011755907281%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US"><param name="src" value="https://picasaweb.google.com/s/c/bin/slideshow.swf"></object>

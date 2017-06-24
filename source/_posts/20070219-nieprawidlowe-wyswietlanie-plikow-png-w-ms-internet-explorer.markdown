@@ -72,19 +72,14 @@ Natomiast w kodzie html strony umieszczamy jego warunkowe dołączenie:
     </html>
     </pre>
 
-To wszystko!! Od tej pory każdy dołączony do strony plik png będzie wyświetlony prawidłowo w każdej przeglądarce :) _Źródła:_
+To wszystko!! Od tej pory każdy dołączony do strony plik png będzie wyświetlony prawidłowo w każdej przeglądarce :)
+
+_Źródła:_
 
   * _[The PNG problem in Windows Internet Explorer](http://homepage.ntlworld.com/bobosola/index.htm)_
-_ __ _
   * _[Normal display of PNG Alpha Transparency with MSIE](http://koivi.com/ie-png-transparency/)_
-_ __ _
   * _[Poprawka wyświetlania plików PNG w IE](http://www.mambopl.com/content/view/136/48/)_
-_ __ _
   * _[PNG - Jak i dlaczego używać](http://pornel.net/pnghowto)_
-_ __ _
   * _[PNG Behavior](http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html)_
-_ __ _
   * _[Improved PNG Behavior](http://www.scss.com.au/family/andrew/webdesign/pngbehavior/)[ ](http://dean.edwards.name/IE7/)_
-_ __ _
   * _[JavaScriptowa biblioteka IE7](http://dean.edwards.name/IE7/)_
-_____________ ____________________________ _

@@ -39,5 +39,3 @@ Istnieją gotowe rozwiązania Open Source, które pozwolą Wam zautomatyzować p
   * [Maven](http://www.php-maven.org/)
   * [Phing](http://phing.info/)
 Jak publikujecie swoje aplikacje? Czy Wasz proces jest już zautomatyzowany? 
-
-Type the name of a command and press enter to execute it, or **help** for assistance.

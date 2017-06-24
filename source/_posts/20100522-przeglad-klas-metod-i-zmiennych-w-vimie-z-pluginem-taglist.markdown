@@ -62,3 +62,5 @@ Ustawiłem także kilka innych opcji, aby dostroić TagList do swoich potrzeb:
     let Tlist_Inc_Winwidth = 0
     let Tlist_Close_On_Select = 1
     let Tlist_Process_File_Always = 1
+
+<object width="480" height="385" data="http://www.youtube.com/v/RsuRtEtf6fo&amp;hl=en_US&amp;fs=1&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="src" value="http://www.youtube.com/v/RsuRtEtf6fo&amp;hl=en_US&amp;fs=1&amp;color1=0x3a3a3a&amp;color2=0x999999"><param name="allowfullscreen" value="true"></object>

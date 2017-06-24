@@ -19,7 +19,7 @@ tags:
 - Symfony2
 ---
 
-![Zdjęcie autorstwa Paul Watsona: http://flic.kr/p/9HpBfjt](/uploads/wp/2011/07/sieve-150x150.jpg)[Komponent Finder](https://github.com/symfony/Finder) sprawia, że wyszukiwanie plików i katalogów w PHP przestaje być męczące. Pozwala na filtrowanie po nazwie, wzorcu, rozmiarze, dacie modyfikacji i kilku innych kryteriach. W wyniku dostaniemy listę obiektów klasy [SplFileInfo](http://php.net/splfileinfo), która oferuje wygodny interfejs do pozyskiwania szczegółów na temat plików i katalogów. **Uwaga**: Kod tworzony w tym wpisie jest dostępny na githubie: <https://github.com/jakzal/SymfonyComponentsExamples>
+[Komponent Finder](https://github.com/symfony/Finder) sprawia, że wyszukiwanie plików i katalogów w PHP przestaje być męczące. Pozwala na filtrowanie po nazwie, wzorcu, rozmiarze, dacie modyfikacji i kilku innych kryteriach. W wyniku dostaniemy listę obiektów klasy [SplFileInfo](http://php.net/splfileinfo), która oferuje wygodny interfejs do pozyskiwania szczegółów na temat plików i katalogów. **Uwaga**: Kod tworzony w tym wpisie jest dostępny na githubie: <https://github.com/jakzal/SymfonyComponentsExamples>
 
 ## Instalacja
 

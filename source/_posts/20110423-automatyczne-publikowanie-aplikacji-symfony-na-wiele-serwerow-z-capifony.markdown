@@ -80,7 +80,5 @@ W plikach etapów możemy zrobić wszystko co jest możliwe w Capistrano:
   * zmienić zachowanie istniejących tasków
   * rozszerzyć istniejące namespace'y o nowe taski
   * utworzyć nowy namespace z własnymi taskami
+
 W praktyce taski i namespace'y rzadko różnią się pomiędzy etapami. Najczęściej będziemy potrzebować zmienionej konfiguracji lub procesu. 
-    
-    
-    set :symfony_env_prod, "new_prod_env"

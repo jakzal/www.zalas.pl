@@ -159,3 +159,48 @@ Załadowanie usług do kontenera jest trywialne. Tworzymy _CotnainerBuilder_ i 
     
     use Symfony\Component\DependencyInjection\ContainerBuilder;
     use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+
+Proces odwrotny jest równie prosty. Usługi zapiszemy do XMLa przekazując ContainerBuilder do XmlDumper:
+
+    <?php
+    // dependencyinjection.php
+
+    // ...
+
+    use Symfony\Component\DependencyInjection\Dumper\XmlDumper;
+
+    $dumper = new XmlDumper($serviceContainer);
+    echo $dumper->dump();
+
+**Uwaga**: W prawdziwym projekcie prawdopodobnie utrzymywalibyśmy usługi w XMLu lub YMLu, ale używali ich po uprzedniej konwersji do PHP (przy pomocy PhpDumper). W ten sposób moglibyśmy czerpać korzyści zarówno z maksymalnej **wydajności** jak i **czytelnej** konfiguracji.
+
+## Wizualizacja usług
+
+W rozbudowanych aplikacjach ilość usług i powiązań między nimi może być spora i skomplikowana. GraphvizDumper pomoże nam wygenerować wykres usług, dzięki któremu łatwiej rozeznamy się w sytuacji.
+
+    <?php
+    // dependencyinjectiongraphviz.php
+
+    require_once __DIR__.'/src/autoload.php';
+
+    use Symfony\Component\DependencyInjection\ContainerBuilder;
+    use Symfony\Component\DependencyInjection\Dumper\GraphvizDumper;
+    use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+    use Symfony\Component\Config\FileLocator;
+
+    $serviceContainer = new ContainerBuilder();
+    $loader = new XmlFileLoader($serviceContainer, new FileLocator(__DIR__.'/config'));
+    $loader->load('buzz.xml');
+
+    $dumper = new GraphvizDumper($serviceContainer);
+    echo $dumper->dump();
+
+Wynik musimy zapisać do pliku (np services.dot). Do wygenerowania wykresu potrzebujemy programu dot (z pakietu graphviz):
+
+    dot -Tpng -o services.png services.dot
+
+Wynik powinien być zbliżony do poniższego obrazka.
+
+<div class="text-center">
+    <a href="/uploads/wp/2011/08/services.png"><img src="/uploads/wp/2011/08/services-400x112.png" alt="Services" /></a>
+</div>

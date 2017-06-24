@@ -70,3 +70,5 @@ Niektóre z komend **wyszukiwania**:
   * [exuberant ctags with PHP in Vim](http://weierophinney.net/matthew/archives/134-exuberant-ctags-with-PHP-in-Vim.html)
 
 ## Wideo
+
+<object width="480" height="385" data="http://www.youtube.com/v/8yjxaBrmiJI&amp;hl=en_US&amp;fs=1&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="src" value="http://www.youtube.com/v/8yjxaBrmiJI&amp;hl=en_US&amp;fs=1&amp;color1=0x3a3a3a&amp;color2=0x999999"><param name="allowfullscreen" value="true"></object>
