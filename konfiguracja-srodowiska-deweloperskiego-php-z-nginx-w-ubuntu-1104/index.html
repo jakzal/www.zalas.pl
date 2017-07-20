@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Konfiguracja środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04 &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Konfiguracja środowiska deweloperskiego PHP z Nginx w Ubuntu 11.04</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2011-05-05" datetime="2011-05-05">5 maja 2011</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/configuration/">
+                    <span class="list-group-item-heading">configuration</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/installation/">
+                    <span class="list-group-item-heading">installation</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/nginx/">
+                    <span class="list-group-item-heading">nginx</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/php/">
+                    <span class="list-group-item-heading">php</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/ubuntu/">
+                    <span class="list-group-item-heading">ubuntu</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p><img src="/uploads/wp/2011/05/nginx-php.png" alt="" />Opisywałem już <a href="/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1004">jak przygotować PHP do pracy z Nginx w Ubuntu 10.04</a>. W Ubuntu <strong>11.04</strong> (Natty Narwhal) procedura jest dużo prostsza za sprawą <strong>PHP 5.3</strong> i obecnego w nim <a href="http://pl.php.net/manual/en/install.fpm.php">php-fpm</a>. Ponieważ w międzyczasie udało mi się też ulepszyć swoją konfigurację <strong>Nginx</strong> dla PHP, postanowiłem opisać temat jeszcze raz.</p>
+
+<h2 id="php">PHP</h2>
+
+<p>Na początek instalujemy pakiety i moduły PHP (dobieramy wedle potrzeb):</p>
+
+<pre><code>sudo apt-get install php5-fpm php5-cli php5-common php5-curl php5-gd \
+  php5-mcrypt php5-mysql php5-pgsql php5-sqlite php5-tidy php5-xmlrpc \
+  php5-xsl php5-intl php5-imagick php5-xdebug php-apc php-pear
+</code></pre>
+
+<p>Wszystkie pliki konfiguracyjne do PHP i php-fpm znajdziemy w katalogu <em>/etc/php5/fpm</em>. Jednak na początek domyślna konfiguracja powinna nam wystarczyć.</p>
+
+<h2 id="nginx">Nginx</h2>
+
+<p>Instalujemy Nginx ze standardowymi modułami:</p>
+
+<pre><code>sudo apt-get install nginx
+</code></pre>
+
+<p>Zwykle pracuję z pseudodomenami <em>.dev</em> (kuba.dev, mojprojekt.dev itd). Wszystkie obsługiwane są przez jedną konfigurację <em>(/etc/nginx/sites-available/dev</em>):</p>
+
+<pre><code>server {
+    listen 80 default;
+    server_name *.dev;
+
+    root /var/www/$host/web;
+
+    access_log /var/log/nginx/$host-access.log;
+    error_log  /var/log/nginx/dev-error.log error;
+
+    index index.php index.html index.htm;
+
+    try_files $uri $uri/ @rewrite;
+
+    location @rewrite {
+        rewrite ^/(.*)$ /index.php/$1;
+    }   
+
+    location ~ \.php {
+        # try_files $uri =404;
+
+        fastcgi_index index.php;
+        fastcgi_pass 127.0.0.1:9000;
+
+        include fastcgi_params;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_param PATH_INFO $fastcgi_path_info;
+        fastcgi_param PATH_TRANSLATED $document_root$fastcgi_path_info;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+</code></pre>
+
+<p>Musimy ją uaktywnić:</p>
+
+<pre><code>sudo ln -s /etc/nginx/sites-available/dev /etc/nginx/sites-enabled/dev
+</code></pre>
+
+<p><strong>Uwaga</strong>: Szczegóły dotyczące poszczególnych opcji i dyrektyw Nginx opisałem w artykule "<a href="/konfiguracja-nginx-dla-projektow-symfony">Konfiguracja Nginx dla projektów Symfony</a>" (konfiguracja jest dość uniwersalna).</p>
+
+<h2 id="konfiguracja-systemu">Konfiguracja systemu</h2>
+
+<p>Dodajemy siebie do grupy <em>www-data</em> i logujemy ponownie:</p>
+
+<pre><code>sudo usermod -a -G www-data kuba
+sudo su kuba
+</code></pre>
+
+<p>Robimy to, aby później nie nadużywać <em>sudo</em> za każdym razem, gdy będziemy pracować nad jedną z naszych aplikacji. Wystarczy, że zadbamy, aby pliki należały do grupy <em>www-data</em>. Pozwalamy, aby wszyscy w grupie mogli tworzyć domeny:</p>
+
+<pre><code>sudo mkdir /var/www
+sudo chown -R www-data:www-data /var/www
+sudo chmod -R 775 /var/www
+</code></pre>
+
+<p>Definiujemy fikcyjne domeny <em>*.dev</em> w <em>/etc/hosts</em> (dużo wygodniej jest użyć dnsmasq, ale na początek plik hosts załatwi sprawę):</p>
+
+<pre><code>127.0.1.1 loki info.dev kuba.dev mojprojekt.dev
+</code></pre>
+
+<h2 id="testy">Testy</h2>
+
+<p>Tworzymy stronę testową:</p>
+
+<pre><code>mkdir /var/www/info.dev/web -p
+echo "&lt;?php echo phpinfo(); ?&gt;" &gt; /var/www/info.dev/web/index.php
+chown -R :www-data /var/www/info.dev
+chmod -R 775 /var/www/info.dev
+</code></pre>
+
+<p>Uruchamiamy php-fpm i Nginx:</p>
+
+<pre><code>sudo service php5-fpm start
+sudo service nginx start
+</code></pre>
+
+<p>Gdy teraz odwiedzimy <em>http://info.dev</em> w przeglądarce, powinniśmy zobaczyć informacje o naszej instalacji PHP. <img src="/uploads/wp/2011/05/phpinfo-400x367.png" alt="" /></p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104';
+            this.page.identifier = 'konfiguracja-srodowiska-deweloperskiego-php-z-nginx-w-ubuntu-1104';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

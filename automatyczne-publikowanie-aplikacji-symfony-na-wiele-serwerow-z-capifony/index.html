@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Automatyczne publikowanie aplikacji Symfony na wiele serwerów z Capifony &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Automatyczne publikowanie aplikacji Symfony na wiele serwerów z Capifony</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2011-04-23" datetime="2011-04-23">23 kwietnia 2011</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/capifony/">
+                    <span class="list-group-item-heading">capifony</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/capistrano/">
+                    <span class="list-group-item-heading">capistrano</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/deployment/">
+                    <span class="list-group-item-heading">deployment</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/php/">
+                    <span class="list-group-item-heading">php</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/symfony/">
+                    <span class="list-group-item-heading">symfony</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/Symfony2/">
+                    <span class="list-group-item-heading">Symfony2</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p><strong><img src="/uploads/wp/2011/04/Symfony2-capistrano-multistage-files-227x400.png" alt="" />Capifony</strong> to zestaw recept <strong>Capistrano</strong> do publikowania aplikacji napisanych w <strong>symfony</strong> lub <strong>Symfony2</strong>. <strong>Multistage</strong> jest rozszerzeniem Capistrano. Ułatwia publikację kodu na wiele serwerów, które różnią się nieco konfiguracją lub procesem publikacji. <strong>Uwaga</strong>: Jeśli nie znasz <a href="https://github.com/capistrano/capistrano/wiki">capistrano</a> lub <a href="http://capifony.org/">capifony</a> to jest właściwy moment, aby odwiedzić ich strony i poczytać o automatycznym publikowaniu kodu. O zaletach tego typu rozwiązań pisałem już w artykule<a href="/automatyczne-publikowanie-aplikacji-php"> "Automatyczne publikowanie aplikacji PHP</a>".</p>
+
+<h2 id="dlaczego-multistage%3F">Dlaczego multistage?</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Staging_%28websites%29">Staging</a> to popularna technika testowania aplikacji zanim dotrze na produkcję. Polega na publikowaniu aplikacji na serwery akceptacyjne (testowe), przed docelową publikacją dostępną dla użytkownika końcowego. W ten sposób weryfikujemy działanie aplikacji w warunkach podobnych do produkcyjnych, ale bez narażania się na klęskę przed całym światem. Chociaż wszystkie środowiska, na które publikujemy kod powinny być takie same, często chcemy aby w jakiś sposób się różniły. Najczęściej chodzi o drobne zmiany w procesie "budowania" kodu lub konfiguracji. Przykładowo nie chcemy używać kontrolerów deweloperskich na produkcji, ale na teście mogą być przydatne do diagnozy błędów. Jest to różnica w procesie. Na produkcji uruchamiamy dodatkowy task, który usuwa kontrolery. Z drugiej strony na serwerze testowym nie chcemy zwykle używać Google Analytics, ale produkcyjny powinien je mieć włączone. To jest różnica w konfiguracji. <a href="https://github.com/capistrano/capistrano/wiki/2.x-Multistage-Extension">Rozszerzenie multistage</a> pomoże nam z tego typu rożnicami.</p>
+
+<h2 id="instalacja">Instalacja</h2>
+
+<pre><code>gem install capifony capistrano-ext
+</code></pre>
+
+<h2 id="kapifonikacja-projektu-%3B">Kapifonikacja projektu ;)</h2>
+
+<pre><code>cd /path/to/myproject
+capifony .
+</code></pre>
+
+<h2 id="przyk%C5%82ad-multistage">Przykład multistage</h2>
+
+<p>Podstawowe rzeczy jakie musimy zrobić to załączenie rozszerzenia i zdefiniowanie etapów (stages). W tym celu zastąpimy zawartość <em>app/config/deploy.rb</em> następującą treścią:</p>
+
+<pre><code>set :stage_dir, 'app/config/deploy' # potrzebne tylko w Symfony2
+require 'capistrano/ext/multistage'
+set :stages, %w(production testing development)
+
+set :application, "MyApp"
+
+set :repository,  "mycompany.com:/var/repos/#{application}.git"
+set :scm,         :git
+
+set  :keep_releases,  3
+</code></pre>
+
+<p><strong>Uwaga</strong>: W przypadku aplikacji napisanej w symfony 1.x musimy usunąć  '<em>app/</em>' ze wszystkich ścieżek do plików konfiguracyjny opisywanych w tym artykule Production, testing i development to nasze etapy (stages). Dla każdego etapu musimy stworzyć osobny plik konfiguracyjny w katalogu <em>app/config/deploy</em>. Oto przykład dla etapu production (<em>app/config/deploy/production.rb</em>):</p>
+
+<pre><code>server 'myapp.com', :app, :web, :primary =&gt; true
+set :deploy_to, "/var/www/myapp.com/"
+
+after 'deploy:finalize_update', 'symfony:project:clear_controllers'
+</code></pre>
+
+<p>Publikacja na serwer testowy potencjalnie będzie wyglądać nieco inaczej (<em>app/config/deploy/testing.rb</em>):</p>
+
+<pre><code>server 'test.myapp.mycompany.com', :app, :web, :primary =&gt; true
+set :deploy_to, "/var/www/test/myapp.mycompany.com/"
+set :symfony_env_prod, "test"
+</code></pre>
+
+<p>Podczas publikacji musimy teraz podać cel (etap):</p>
+
+<pre><code>cap production deploy
+</code></pre>
+
+<p>W plikach etapów możemy zrobić wszystko co jest możliwe w Capistrano:</p>
+
+<ul>
+<li>podpiąc wywołania dodatkowych tasków i zmienić proces publikacji dla danego etapu</li>
+<li>zmienić zachowanie istniejących tasków</li>
+<li>rozszerzyć istniejące namespace'y o nowe taski</li>
+<li>utworzyć nowy namespace z własnymi taskami</li>
+</ul>
+
+<p>W praktyce taski i namespace'y rzadko różnią się pomiędzy etapami. Najczęściej będziemy potrzebować zmienionej konfiguracji lub procesu.</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony';
+            this.page.identifier = 'automatyczne-publikowanie-aplikacji-symfony-na-wiele-serwerow-z-capifony';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Instalacja sasc-ng w Ubuntu 10.10 &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Instalacja sasc-ng w Ubuntu 10.10</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2010-11-16" datetime="2010-11-16">16 listopada 2010</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/ubuntu/">
+                    <span class="list-group-item-heading">ubuntu</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/sasc-ng/">
+                    <span class="list-group-item-heading">sasc-ng</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p><img src="/uploads/wp//2010/11/matrix.png" alt="Matrix" /> Źródło zdjęcia: http://picasaweb.google.com/lh/photo/JMArfIS7cNM4bAtfH4_blQ Jak <a href="/kodowane-kanaly-telewizji-satelitarnej-w-dowolnej-aplikacji-dvb">już kiedyś pisałem</a>, sasc-ng pozwala na oglądanie kodowanych kanałów w dowolnej aplikacji obsługującej standard dvb. Sama aplikacja nie musi "wiedzieć", że kanał jest kodowany. Moduł jądra kompilowany z sasc-ng tworzy dodatkowe urządzenie, na którym dostępny jest odkodowany sygnał. Jedyne do czego musimy zmusić aplikację DVB, to wskazać właściwe urządzenie. Sasc-ng nie jest dostępny w oficjalnych repozytoriach Ubuntu, dlatego trzeba go skompilować.</p>
+
+<h2 id="instalacja-zale%C5%BCno%C5%9Bci">Instalacja zależności</h2>
+
+<p>Zaczynamy od instalacji nagłówków jądra i kilku innych pakietów potrzebnych do kompilacji:</p>
+
+<pre><code>sudo apt-get install linux-headers-`uname -r` build-essential mercurial libssl-dev gettext
+</code></pre>
+
+<h2 id="pobranie-%C5%BAr%C3%B3de%C5%82">Pobranie źródeł</h2>
+
+<p>Źródła sasc-ng pobieramy wprost z repozytorium dewelopera:</p>
+
+<pre><code>mkdir -p ~/Apps/src
+cd ~/Apps/src
+hg clone http://85.17.209.13:6100/sc
+</code></pre>
+
+<h2 id="na%C5%82o%C5%BCenie-%C5%82atki-usuwaj%C4%85cej-sprawdzanie-uprawnie%C5%84">Nałożenie łatki usuwającej sprawdzanie uprawnień</h2>
+
+<p>Niestety sasc-ng odmawiał działania z moją kartą Cyfry+. Okazało się, że maska uprawnień PBM obliczana jest nieprawidłowo. Okazało się też, że jej obliczanie wydaje się być niepotrzebne (wielkie dzięki dla Wojtka za zauważenie tego!). <a href="https://gist.github.com/675636">Łatka</a> sprawia, że metoda sprawdzająca uprawnienia zawsze zwróci <em>true</em>.</p>
+
+<pre><code>cd ~/Apps/src/
+wget https://gist.github.com/raw/675636/185dd32935ce1e5e8b7a876d82859bf80d0cc71e/sc-seca.c.patch
+cd ~/Apps/src/sc
+patch -p1 &lt; ../sc-seca.c.patch
+</code></pre>
+
+<h2 id="kompilacja">Kompilacja</h2>
+
+<p>Wreszcie czas na kompilację programu i modułu jądra:</p>
+
+<pre><code>cd ~/Apps/src/sc/contrib/sasc-ng/
+chmod +x configure
+chmod +x dvbloopback/module/config_dvb.pl
+./configure
+make
+make module
+</code></pre>
+
+<h2 id="instalacja">Instalacja</h2>
+
+<p>Kopiujemy moduł, binarkę i kilka bibliotek w ogólnie dostępne miejsca:</p>
+
+<pre><code>cd ~/Apps/src/sc/contrib/sasc-ng/
+sudo rm /lib/modules/`uname -r`/misc/dvbloopback.ko
+sudo cp sasc-ng /usr/bin
+sudo cp sc/PLUGINS/lib/* /usr/lib/
+sudo mkdir /lib/modules/`uname -r`/misc
+sudo /usr/bin/install dvbloopback.ko /lib/modules/`uname -r`/misc/
+sudo depmod
+</code></pre>
+
+<h2 id="konfiguracja">Konfiguracja</h2>
+
+<p>Tworzymy katalog na konfigurację:</p>
+
+<pre><code>sudo mkdir /etc/sc_files
+</code></pre>
+
+<p>Przykładowe pliki konfiguracyjne znajdziemy w katalogu <em>examples</em> źródeł sc (ściągnęliśmy je do <em>~/Apps/src/sc</em>). Kartę Cyfry wpinam do programatora Phoenix, którego mam podłączonego do portu COM. Aby sasc-ng 'zobaczył' kartę, tworzymy wpis w <em>/etc/sc_files/cardslot.conf</em>:</p>
+
+<pre><code>sudo su -c "echo 'serial:/dev/ttyS0:0:0' &gt; /etc/sc_files/cardslot.conf"
+</code></pre>
+
+<h2 id="uruchomienie">Uruchomienie</h2>
+
+<p>Przed pierwszym uruchomieniem musimy załadować moduł jądra:</p>
+
+<pre><code>sudo modprobe dvbloopback
+</code></pre>
+
+<p>Teraz możemy już uruchomić sasc-ng:</p>
+
+<pre><code>sasc-ng -j 0:1 --cam-budget --cam-dir /etc/sc_files
+</code></pre>
+
+<p>Jak zwykle wszystkie dostępne opcje dostępne są po wywołaniu <em>sasc-ng -h</em>.</p>
+
+<h2 id="testowanie-z-mplayerem">Testowanie z mplayerem</h2>
+
+<p>Powinniśmy już być w stanie zobaczyć obraz kodowanych kanałów w aplikacjach typu mplayer, czy xine. Pokażę to na podstawie mplayera. Jeśli nie posiadamy listy kanałów, tworzymy ją szybko:</p>
+
+<pre><code>echo 'PLANETE(CYFRA +):10719:v:0:27500:165:100:4406' &gt; ~/.mplayer/channels.conf
+</code></pre>
+
+<p>Uruchamiamy mplayer używając protokołu <em>dvb://</em>. Ważne jest, żeby pamiętać o wskazaniu odpowiedniego urządzenia DVB (w tym przypadku '2'):</p>
+
+<pre><code>mplayer dvb://2@
+</code></pre>
+
+<h2 id="testowanie-z-vdr">Testowanie z VDR</h2>
+
+<p>VDR sam rozponaje, czy program jest kodowany. Jeśli nie mamy softcama w VDR, to VDR uzna, że nie może pokazać obrazu. Musimy go nieco "ogłupić". Po pierwsze wszystkie kanały muszą być oznaczone jako niekodowane. Zamiast:</p>
+
+<pre><code>PLANETE;CYFRA +:10719:VC56M2O0S0:S13.0E:27500:165=2:100=pol@4:0:**100**:4406:318:11000:0
+</code></pre>
+
+<p>Powinniśmy mieć:</p>
+
+<pre><code>PLANETE;CYFRA +:10719:VC56M2O0S0:S13.0E:27500:165=2:100=pol@4:0:**0**:4406:318:11000:0
+</code></pre>
+
+<p>'0' oznacza program <a href="http://pl.wikipedia.org/wiki/FTA">FTA</a>. Poza tym musimy sprawić, aby VDR nie nadpisał nam naszych zmian. W tym celu w pliku <em>/etc/vdr/setup.conf</em> zmieniamy wartość opcji <em>UpdateChannels</em> na <em>0</em>:</p>
+
+<pre><code>UpdateChannels = 0
+</code></pre>
+
+<p>Pozostało jeszcze kazać VDR korzystać z drugiego urządzenia DVB, na którym dostępny jest odkodowany sygnał. Do zmiennej OPTIONS w pliku <em>/etc/default/vdr</em> dodajemy opcję <em>-D</em>:</p>
+
+<pre><code>OPTIONS="-w 60 -D 1"
+</code></pre>
+
+<p><strong>Uwaga</strong>: VDR numeruje urządzenia od zera. Dlatego wskazujemy urządzenie numer jeden. Zakładając, że mamy już uruchomiony sasc-ng, startujemy VDR:</p>
+
+<pre><code>sudo service vdr start
+</code></pre>
+
+<p>i cieszymy się odkodowanym obrazem TV. <strong>Wskazówka</strong>: Sprawienie, żeby wszystkie kanały były widziane jako FTA może być pracochłonne. Poniższym skryptem robimy to automatycznie dla całej listy:</p>
+
+<pre><code>sed -i -e 's/:\([^:]\+\)\(:\([^:]\+\):\([^:]\+\):\([^:]\+\):\([^:]\+\)\)$/:0\2/' channels.conf
+</code></pre>
+
+<h2 id="skrypt-startowy">Skrypt startowy</h2>
+
+<p>VDR jest domyślnie uruchamiany podczas startu systemu. Do pełni szczęścia chcielibyśmy, aby sasc-ng uruchamiany był przed VDR. Napisałem w tym celu skrypt init.d dla Ubuntu:</p>
+
+<pre><code>#! /bin/sh
+
+### BEGIN INIT INFO
+# Provides:          sasc-ng
+# Required-Start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# X-Start-Before:    $vdr
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts sasc-ng
+# Description:       starts sasc-ng
+### END INIT INFO
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+NAME=sasc-ng
+DESC=sasc-ng
+
+test -x $DAEMON || exit 0
+
+PIDFILE="/var/run/$NAME.pid"
+SASC_NG="/usr/bin/sasc-ng"
+OPTIONS="-j 0:1 --cam-budget"
+CAM_DIR="./sc_files"
+
+# Include sasc-ng defaults if available
+if [ -f /etc/default/sasc-ng ] ; then
+    . /etc/default/sasc-ng
+fi
+
+SASC_NG_ARGUMENTS="$OPTIONS --cam-dir $CAM_DIR -P $PIDFILE -D"
+
+set -e
+
+. /lib/lsb/init-functions
+
+case "$1" in
+  start)
+    echo "Loading dvbloopback module"
+    modprobe dvbloopback
+
+    echo -n "Starting $DESC: "
+    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec "$SASC_NG" -- $SASC_NG_ARGUMENTS || true
+    echo "$NAME."
+    ;;
+  stop)
+    echo -n "Stopping $DESC: "
+    start-stop-daemon --stop --quiet --pidfile $PIDFILE --exec "$SASC_NG" || true
+    echo "$NAME."
+
+    sleep 1
+    echo "Unloading dvbloopback module"
+    rmmod dvbloopback
+    ;;
+  restart)
+    echo -n "Restarting $DESC: "
+    start-stop-daemon --stop --quiet --pidfile $PIDFILE --exec "$SASC_NG" || true
+    sleep 1
+    start-stop-daemon --start --quiet --pidfile $PIDFILE --exec "$SASC_NG" -- $SASC_NG_ARGUMENTS || true
+    echo "$NAME."
+    ;;
+  status)
+    status_of_proc -p $PIDFILE "$SASC_NG" sasc-ng &amp;&amp; exit 0 || exit $?
+    ;;
+  *)
+    echo "Usage: $NAME {start|stop|restart|status}" &gt;&amp;2
+    exit 1
+    ;;
+esac
+
+exit 0
+</code></pre>
+
+<p>Skrypt kopiujemy do /etc/init.d/sasc-ng i nadajemy mu prawa do wykonywania (<em>chmod +x /etc/init.d/sasc-ng</em>). Konfigurację przeprowadzamy w <em>/etc/default/sasc-ng</em>:</p>
+
+<pre><code>OPTIONS="-j 0:1 --cam-budget"
+CAM_DIR="/etc/sc_files"
+</code></pre>
+
+<p>Teraz sasc-ng uruchamiamy i zatrzymujemy jak każdą usługę Ubuntu:</p>
+
+<pre><code>sudo service sasc-ng start
+</code></pre>
+
+<p>Aby program uruchamiany był ze startem Ubuntu wykonujemy:</p>
+
+<pre><code>sudo update-rc.d sasc-ng defaults
+</code></pre>
+
+<h2 id="uwagi">Uwagi</h2>
+
+<p>Mam nadzieję, że opis jest wystarczająco przejrzysty. Czekam na ewentualne sugestie, czy też inne komentarze ;)</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/instalacja-sasc-ng-ubuntu-1010';
+            this.page.identifier = 'instalacja-sasc-ng-ubuntu-1010';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

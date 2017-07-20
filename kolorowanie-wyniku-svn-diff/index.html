@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Kolorowanie wyniku svn diff &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Kolorowanie wyniku svn diff</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2009-06-17" datetime="2009-06-17">17 czerwca 2009</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/bash/">
+                    <span class="list-group-item-heading">bash</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p>Polecenie <em>svn diff</em> umożliwia obejrzenie zmian pomiędzy dwoma wersjami plików z repozytorium svn. Jego wyjście nie zawsze jest czytelne. Na początku zmienionych linii umieszczane są tylko  '+' (jeśli linia została dodana) lub '-' (jeśli została usunięta).</p>
+
+<p><img src="/uploads/wp//2009/06/svn-diff-before-399x183.png" alt="svn diff in black and white" /></p>
+
+<p>Możemy nieco ułatwić sobie pracę przez instalację <a href="http://colordiff.sourceforge.net/">colordiff</a>. Program opakowuje polecenie <em>diff</em> i zwraca taki sam rezultat, jednak pokolorowany.</p>
+
+<p><img src="/uploads/wp//2009/06/svn-diff-after-400x183.png" alt="svn diff in colors" /></p>
+
+<p>W ubuntu colordiff instalujemy prostym poleceniem:</p>
+
+<pre><code>sudo aptitude install colordiff
+</code></pre>
+
+<p>Wynik komend <em>diff</em>, <em>svn diff</em> i innych im podobnym można teraz przekierować potokiem do <em>colordiff</em>, aby uzyskać kolorowe wyjście__:</p>
+
+<pre><code>svn diff plugins/zMobyPicturePlugin/lib/zMobyPictureClient.class.php | colordiff
+</code></pre>
+
+<p>Dla używających powłoki bash polecam zadeklarowanie w pliku <em>~/.bashrc</em> prostej funkcji:</p>
+
+<pre><code>svndiff()
+{
+  svn diff "${@}" | colordiff
+}
+</code></pre>
+
+<p>Dzięki temu po ponownym zalogowaniu możemy nieco skrócić wywołanie polecenia:</p>
+
+<pre><code>svndiff plugins/zMobyPicturePlugin/lib/zMobyPictureClient.class.php
+</code></pre>
+
+<p><strong>Notatka</strong>: Podobny rezultat możemy uzyskać za pomocą edytora vim. Przeczytaj "<a href="/kolorowe-svn-diff-w-edytorze-vim">Kolorowe svn diff w edytorze vim</a>", aby dowiedzieć się więcej na ten temat.</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/kolorowanie-wyniku-svn-diff';
+            this.page.identifier = 'kolorowanie-wyniku-svn-diff';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

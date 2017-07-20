@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Symfony i APC &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Symfony i APC</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2010-08-28" datetime="2010-08-28">28 sierpnia 2010</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/symfony/">
+                    <span class="list-group-item-heading">symfony</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/php/">
+                    <span class="list-group-item-heading">php</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/apc/">
+                    <span class="list-group-item-heading">apc</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p>Do niedawna byłem wyłącznie użytkownikiem <a href="http://xcache.lighttpd.net/">XCache</a> (jeśli chodzi o akceleratory PHP). Ostatnio potrzebowałem użyć <a href="http://php.net/apc">APC</a> w aplikacji symfony. Poszło mi całkiem gładko jako, że framework bardzo ładnie integruje się z najpopularniejszymi rozwiązaniami tego typu.****</p>
+
+<h2 id="akceleratory-php-w-symfony">Akceleratory PHP w symfony</h2>
+
+<p>Symfony daje możliwość zmiany strategii cache'owania dla widoku, i18n i routingu. Dodatkowo Doctrine umie cache'ować skompilowane zapytania DQL oraz ich wyniki. Strategie cache'owania w symfony implementuje się dziedzicząc po klasie <em>sfCache</em>. Obsługa <strong>APC</strong> zaimplementowana jest w <em>sfAPCCache</em>. Każdy z popularnych akceleratorów ma swoją klasę: <strong>XCache</strong> (<em>sfXCacheCache</em>), <strong>EAccelerator</strong> (<em>sfEacceleratorCache</em>), <strong>memcache</strong> (<em>sfMemcacheCache</em>) i <strong>SQLite</strong> (<em>sfSQLiteCache</em>). Poniższy opis można zastosować do dowolnego z wyżej wymienionych rozwiązań. Wystarczy tylko zmienić nazwę klasy.</p>
+
+<h2 id="apc-w-symfony">APC w symfony</h2>
+
+<p>Cache'owanie w plikach jest domyślną strategią cache'owania w symfony (<em>sfFileCache</em>). Możemy to zmienić dla routingu, widoku i tłumaczeń w pliku fabryk (na przykład <em>apps/frontend/config/factories.yml</em> lub <em>config/factories.yml</em>):</p>
+
+<pre><code>all:
+  routing:
+    class: sfPatternRouting
+    param:
+      generate_shortest_url:            true
+      extra_parameters_as_query_string: true
+      cache:
+        class: sfAPCCache
+        param:
+          automatic_cleaning_factor: 0
+          lifetime:                  31556926
+
+  view_cache:
+    class: sfAPCCache
+
+  i18n:
+    param:
+      cache:
+        class: sfAPCCache
+        param:
+          automatic_cleaning_factor: 0
+          lifetime:                  31556926
+</code></pre>
+
+<p>Od tej pory cache routingu, widoku i tłumaczeń trzymany będzie w pamięci. Dzięki temu z każdym żądaniem strony symfony wykona o wiele mniej operacji na dysku (które z natury są wolne).</p>
+
+<h2 id="cache-dql-i-wynik%C3%B3w-zapyta%C5%84-w-doctrine">Cache DQL i wyników zapytań w Doctrine</h2>
+
+<p>Włączenie cache'owania zapytań DQL jest dość bezpiecznym ruchem. Pod warunkiem, że nie tworzymy ich poprzez sklejanie tekstu, a używamy prepared statements! Jest tak dlatego, że z parametrów przekazanych do zapytania generowany jest unikalny identyfikator, który następnie jest używany przy wyciąganiu zapytania z cache'u. W symfony Doctrine konfigurujemy w metodzie <em>configureDoctrine()</em> klasy konfiguracji projektu (<em>config/ProjectConfiguration.class.php</em>). W celu włączenia cache'owania skompilowanych zapytań DQL ustawiamy atrybut <em>ATTR_QUERY_CACHE</em> na odpowiednią wartość:</p>
+
+<pre><code>/**
+ * @param Doctrine_Manager $manager
+ * @return null
+ */
+public function configureDoctrine(Doctrine_Manager $manager)
+{
+  $manager-&gt;setAttribute(Doctrine_Core::ATTR_QUERY_CACHE, new Doctrine_Cache_Apc());
+}
+</code></pre>
+
+<p>Cache'owanie wyników zapytań jest nieco trudniejsze. Samo włączenie mechanizmu jest równie proste::</p>
+
+<pre><code>$manager-&gt;setAttribute(Doctrine_Core::ATTR_RESULT_CACHE, new Doctrine_Cache_Apc());
+</code></pre>
+
+<p>Jednak cache'owanie wszystkich wyników zapytań nie jest dobrym pomysłem w większości projektów. Czas życia każdego z wyników może różnić się znacząco. Jedne dane nie zmieniają się tygodniami, a inne są tak dynamiczne, że wcale nie warto ich cache'ować (są nieaktualne w momencie pobrania). Możemy też włączyć cache tylko dla wybranego połączenia:</p>
+
+<pre><code>$connection-&gt;setAttribute(Doctrine_Core::ATTR_RESULT_CACHE, new Doctrine_Cache_Apc());
+</code></pre>
+
+<p>Jednak najprzydatniejsze wydaje się być cache'owanie wybranych zapytań:</p>
+
+<pre><code>$query = Doctrine_Query::create()
+  -&gt;useResultCache(new Doctrine_Cache_Apc());
+</code></pre>
+
+<p>Dokumentacja Doctrine szerzej opisuje tematykę cache'owania zapytań i wyników w sekcji <a href="http://www.doctrine-project.org/documentation/manual/1_2/en/caching:query-cache-&amp;-result-cache">Query Cache &amp; Result Cache</a>.</p>
+
+<h2 id="przysz%C5%82o%C5%9B%C4%87-apc">Przyszłość APC</h2>
+
+<p>Dawno temu wybrałem XCache ponieważ w tamtym okresie miał lepsze wsparcie, a różnic w wydajności nie było. Dzisiaj, kiedy APC jest aktywnie rozwijane i są plany jego włączenia do jądra PHP, muszę przemyśleć temat ponownie. A Wy? Czego używacie? Dlaczego? Robiliście testy?</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/symfony-i-apc';
+            this.page.identifier = 'symfony-i-apc';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

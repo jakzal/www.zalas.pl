@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Nauka Symfony2 przez pisanie testów jednostkowych &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Nauka Symfony2 przez pisanie testów jednostkowych</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2011-03-24" datetime="2011-03-24">24 marca 2011</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/contributing/">
+                    <span class="list-group-item-heading">contributing</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/php/">
+                    <span class="list-group-item-heading">php</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/phpunit/">
+                    <span class="list-group-item-heading">phpunit</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/Symfony2/">
+                    <span class="list-group-item-heading">Symfony2</span>
+                </a>
+            </li>
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/testing/">
+                    <span class="list-group-item-heading">testing</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p><img src="/uploads/wp/2011/03/unit-testing.png" alt="" /> Podczas Hacking Day na <a href="/symfony-live-2011">Symfony Live</a> postanowiłem spróbować sił i po raz pierwszy napisać kilka testów dla <a href="http://symfony.com">Symfony2</a>. Już od jakiegoś czasu jestem niemal fanatykiem TDD, a ostatnio mocno interestuję się BDD. Testy jednostkowe z pewnością nie są mi obce. Nie podejrzewałem jednak, że ich pisanie dla istniejącego kodu może sprawić tyle radości. Odkryłem też, że jest to doskonała metoda na naukę Symfony2.</p>
+
+<h2 id="testuj-i-ucz-si%C4%99">Testuj i ucz się</h2>
+
+<p>Pisząc testy z pewnością wnosimy swój wkład w projekt. Poprawiamy jego jakość i wiarygodność. To, że przy okazji uczymy się, jest nieco mniej oczywiste. Udeżyło mnie to podczas próby pisania pierwszych testów. Zwyczajowo, jednej klasie w aplikacji odpowiada jedna klasa testowa. <strong>Czytając test uczymy się jak używać klasy, której on dotyczy</strong>. Poznajemy jej API. Z kolei wymagana do napisania testu analiza kodu samej klasy, wiele nam powie o wnętrznościach Symfony. Kodując później aplikacje będziemy mieli bardzo przyjemne uczucie, że rzeźbimy w frameworku, który znamy tak jakbyśmy sami go napisali.</p>
+
+<h2 id="jak-zacz%C4%85%C4%87%3F">Jak zacząć?</h2>
+
+<p>Na początek warto zapoznać się z podstawowymi zasadami. Dzięki <a href="http://symfony.com/doc/2.0/contributing/code/standards.html">standardom kodowania</a> nauczymy się "mówić" tym samym językiem co inni programiści Symfony. Następnym przystankiem powinien być rozdział z dokumentacji o <a href="http://symfony.com/doc/2.0/contributing/code/patches.html">tworzeniu łatek</a>. Dowiemy się z niego jak odbywają się prace i jakich narzędzi będziemy potrzebować. Na koniec (dla formalności) powinniśmy przeczytać <a href="http://symfony.com/doc/2.0/contributing/code/tests.html">jak uruchomić testy</a>. Po lekturze powyższych artykułów będziemy w stanie sforkować <a href="http://github.com/symfony/symfony">repozytorium Symfony na githubie</a>, sklonować je lokalnie i oczywiście uruchomić testy:</p>
+
+<pre><code>phpunit
+</code></pre>
+
+<p><img src="/uploads/wp/2011/03/phpunit-output-400x128.png" alt="" /></p>
+
+<h2 id="analiza-pokrycia-kodu-testami">Analiza Pokrycia Kodu Testami</h2>
+
+<p>Poprzez analizę pokrycia kodu testami (Code Coverage) możemy wyłuskać, które fragmenty zostały wykonane podczas uruchomienia testów. PHPUnit potrafi wygenerować nam raport z pokrycia w _html_u:</p>
+
+<pre><code>phpunit --coverage-html=cov
+</code></pre>
+
+<p><img src="/uploads/wp/2011/03/symfony2-test-coverage-400x114.png" alt="" /></p>
+
+<p>Z raportu dowiemy się, które klasy i metody zostały przetestowane a także, które linie zostały wykonane podczas uruchomienia testów (i ile razy). Tworzy to z raportu doskonałe narzędzie do lokalizacji nie przetestowanego kodu.</p>
+
+<p><img src="/uploads/wp/2011/03/symfony2-class-test-coverage-400x104.png" alt="" /></p>
+
+<p>Niestety PHPUnit nie powie nam, czy wszystkie możliwe ściezki wykonania zostały przebyte. To musimy zrobić sami. Zauważyłem także, że aby otrzymać bardziej realny raport z pokrycia testami, powinniśmy wygenerować go dla odosobnionego komponentu.  Czasem jeden komponent jest używany przez inny i potrafi to sfałszować wyniki. <strong>Fakt, że kod został wykonany podczas testów nie oznacza, że jego zachowanie zostało przez nie zweryfikowane.</strong> **<img src="/uploads/wp/2011/03/symfony2-components-test-coverage-400x266.png" alt="" /> **</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/nauka-symfony2-pisanie-testow-jednostkowych';
+            this.page.identifier = 'nauka-symfony2-pisanie-testow-jednostkowych';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

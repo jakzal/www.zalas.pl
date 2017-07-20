@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>PHP 5.3 zostało wydane &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">PHP 5.3 zostało wydane</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2009-06-30" datetime="2009-06-30">30 czerwca 2009</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/php/">
+                    <span class="list-group-item-heading">php</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p><a href="http://php.net/releases/5_3_0.php">PHP 5.3 zostało wydane</a>. Wersja była długo oczekiwana z uwagi na wiele usprawnień, nowych funkcjonalności i poprawionych błędów. PHP 5.3 to prawie 6, tylko bez wsparcia dla Unicode. Oto lista rzeczy, na które szczególnie czekałem lub wydały mi się interesujące.</p>
+
+<h2 id="opcjonalny-od%C5%9Bmiecacz-pami%C4%99ci">Opcjonalny odśmiecacz pamięci</h2>
+
+<p>Do tej pory PHP cierpiało na wycieki pamięci przy okazji występowania cyklicznych referencji. Problem został bardzo dobrze opisany w artykule Dericka Rethansa w <em>Collecting Garbage: PHP's Take on Variables _(opublikowanym w <a href="http://phparch.com/magazine/index/95">kwietniowym numerze php|architect</a>). W PHP 5.3 dostępna jest rodzina funkcji <a href="http://php.net/gc_enable">odśmiecacza pamięci</a> (gc</em>*), które pozwalają nam lepiej ją kontrolować.</p>
+
+<h2 id="lepsza-wydajno%C5%9B%C4%87">Lepsza wydajność</h2>
+
+<p>Informacja o nowym wydaniu wspomina o  "ukrytej, polepszonej wydajności". Nie ujawniono więcej szczegółów, jednak o tych sprawach zawsze jest dobrze usłyszeć ;)</p>
+
+<h2 id="przestrzenie-nazw">Przestrzenie nazw</h2>
+
+<p><a href="http://php.net/namespaces">Przestrzenie nazw</a> w PHP zostały zaprojektowane do rozwiązania dwóch problemów: unikania konfliktów nazw i polepszenia czytelności. Konflikty występują głównie tam gdzie nasz kod spotyka się z zewnętrznymi bibliotekami. Czasem zdaża się, że nazwy klas czy funkcji powtarzają się. Przestrzenie nazw pomagają unikać takich przypadków i dodatkowo, pośrednio poprawiają czytelność kodu. Umieszczając definicje klas w różnych przestrzeniach, nie musimy już nadawać im długich, unikalnych nazw.</p>
+
+<h2 id="potr%C3%B3jny-operator">Potrójny operator</h2>
+
+<p>Od teraz możliwe jest pominięcie środkowej części operatora potrójnego, stanowiącego skrót dla warunku if. Zamiast pisać:</p>
+
+<pre><code>echo $test ? $test : 'brak';
+</code></pre>
+
+<p>możemy użyć skrótu:</p>
+
+<pre><code>echo $test ?: 'brak';
+</code></pre>
+
+<p>Operator szczególnie przyda się w plikach widoku, gdzie uczyni instrukcje krótszymi i bardziej czytelnymi.</p>
+
+<h2 id="funkcje-lambda-i-domkni%C4%99cia">Funkcje Lambda i domknięcia</h2>
+
+<p><a href="http://php.net/closures">Domknięcia</a>, znane także jako funkcje anonimowe, pozwalają na deklarowanie funkcji bez określonej nazwy. Ich głównym przeznaczeniem jest "użyj i zapomnij", dlatego szczególnie sprawdzają się jako parametry typu callback.</p>
+
+<pre><code>$values = array_map(
+  function ($value) { 
+    return strtoupper($value) 
+  }, 
+  array('a', 'b', 'c')
+);
+</code></pre>
+
+<p>Wymyślono już <a href="http://www.google.com/search?&amp;q=lambda+functions+and+closures+in+php">wiele przykładów zastosowania</a> tych funkcji i niektóre wyglądają naprawdę zniechęcająco. Oddane w niepowołane ręce mogą uczynić wiele szkód. Jak każde potężne narzędzie, powinno być używane z rozwagą.</p>
+
+<h2 id="goto">goto</h2>
+
+<p><a href="http://pl2.php.net/goto">Goto</a> wywołało kontrowersyjne dyskusje jeszcze przed wydaniem PHP 5.3. W jakim celu dodano do języka instrukcję znienawidzoną w niemal całym programistycznym świecie?</p>
+
+<p><img src="/uploads/wp//2009/07/goto.png" alt="goto według xkcd" /></p>
+
+<h2 id="rozsze%C5%BCenie-phar">Rozszeżenie phar</h2>
+
+<p>Rozszeżenie phar udostępnia ciekawą funkcjonalność, zbliżoną do znanych z javy plików JAR. Pozwala na spakowanie całej aplikacji do jednego pliku <a href="http://php.net/phar">phar</a> (PHP Archive - Archiwum PHP). Z założenia ma ułatwić proces dystrybucji pakietów.</p>
+
+<h2 id="co-dalej%3F">Co dalej?</h2>
+
+<p>Migracja! Jest już dostępny <a href="http://php.net/migration53">przewodnik do migracji</a>. Najwyższy czas go przeczytać i poznać zmiany w stosunku do wersji 5.2. Występują pewne <a href="http://php.net/manual/en/migration53.incompatible.php">niekompatybilności</a>, ale koniec końców nie jest to główne wydanie i migracja powinna pójść dość gładko. Jeśli używacie gotowych bibliotek czy frameworków, najlepiej poczekać na wydania kompatybilne z PHP 5.3.</p>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/php-53-zostalo-wydane';
+            this.page.identifier = 'php-53-zostalo-wydane';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

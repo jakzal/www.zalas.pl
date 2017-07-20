@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Nieprawidłowe wyświetlanie plików PNG w MS Internet Explorer &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Nieprawidłowe wyświetlanie plików PNG w MS Internet Explorer</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2007-02-19" datetime="2007-02-19">19 lutego 2007</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/web/">
+                    <span class="list-group-item-heading">web</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p>Nie jeden webmaster klął na Microsoft© za nieprawidłowe wyświetlanie przezroczystości plików <a href="http://pl.wikipedia.org/wiki/Png">PNG</a> w przeglądarkach Internet Explorer - zamiast niej otrzymujemy szare tło. Jedyne co pozostaje to zastosować <a href="http://pl.wikipedia.org/wiki/GIF">GIF</a>a, który rzadko się do tego nadaje. Przezroczyste pliki GIF często są poszarpane, a ich jakość jest oczywiście niższa - to dlatego, że ich przezroczystość ma tylko 8 bitów. Myślałem, że tego nie da się obeść w inny sposób niż zaczekać aż IE będzie niszową, mało znaczącą przeglądarką, albo zostanie wypuszczona jego nowa, poprawiona wersja. A jednak... Zostałem mile zaskoczony, gdy dowiedziałem się, że jest możliwe zmusić IE do prawidłowego pokazania plików PNG :D Do tego jest to bardzo proste i sprowadza się do wywołania specjalnego kodu JavaScript. Kod ten jest pomijany przez inne przeglądarki. Rozwiązanie niemal idealne ;) W osobnym pliku js umieszczamy poniższy kod:</p>
+
+<pre><code>/*
+Correctly handle PNG transparency in Win IE 5.5 &amp; 6.
+http://homepage.ntlworld.com/bobosola. Updated 18-Jan-2006.
+Use in  with DEFER keyword wrapped in conditional comments:
+*/
+var arVersion = navigator.appVersion.split("MSIE")
+var version = parseFloat(arVersion[1])
+if ((version &gt;= 5.5) &amp;&amp; (document.body.filters))
+{
+   for(var i=0; i
+   {
+      var img = document.images[i]
+      var imgName = img.src.toUpperCase()
+      if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+      {
+         var imgID = (img.id) ? "id='" + img.id + "' " : ""
+         var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+         var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+         var imgStyle = "display:inline-block;" + img.style.cssText
+         if (img.align == "left") imgStyle = "float:left;" + imgStyle
+         if (img.align == "right") imgStyle = "float:right;" + imgStyle
+         if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+         var strNewHTML = "
+         + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+         + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+         + "(src=\'" + img.src + "\', sizingMethod='scale');\"&gt;"
+         img.outerHTML = strNewHTML
+         i = i-1
+      }
+   }
+}
+</code></pre>
+
+<p>Natomiast w kodzie html strony umieszczamy jego warunkowe dołączenie:</p>
+
+<pre><code>&lt;pre&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Prawidłowe wyświetlanie plików PNG w MS Internet Explorer&lt;/title&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;!--[if lt IE 7.]&gt;
+    &lt;script defer type="text/javascript" src="pngfix.js"&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+Obrazki PNG zostaną poprawnie wyświetlone w tym dokumencie także w Internet Explorer.
+
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/pre&gt;
+</code></pre>
+
+<p>To wszystko!! Od tej pory każdy dołączony do strony plik png będzie wyświetlony prawidłowo w każdej przeglądarce :)</p>
+
+<p><em>Źródła:</em></p>
+
+<ul>
+<li><em><a href="http://homepage.ntlworld.com/bobosola/index.htm">The PNG problem in Windows Internet Explorer</a></em></li>
+<li><em><a href="http://koivi.com/ie-png-transparency/">Normal display of PNG Alpha Transparency with MSIE</a></em></li>
+<li><em><a href="http://www.mambopl.com/content/view/136/48/">Poprawka wyświetlania plików PNG w IE</a></em></li>
+<li><em><a href="http://pornel.net/pnghowto">PNG - Jak i dlaczego używać</a></em></li>
+<li><em><a href="http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html">PNG Behavior</a></em></li>
+<li><em><a href="http://www.scss.com.au/family/andrew/webdesign/pngbehavior/">Improved PNG Behavior</a><a href="http://dean.edwards.name/IE7/"> </a></em></li>
+<li><em><a href="http://dean.edwards.name/IE7/">JavaScriptowa biblioteka IE7</a></em></li>
+</ul>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer';
+            this.page.identifier = 'nieprawidlowe-wyswietlanie-plikow-png-w-ms-internet-explorer';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>

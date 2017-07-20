@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Zaciemnianie kodu &mdash; Jakub Zalas &mdash; Agile Software Engineer, Architekt, Trener</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="verify-v1" content="mHEiONNL9DtmjWO7JCPw24xJ/FNQsnO8ekomLfropQg=" />            <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="http://www.zalas.pl/favicon.ico" />
+        <link rel="alternate" type="application/atom+xml" href="http://www.zalas.pl/atom.xml" title="Jakub Zalas activity feed" />
+        <link href="http://www.zalas.pl/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/base.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/css/code.css" rel="stylesheet" type="text/css" />
+        <link href="http://www.zalas.pl/components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+                                    </head>
+    <body>
+                <header>
+                        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.zalas.pl/" title="Strona Główna"><span class="glyphicon glyphicon-home"></span></a></li>
+                </ul>
+            </nav>
+                    </header>
+                        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                        <section itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 itemprop="name">Zaciemnianie kodu</h1>
+        <div class="post-date pull-right">
+            <time itemprop="datePublished" content="2007-01-02" datetime="2007-01-02">2 stycznia 2007</time>
+        </div>
+        <ul class="list-unstyled list-inline post-tag-cloud">
+                        <li>
+                <span class="glyphicon glyphicon-tag"></span>
+                <a href="http://www.zalas.pl/tag/perl/">
+                    <span class="list-group-item-heading">perl</span>
+                </a>
+            </li>
+                    </ul>
+
+                <div class="alert alert-danger">
+            Ten wpis został napisany dawno temu i może być już nieaktualny.
+        </div>
+        
+        <section class="content" itemprop="articleBody"><p>Zaciemnianie kodu (<a href="http://en.wikipedia.org/wiki/Obfuscated_code">code obfuscation</a>) to proces czyniący go trudnym do przeczytania i zrozumienia, jednak pozostawiający nadal wykonywalnym. <a href="http://pl.wikipedia.org/wiki/Perl">Perl</a> ze swoimi <a href="http://bash.org.pl/69677/">zwariowanymi możliwościami składniowymi</a> idealnie nadaje się do takich <a href="http://en.wikipedia.org/wiki/Obfuscated_Perl_contest">zabaw</a>. <a href="http://www.perlmonks.com/index.pl?node_id=161087">Yet Another Obfuscation Engine</a> (yaoe.pl) jest jednym z zaciemniaczy tworzącym nawet z prostego skryptu pozornie bezsensowny ciąg znaków. Spotkałem się z tym po raz pierwszy trochę ponad rok temu, kiedy to firma <a href="http://www.strangelogic.com">Strange Logic</a> szukała nowych programistów. Otrzymałem link do strony <a href="http://www.hackpoland.com">www.hackpoland.com</a>, gdzie znajdował się skrypt zaciemniony tą metodą (aby się tego dowiedzieć wystarczyło zapytać <a href="http://www.google.com">google</a> &#45; powstały kod jest dosyć charakterystyczny). Uruchamiając go można było poczytać więcej na temat firmy oraz wyzwania jakie stawia osobom, które chciałyby dla niej pracować. Wydał mi się to bardzo dobry sposób na poszukiwanie nowych pracowników :) W wyzwaniu chodziło o to, aby odnaleźć zaszyty w kodzie komentarz z odnośnikiem do strony internetowej z dalszymi intstrukcjami ;) Napisałem 'odciemniacz' kodu zaciemnionego przez <a href="http://www.perlmonks.com/index.pl?node_id=161087">yaoe.pl</a>. Skrypt powinien odwrócić proces zaciemniania przynajmniej tak, aby można było odczytać pierwotny kod (prawdopodobnie nie zawsze da się potem uruchomić).</p>
+
+<pre><code>#!/usr/bin/perl
+#Deobfuscates perl code (obfuscaded by Yet Another Obfuscation Engine)
+#author: Jakub Zalas &lt;jakub@zalas.net&gt;
+#version: 20061230
+#first version: 2005
+#licence: GPL
+use strict;
+use warnings;
+
+die "Usage:\n\t$0 file_name_to_deobfuscate.pl\n" if !defined($ARGV[0]);
+my $fileName = $ARGV[0];
+
+my %code = (
+    "\t"   =&gt; "chr oct ord w",
+    "\n"   =&gt; "chr hex a",
+    ' '    =&gt; "chr oct hex ffa",
+    '!'    =&gt; "chr hex hex hex f",
+    '"'    =&gt; "chr oct oct hex ceaa",
+    '#'    =&gt; "chr oct hex abaa",
+    '$'    =&gt; "chr oct hex afaa",
+    '%'    =&gt; "chr oct oct hex daaa",
+    '&amp;'    =&gt; "chr hex oct hex cda",
+    "'"    =&gt; "chr oct hex baba",
+    '('    =&gt; "chr hex oct hex daa",
+    ')'    =&gt; "chr oct hex caaa",
+    '*'    =&gt; "chr oct hex ceaa",
+    '+'    =&gt; "chr oct sqrt hex afa",
+    ','    =&gt; "chr oct sqrt hex baa",
+    '-'    =&gt; "chr oct hex daaa",
+    '.'    =&gt; "chr oct hex ddea",
+    '/'    =&gt; "chr oct sqrt hex cba",
+    0      =&gt; "oct a",
+    1      =&gt; "m mm",
+    2      =&gt; "int log hex a",
+    3      =&gt; "int sqrt hex a",
+    4      =&gt; "int log ord a",
+    5      =&gt; "int log hex aa",
+    6      =&gt; "chr sqrt hex baa",
+    7      =&gt; "int log hex aaa",
+    8      =&gt; "int oct ord l",
+    9      =&gt; "int oct ord w",
+    ':'    =&gt; "chr oct oct ord n",
+    ';'    =&gt; "chr sqrt hex daa",
+    '&lt;'    =&gt; "chr oct oct ord p",
+    '='    =&gt; "chr sqrt hex eaa",
+    '&gt;'    =&gt; "chr oct oct ord r",
+    '?'    =&gt; "chr sqrt hex faa",
+    '@'    =&gt; "chr oct ord d",
+    '['    =&gt; "chr oct oct hex cd",
+    "\\"   =&gt; "chr oct oct hex ce",
+    ']'    =&gt; "chr oct oct hex cf",
+    '^'    =&gt; "chr oct hex hex dfa",
+    _      =&gt; "chr log sqrt exp hex be",
+    '`'    =&gt; "chr hex oct oct ord p",
+    '{'    =&gt; "chr oct hex ad",
+    '|'    =&gt; "chr oct hex ae",
+    '}'    =&gt; "chr oct hex af",
+    '~'    =&gt; "chr oct oct hex ord h",
+);
+my %decode = ();
+foreach my $key ( keys( %code ) ) {
+    $decode{$code{$key}} = $key;
+}
+
+undef $/;
+open FILE, "&lt;$fileName";
+my $file = &lt;FILE&gt;;
+close FILE;
+
+$file =~ s/\s+/ /g;
+
+my @tmp = split("eval if ", $file);
+my @part1 = split(" x ", $tmp[0]);
+my @part2 = split(" x ", $tmp[1]);
+undef @tmp;
+
+my $count=0;
+while($count&lt;2) {
+    my $repeat=1;
+    my @part;
+    @part = @part1 if $count==0;
+    @part = @part2 if $count==1;
+
+    for(my $i=$#part; $i&gt;=0; $i--) {
+        my $row = $part[$i];
+
+        #in obfuscator repeating characters are being replaced
+        #by the sequence from the following regexp
+        if($row =~ /^s zzchr ordze(\s+|$)/) {
+            $repeat++;
+            next;
+        }
+
+        #decode
+        if($row =~ /s zz(.*?)ze/ &amp;&amp; defined($decode{$1})) {
+            my $entity = $1;
+            $row =~ s/s zz${entity}ze/$decode{$entity}/
+        }
+
+        $row =~ s/s zzucfirst (.*?)ze/\u$1/ or
+        $row =~ s/s zzuc q y(.*?)yze/\U$1\L/ or
+        $row =~ s/s zzuc (.*?)ze/\U$1\L/ or
+        $row =~ s/s aaucfirst (.*?)ae/\u$1/ or
+        $row =~ s/s aauc (.*?)ae/\U$1\L/ or
+        $row =~ s/s zz(.*?)z/$1/ or
+        $row =~ s/s aa(.*?)a/$1/;
+
+        $row =~ s/q (y|b)(.*?)\1/$2/gi;
+
+        print $row for 1 .. $repeat;
+
+        $repeat = 1;
+    }
+
+    $count++;
+}
+
+1;
+</code></pre>
+</section>
+    </section>
+
+
+        <div id="disqus_thread"></div>
+    <script>
+         var disqus_shortname = 'zalas-pl';
+         var disqus_config = function () {
+            this.page.url = 'http://www.zalas.pl/zaciemnianie-kodu';
+            this.page.identifier = 'zaciemnianie-kodu';
+         };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <div class="row author" itemscope itemtype="http://data-vocabulary.org/Person">
+                        <div class="col-md-12 col-sm-2 col-xs-4">
+                            <img itemprop="photo" class="avatar img-rounded img-responsive" src="http://www.zalas.pl/images/kuba.png" alt="Jakub Zalas" title="Jakub Zalas" />
+                        </div>
+                        <div class="col-md-12 col-sm-10 cal-xs-8">
+                            <h4 itemprop="name">Jakub Zalas</h4>
+                            <p itemprop="title">Architekt, Programista, Trener</p>
+                            <ul class="social list-inline">
+                                <li><a href="https://twitter.com/jakub_zalas" title="Jakub Zalas na twitterze"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://github.com/jakzal" title="Jakub Zalas na githubie"><i class="fa fa-github-alt"></i></a></li>
+                                <li class="last-item"><a href="https://www.linkedin.com/in/jakubzalas/" title="Jakub Zalas na linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                        <footer>
+            <div id="license">
+                <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" src="http://www.zalas.pl/images/cc-by.png" /></a> <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Jakub Zalas</span> opublikował ten artykuł na licencji <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+            </div>
+        </footer>
+                                        <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-607315-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            
+            
+            <script src="http://www.zalas.pl/components/highlightjs/highlight.pack.js"></script>
+            <script>hljs.initHighlightingOnLoad();</script>
+                    </body>
+</html>
